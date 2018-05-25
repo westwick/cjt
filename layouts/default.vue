@@ -1,53 +1,83 @@
 <template>
   <div>
-    <p>Andrew</p>
+    <app-header />
     <nuxt/>
   </div>
 </template>
 
-<style>
-html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
+<script>
+import AppHeader from '~/components/AppHeader';
 
-*, *:before, *:after {
-  box-sizing: border-box;
-  margin: 0;
+export default {
+  components: {
+    AppHeader
+  },
 }
+</script>
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
+<style lang="sass">
+  @import './icon.css'
+  a
+    transition: all .3s ease-in-out
+  body 
+    font-family: 'Karla', sans-serif
+    padding-top: 80px
+    background: #f8f8f8
+  button, .button, input 
+    font-family: 'Karla', sans-serif 
+  .button:focus:not(:active), .button.is-focused:not(:active)
+    outline: 0
+    box-shadow: none
+  html
+    font-size: 16px
+    word-spacing: 1px
+    -ms-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%
+    -moz-osx-font-smoothing: grayscale
+    -webkit-font-smoothing: antialiased
+    box-sizing: border-box
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
+  *, *:before, *:after
+    box-sizing: border-box
+    margin: 0
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
+  .card
+    border: none
+    border-radius: 5px
+    box-shadow: 0 0 8px rgba(0,0,0,.1)
+    
+    .treasure
+      position: absolute
+      top: -16px
+      left: -16px
+      width: 64px
+      height: 64px
+      border-radius: 50%
+      background: #FDC132
+      border: 1px solid #fff
+    .img-main
+      width: 100%
+      height: auto
+      border-radius: 5px 5px 0 0
+    .card-content
+      padding: 16px
+      display: flex
+      align-items: center
+      flex-direction: column
+      justify-content: center
+    h2
+      width: 100%
+      font-size: 20px
+      font-weight: bold
+    h3
+      width: 100%
+      color: darken(#eb2e19, 5%)
+      font-weight: bold
+      font-size: 14px
+    p
+      width: 100%
+      margin-top: 16px
+      font-size: 14px
+    .button
+      margin-top: 16px
 </style>
