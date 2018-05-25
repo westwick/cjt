@@ -1,5 +1,6 @@
 <template>
   <div>
+    <p>Andrew</p>
     <nuxt/>
   </div>
 </template>

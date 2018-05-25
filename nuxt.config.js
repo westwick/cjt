@@ -5,7 +5,8 @@ var path = require('path');
 // automatically and match it to the path of your Nuxt routes.
 // The Nuxt routes are generate by Nuxt automatically based on the pages folder.
 var dynamicRoutes = getDynamicPaths({
-  '/blog': 'blog/posts/*.json'
+  '/blog': 'blog/posts/*.json',
+  '/tours': 'tours/*.json'
 });
 
 
@@ -24,6 +25,14 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  css: [
+    // Load a Node.js module directly (here it's a Sass file)
+    'bulma',
+    // CSS file in the project
+    // '@/assets/css/main.css',
+    // SCSS file in the project
+    // '@/assets/css/main.scss'
+  ],
   /*
   ** Customize the progress bar color
   */
@@ -38,6 +47,11 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    postcss: {
+      plugins: {
+        'postcss-custom-properties': false
+      }
+    },
     /*
     ** Run ESLint on save
     */
