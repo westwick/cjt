@@ -5,10 +5,10 @@
         <div class="header-left">
           <div class="logo">CJT</div>
           <nav>
-            <nuxt-link to="/tours">Tours</nuxt-link>
+            <nuxt-link to="tours">Tours</nuxt-link>
             <a href="#">Specials</a>
             <a href="#">Group Events</a>
-            <a href="#">More Info</a>
+            <a href="#" class="more-info">More Info <i class="fas fa-sort-down"></i></a>
           </nav>
         </div>
         <div class="header-right">
@@ -29,8 +29,8 @@ export default {
 <style lang="sass">
   header
     background: #0D1521
-    height: 80px
-    line-height: 80px
+    height: 96px
+    line-height: 96px
     position: fixed
     top: 0
     left: 0
@@ -50,6 +50,11 @@ export default {
             top: 2px
             font-size: 16px
             margin-right: 8px
+    .more-info
+      i
+        margin-left: 6px
+        position: relative
+        top: -3px
     .logo
       margin-right: 120px
       display: inline-block
@@ -61,7 +66,7 @@ export default {
         color: #c8c8c8
         text-transform: uppercase
         font-weight: bold
-        font-size: 14px
+        font-size: 16px
         &:hover
           color: #f44444
 </style>

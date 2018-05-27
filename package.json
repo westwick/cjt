@@ -1,7 +1,7 @@
 {
-  "name": "cjtest",
+  "name": "cjt",
   "version": "1.0.0",
-  "description": "Nuxt.js + Netlify CMS project",
+  "description": "Captain Jack's Tours Homepage",
   "author": "Andrew Westwick <awestwick@gmail.com>",
   "private": true,
   "scripts": {

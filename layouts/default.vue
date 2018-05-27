@@ -1,16 +1,21 @@
 <template>
   <div>
     <app-header />
-    <nuxt/>
+    <section id="main">
+      <nuxt/>
+    </section>
+    <app-footer />
   </div>
 </template>
 
 <script>
 import AppHeader from '~/components/AppHeader';
+import AppFooter from '~/components/AppFooter';
 
 export default {
   components: {
-    AppHeader
+    AppHeader,
+    AppFooter
   },
 }
 </script>
@@ -21,7 +26,7 @@ export default {
     transition: all .3s ease-in-out
   body 
     font-family: 'Karla', sans-serif
-    padding-top: 80px
+    padding-top: 96px
     background: #f8f8f8
   button, .button, input 
     font-family: 'Karla', sans-serif 
@@ -41,6 +46,8 @@ export default {
     box-sizing: border-box
     margin: 0
 
+  #main
+    min-height: 80vh
   .card
     border: none
     border-radius: 5px
@@ -78,6 +85,13 @@ export default {
       width: 100%
       margin-top: 16px
       font-size: 14px
+      overflow: hidden
+      text-overflow: ellipsis
+      display: -webkit-box
+      -webkit-box-orient: vertical
+      -webkit-line-clamp: 5
+      line-height: 20px
+      max-height: 100px
     .button
       margin-top: 16px
 </style>

@@ -6,7 +6,7 @@
           <div class="column is-7">
             <h1>Ahoy Matey!</h1>
             <p>Captain Jack's Santa Barbara Tours can be reserved for any day (subject to availability). All of our tours have been designed with you in mind.</p>
-            <nuxt-link class="home-btn button" to="/tours"><span class="icon-calendar"></span>Book a Tour</nuxt-link>
+            <nuxt-link class="home-btn button" to="tours"><span class="icon-calendar"></span>Book a Tour</nuxt-link>
           </div>
         </div>
       </div>
@@ -19,7 +19,7 @@
             <p>Captain Jack's Tours is the #1 Tour &amp; Event company in Santa Barbara, offering more fun choices every day. Captain Jack's Tours will provide that special something to every event whether your group consists of 2 people or 200. With so many fun things to do in Santa Barbara, Captain Jack's Tours &amp; Events has something for everyone!</p>
           </div>
           <div class="column is-7">
-            <div class="greeting-images columns">
+            <div class="greeting-images columns is-mobile">
               <div class="column is-4">
                 <img src="~/assets/horseride.jpg" />
               </div>
@@ -45,21 +45,34 @@
                 <h2>Hotel and Wine Tour Combo</h2>
                 <h3>Only $149 per night Oct 15th – March 14th</h3>
                 <h3>Only $169 per night March 15th – Oct 14th</h3>
-                <p>Book any tour through Captain Jack’s Tours and you will qualify for our hotel special. Hotel accommodations are at the newly remodeled La Quinta Inn &amp; Suites.</p>
+                <p>Book any tour through Captain Jack’s Tours and you will qualify for our hotel special. Hotel accommodations are at the newly remodeled La Quinta Inn & Suites. It includes an over-sized room, heated pool, beautiful garden grounds and is located in downtown Santa Barbara. Breakfast, WI-FI & free parking are 'included' in this package – this package is limited in availability. Book any tour with Captain Jack’s tours….and save with our special room rate. Ask for more details.</p>
                 <a href="#" class="button">Learn More</a>
               </div>
             </div>
           </div>
           <div class="column is-4">
             <div class="card">
-              <p>Test</p>
+              <div class="treasure"></div>
+              <img class="img-main" src="~/assets/valley4.jpg">
+              <div class="card-content">
+                <h2>Hotel and Wine Tour Combo</h2>
+                <h3>Only $149 per night Oct 15th – March 14th</h3>
+                <h3>Only $169 per night March 15th – Oct 14th</h3>
+                <p>Book any tour through Captain Jack’s Tours and you will qualify for our hotel special. Hotel accommodations are at the newly remodeled La Quinta Inn &amp; Suites.</p>
+                <a href="#" class="button">Learn More</a>
+              </div>
             </div>
           </div>
           <div class="column is-4">
-            <div class="card">
-              <p>Test</p>
-            </div>
+            <img src="~/assets/temp.png" />
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="home-awards">
+      <div class="container">
+        <div class="columns">
+
         </div>
       </div>
     </section>
@@ -77,20 +90,6 @@
         </nuxt-link>
       </li>
     </ul>
-    <div class="columns">
-    <div class="column">
-      First column
-    </div>
-    <div class="column">
-      Second column
-    </div>
-    <div class="column">
-      Third column
-    </div>
-    <div class="column">
-      Fourth column
-    </div>
-  </div>
     <ul>
       <li v-for="tour in tours" :key="tour.title">
         <nuxt-link :to="tour._path">
@@ -159,7 +158,7 @@ export default {
     font-size: 16px
     border: none
     outline: none
-    box-shadow: 0 0 5px rgba(155,155,155,.3)
+    box-shadow: 0 0 8px rgba(0,0,0,.35)
     padding: 10px 16px
     height: auto
     border-radius: 3px
