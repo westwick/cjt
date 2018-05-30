@@ -1,5 +1,9 @@
 {
   "title": "$50 Santa Barbara Kayak Tour",
+  "subheader": "10:30 - 11:00 Start Time / 7 Days a week",
+  "subheader2": "10:30 - 11:00 Start Time / 7 Days a week",
   "price": "40",
-  "body": "testing"
+  "body": "testing",
+  "extra": "test23",
+  "sort": "20"
 }
