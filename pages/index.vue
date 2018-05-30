@@ -64,7 +64,7 @@
             </div>
           </div>
           <div class="column is-4">
-            <img src="~/assets/temp.png" />
+            <img src="~/assets/specials.png" />
           </div>
         </div>
       </div>
@@ -158,7 +158,7 @@ export default {
   .home-greeting
     padding: 32px 0
     background: #fff
-    border-bottom: 3px solid #eb2e19
+    border-bottom: 5px solid #eb2e19
     h3 
       color: #eb2e19
       font-weight: bold
