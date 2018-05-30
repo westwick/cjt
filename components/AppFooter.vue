@@ -1,39 +1,48 @@
 <template>
   <footer>
+    <div class="crow-container">
+      <img src="~/assets/crowsnest.png" class="crowsnest" />
+    </div>
     <div class="container">
       <div class="columns">
-        <div class="column">
-          <h5>Main Links</h5>
-          <ul>
-            <li><a href="#">Tours</a></li>
-            <li><a href="#">Large Group Events</a></li>
-            <li><a href="#">Current Specials</a></li>
-          </ul>
+        <div class="column is-3">
         </div>
-        <div class="column">
-          <h5>More Links</h5>
-          <ul>
-            <li><a href="#">Private Sailing Cruises</a></li>
-            <li><a href="#">School Events</a></li>
-          </ul>
-        </div>
-        <div class="column">
-          <h5>More Info</h5>
-          <ul>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Frequently Asked Questions</a></li>
-            <li><a href="#">Useful Links</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About Us</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="columns">
-        <div class="column disclosures">
-          <p class="disclosure"><strong>Selection &amp; Convenience:</strong> Captain Jack's Tours is a day tour/events company and ticket broker specializing in the Santa Barbara area. Tours, prices and times are subject to change without notice. The prices we quote may include and/or be subject to a handling/processing fee. Please read our cancellation policy and other disclosures.</p>
-          <p class="disclosure">Captain Jack's Guides will do everything to make your tour "special". If you have a good time, feel free to show your appreciation.</p>
-          <p class="disclosure">Captain Jack's Tours is not responsible for items lost or left behind, including personal items, wine, &amp; other purchases made throughout the day. Please make sure you check your belongings carefully at the end of the tour.</p>
-          <p class="disclosure"><strong>Cancellation Policy:</strong> Please be aware that Capt. Jack's Tours has a NO CANCELLATION, NO REFUND POLICY. It is no different than if you bought a ticket for a baseball game or a concert….if you miss the event no one is going to send you a refund. All sales are final. If Capt. Jack’s Tours cancels your tour due to weather or any other reason you will receive a full refund.</p>
+        <div class="column is-9">
+          <div class="columns">
+            <div class="column">
+              <h5>Main Links</h5>
+              <ul>
+                <li><a href="#">Tours</a></li>
+                <li><a href="#">Large Group Events</a></li>
+                <li><a href="#">Current Specials</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h5>More Links</h5>
+              <ul>
+                <li><a href="#">Private Sailing Cruises</a></li>
+                <li><a href="#">School Events</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h5>More Info</h5>
+              <ul>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Frequently Asked Questions</a></li>
+                <li><a href="#">Useful Links</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column disclosures">
+              <p class="disclosure"><strong>Selection &amp; Convenience:</strong> Captain Jack's Tours is a day tour/events company and ticket broker specializing in the Santa Barbara area. Tours, prices and times are subject to change without notice. The prices we quote may include and/or be subject to a handling/processing fee. Please read our cancellation policy and other disclosures.</p>
+              <p class="disclosure">Captain Jack's Guides will do everything to make your tour "special". If you have a good time, feel free to show your appreciation.</p>
+              <p class="disclosure">Captain Jack's Tours is not responsible for items lost or left behind, including personal items, wine, &amp; other purchases made throughout the day. Please make sure you check your belongings carefully at the end of the tour.</p>
+              <p class="disclosure"><strong>Cancellation Policy:</strong> Please be aware that Capt. Jack's Tours has a NO CANCELLATION, NO REFUND POLICY. It is no different than if you bought a ticket for a baseball game or a concert….if you miss the event no one is going to send you a refund. All sales are final. If Capt. Jack’s Tours cancels your tour due to weather or any other reason you will receive a full refund.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -47,11 +56,14 @@ export default {
 
 <style lang="sass">
   footer
-    background: #393a3c
+    background: #fff
     // background: linear-gradient(to top, #100c23 0, #420330 100%)
     color: #b8b8b8
-    padding: 80px 0
+    padding: 80px 0 0
     font-size: 18px
+    position: relative
+    overflow: hidden
+    border-top: 5px solid #eb2e19
     h5
       text-transform: uppercase
       font-weight: bold
@@ -60,17 +72,21 @@ export default {
       letter-spacing: 0.4px
       color: #9c9c9c
     a
-      color: #ccc
+      color: #eb2e19
     li
       margin-bottom: 8px
       &:last-child
         margin-bottom: 0
   .disclosures
-    margin-top: 40px
+    margin: 40px 0 80px
   .disclosure
     font-size: 14px
     color: #9a9a9a
     margin-bottom: 16px
     strong
       color: #9c9c9c
+  .crow-container
+    position: absolute
+    bottom: -10px
+    left: 40px
 </style>

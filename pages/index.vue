@@ -76,27 +76,6 @@
         </div>
       </div>
     </section>
-    <h2>Blog</h2>
-    <nuxt-link to="tours">
-      Browser Tours
-    </nuxt-link>
-    <nuxt-link to="cool">
-      cool
-    </nuxt-link>
-    <ul>
-      <li v-for="post in posts" :key="post.date">
-        <nuxt-link :to="post._path">
-          {{ post.title }}
-        </nuxt-link>
-      </li>
-    </ul>
-    <ul>
-      <li v-for="tour in tours" :key="tour.title">
-        <nuxt-link :to="tour._path">
-          {{ tour.title }}
-        </nuxt-link>
-      </li>
-    </ul>
   </section>
 </template>
 
@@ -128,6 +107,7 @@ export default {
 </script>
 
 <style lang="sass">
+  @import "~bulma/sass/utilities/_all.sass"
   .home-hero
     height: 400px
     max-height: 400px
@@ -144,6 +124,9 @@ export default {
     align-items: center
     color: #fff
     text-align: left
+    padding: 0 16px
+    +desktop
+      padding: 0
     h1
       font-size: 24px
       font-weight: bold
@@ -182,10 +165,16 @@ export default {
       text-transform: uppercase
       font-size: 20px
       margin-bottom: 16px
+      padding-left: 16px
+      +desktop
+        padding-left: 0
     p
       color: #0a0a0a
       font-size: 14px
       font-weight: 500
+      padding-left: 16px
+      +desktop
+        padding-left: 0
   .greeting-images
     img
       width: 100%

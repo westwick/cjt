@@ -19,17 +19,24 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js + Netlify CMS project' }
+      { hid: 'description', name: 'description', content: 'Nuxt.js + Netlify CMS project' },
+      { name: 'theme-color', content: '#ffffff' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Karla:400,500,700' },
-      { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.0.13/css/all.css' }
+      { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.0.13/css/all.css' },
+      { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+      { rel: 'manifest', href: '/site.webmanifest' },
+      { rel: 'mask-icon', color: '#5bbad5', href: '/safari-pinned-tab.svg' }
     ]
   },
   css: [
+    { src: '~layouts/main.sass', lang: 'sass' }
     // Load a Node.js module directly (here it's a Sass file)
-    'bulma',
+    // 'bulma',
     // CSS file in the project
     // '@/assets/css/main.css',
     // SCSS file in the project

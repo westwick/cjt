@@ -1,0 +1,81 @@
+header
+  background: #0D1521
+  height: 72px
+  line-height: 72px
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 99
+  +widescreen
+    height: 96px
+    line-height: 96px
+  .header
+    display: flex
+    justify-content: space-between
+    .header-left
+      display: flex
+    .header-right
+      a
+        color: #e3e3e3
+        font-size: 14px
+        display: none
+        +desktop
+          display: block
+        span
+          position: relative
+          top: 2px
+          font-size: 16px
+          margin-right: 8px
+  .more-info
+    i
+      margin-left: 6px
+      position: relative
+      top: -3px
+  .logo
+    margin-left: 16px
+    margin-right: 24px
+    display: inline-block
+    color: #f44444
+    +desktop
+      margin-left: 0
+    +widescreen
+      margin-right: 32px
+    img
+      height: 56px
+      width: auto
+      min-width: 205px
+      margin: 8px 0
+      +widescreen
+        height: 80px
+  nav 
+    display: none
+    +tablet
+      display: flex
+    a
+      padding: 0 24px
+      color: #e3e3e3
+      text-transform: uppercase
+      font-weight: bold
+      font-size: 14px
+      +widescreen
+        padding: 0 32px
+        font-size: 16px
+      &:hover
+        color: #ff0300
+  .subheader
+    position: fixed
+    top: 72px
+    left: 0
+    width: 100%
+    background: #15577E
+    color: #fff
+    height: 32px
+    line-height: 1rem
+    display: flex
+    align-items: center
+    justify-content: center
+    +desktop
+      display: none
+    p
+      margin: 0

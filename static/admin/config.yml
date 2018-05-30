@@ -22,7 +22,11 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     format: 'json'
     fields:
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Subheader", name: "subheader", widget: "string", required: true}
+      - {label: "Subheader2", name: "subheader2", widget: "string", required: false}
       - {label: "Price", name: "price", widget: "number"}
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown", required: true}
+      - {label: "Extra Description", name: "extra", widget: "markdown"}
+      - {label: "Sort", name: "sort", widget: "number"}
