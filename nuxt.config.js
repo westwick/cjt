@@ -45,7 +45,7 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' },
+  loading: { color: 'rgba(235,45,25,.65)' },
   /*
   ** Route config for pre-rendering
   */
@@ -55,6 +55,7 @@ module.exports = {
   /*
   ** Build configuration
   */
+  mode: 'spa',
   build: {
     postcss: {
       plugins: {
