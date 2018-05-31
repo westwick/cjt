@@ -23,10 +23,11 @@ collections:
     format: 'json'
     fields:
       - {label: "Title", name: "title", widget: "string", required: true}
-      - {label: "Subheader", name: "subheader", widget: "string", required: true}
-      - {label: "Subheader2", name: "subheader2", widget: "string", required: false}
-      - {label: "Price", name: "price", widget: "number"}
+      - {label: "Subheader", name: "subheader", widget: "string", required: false}
+      - {label: "Start Time", name: "startTime", widget: "string", required: false}
+      - {label: "Price", name: "price", widget: "string", required: false}
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: true}
-      - {label: "Extra Description", name: "extra", widget: "markdown"}
-      - {label: "Sort", name: "sort", widget: "number"}
+      - {label: "Extra Description", name: "extra", widget: "markdown", required: false}
+      - {label: "Sort", name: "sort", widget: "number", required: true}
+      - {label: "Allow Online Booking", name: "allowBooking", widget: "boolean", required: true}
