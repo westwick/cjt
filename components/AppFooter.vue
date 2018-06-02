@@ -28,7 +28,7 @@
               <h5>More Info</h5>
               <ul>
                 <li><a href="#">Gallery</a></li>
-                <li><a href="#">Frequently Asked Questions</a></li>
+                <li><a href="#">FAQ</a></li>
                 <li><a href="#">Useful Links</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">About Us</a></li>
@@ -55,37 +55,5 @@ export default {
 </script>
 
 <style lang="sass">
-  footer
-    background: #fff
-    // background: linear-gradient(to top, #100c23 0, #420330 100%)
-    color: #b8b8b8
-    padding: 80px 0 0
-    font-size: 18px
-    position: relative
-    overflow: hidden
-    h5
-      text-transform: uppercase
-      font-weight: bold
-      font-size: 16px
-      margin-bottom: 32px
-      letter-spacing: 0.4px
-      color: #9c9c9c
-    a
-      color: #eb2e19
-    li
-      margin-bottom: 8px
-      &:last-child
-        margin-bottom: 0
-  .disclosures
-    margin: 40px 0 80px
-  .disclosure
-    font-size: 14px
-    color: #9a9a9a
-    margin-bottom: 16px
-    strong
-      color: #9c9c9c
-  .crow-container
-    position: absolute
-    bottom: -10px
-    left: 40px
+
 </style>

@@ -80,7 +80,12 @@
     <section class="home-awards">
       <div class="container">
         <div class="columns">
-
+          <div class="column is-6">
+            <p>Voted "Best Wine Tour In Santa Barbara" 5 years in a row!!!</p>
+          </div>
+          <div class="column is-6">
+            <p>Voted "Best Wine Tour In Santa Barbara" 5 years in a row!!!</p>
+          </div>
         </div>
       </div>
     </section>
@@ -164,6 +169,9 @@ export default {
     color: #fff
     text-align: left
     padding: 0 16px
+    @media screen and (min-width: 1400px)
+      background-position: 50% 40%
+
     +desktop
       padding: 0
     h1
@@ -211,13 +219,16 @@ export default {
       color: #0a0a0a
       font-size: 14px
       font-weight: 500
-      padding-left: 16px
+      padding: 0 16px
       +desktop
-        padding-left: 0
+        padding: 0
   .greeting-images
     img
       width: 100%
       height: 100%
   .home-featured
-    padding: 48px 0
+    padding: 48px 8px
+  .home-awards
+    background: #fff
+    padding: 80px 0
 </style>
