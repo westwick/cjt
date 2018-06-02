@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="shell">
     <app-header />
     <section id="main">
       <nuxt/>
@@ -22,4 +22,5 @@ export default {
 
 <style lang="sass">
   @import './icon.css'
+  @import './hamburger.css'
 </style>

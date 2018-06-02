@@ -1,27 +1,53 @@
 header
   background: #0D1521
-  height: 72px
-  line-height: 72px
   position: fixed
   top: 0
   left: 0
   width: 100%
   z-index: 99
+  height: 72px
   +widescreen
     height: 96px
-    line-height: 96px
   .header
     display: flex
+    align-items: center
     justify-content: space-between
+    height: 72px
+    +widescreen
+      height: 96px
+    .header-logo-text
+      display: block
+      img
+        height: 32px
+        max-height: 32px
+        @media screen and (max-width: 350px)
+          height: 27px
+          max-height: 27px
+      +tablet
+        display: none
     .header-left
+      height: 100%
       display: flex
     .header-right
-      a
-        color: #e3e3e3
-        font-size: 14px
+      height: 100%
+      display: flex
+      align-items: center
+      .mobile-menu
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        width: 72px
+        @media screen and (max-width: 350px)
+          width: 64px
+        +tablet
+          display: none
+      .contact
         display: none
         +desktop
           display: block
+      a
+        color: #e3e3e3
+        font-size: 14px
         span
           position: relative
           top: 2px
@@ -34,24 +60,41 @@ header
       top: -3px
   .logo
     margin-left: 16px
-    margin-right: 24px
+    margin-right: 0
     display: inline-block
     color: #f44444
+    @media screen and (max-width: 400px)
+      margin-left: 8px
     +desktop
       margin-left: 0
     +widescreen
       margin-right: 32px
+    a
+      height: 100%
+      display: flex
+      justify-content: center
+      align-items: center
     img
       height: 56px
       width: auto
-      min-width: 205px
-      margin: 8px 0
       +widescreen
         height: 80px
+    .logo-small
+      display: flex
+      min-width: 100%
+      width: 73.5px
+      +tablet
+        display: none
+    .logo-big
+      display: none
+      min-width: 205px
+      +tablet
+        display: flex
   nav 
     display: none
     +tablet
       display: flex
+      align-items: center
     a
       padding: 0 24px
       color: #e3e3e3
@@ -63,19 +106,60 @@ header
         font-size: 16px
       &:hover
         color: #ff0300
-  .subheader
-    position: fixed
-    top: 72px
-    left: 0
+.subheader
+  position: fixed
+  top: 72px
+  left: 0
+  width: 100%
+  background: #0D1521
+  color: #fff
+  line-height: 1rem
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  z-index: 50
+  transform: translateY(-197px)
+  transition: all .3s cubic-bezier(0.68, 0, 0.265, 1.0)
+  +tablet
+    transform: translateY(0)
+  &.is-active
+    transform: translateY(0)
+  +desktop
+    display: none
+  p
     width: 100%
-    background: #15577E
-    color: #fff
+    text-align: center
+    border-top: 1px solid #222233
+    margin: 0
     height: 32px
-    line-height: 1rem
-    display: flex
-    align-items: center
-    justify-content: center
-    +desktop
-      display: none
-    p
-      margin: 0
+    line-height: 32px
+    span
+      position: relative
+      top: 2px
+      margin-left: 8px
+      margin-right: 1px
+
+.mobile-menu
+  height: 100%
+  margin-right: 16px
+  @media screen and (max-width: 400px)
+    margin-right: 8px
+  button:focus
+    outline: 0
+.mobile-menu-expanded
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  width: 100%
+  +tablet
+    display: none
+  a
+    background: linear-gradient(to bottom, #0D1521, #0d0f13)
+    padding: 16px 0
+    color: #fff
+    border-top: 1px solid #222233
+    border-top: 1px solid #002233
+    width: 100%
+    text-align: center

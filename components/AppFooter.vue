@@ -63,7 +63,6 @@ export default {
     font-size: 18px
     position: relative
     overflow: hidden
-    border-top: 5px solid #eb2e19
     h5
       text-transform: uppercase
       font-weight: bold

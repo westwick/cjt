@@ -1,34 +1,68 @@
 <template>
-  <header>
-    <div class="container">
-      <div class="header">
-        <div class="header-left">
-          <div class="logo"><nuxt-link to="/"><img src="~/assets/cjlogowhite.png" /></nuxt-link></div>
-          <nav>
-            <nuxt-link to="/tours">Tours</nuxt-link>
-            <a href="#">Specials</a>
-            <a href="#">Group Events</a>
-            <a href="#" class="more-info">More Info <i class="fas fa-sort-down"></i></a>
-          </nav>
-        </div>
-        <div class="header-right">
-          <div class="contact">
-            <a href="tel:1-805-564-1819"><span class="icon-phone"></span> (805) 564-1819</a>
+  <section class="header-container">
+    <header>
+      <div class="container">
+        <div class="header">
+          <div class="header-left">
+            <div class="logo">
+              <nuxt-link to="/" class="logo-small"><img src="~/assets/cjface.png" @click="closeMenu()" /></nuxt-link>
+              <nuxt-link to="/" class="logo-big"><img src="~/assets/cjlogowhite.png" /></nuxt-link>
+            </div>
+            <nav>
+              <nuxt-link to="/tours">Tours</nuxt-link>
+              <a href="#">Specials</a>
+              <a href="#">Group Events</a>
+              <a href="#" class="more-info">More Info <i class="fas fa-sort-down"></i></a>
+            </nav>
+          </div>
+          <div class="header-logo-text">
+            <img src="~/assets/cjtlogotextonly.png" />
+          </div>
+          <div class="header-right">
+            <div class="mobile-menu">
+              <button class="hamburger hamburger--elastic" :class="{'is-active': isActive}" @click="toggleMenu()">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+            </div>
+            <div class="contact">
+              <a href="tel:1-805-564-1819"><span class="icon-phone"></span> (805) 564-1819</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="subheader">
-        <p>Call us <a href="tel:1-805-564-1819"><span class="icon-phone"></span> (805) 564-1819</a></p>
+    </header>
+    <div class="subheader" :class="{'is-active': isActive}">
+      <div class="mobile-menu-expanded" @click="closeMenu()">
+        <nuxt-link to="/tours">Tours</nuxt-link>
+        <a href="#">Specials</a>
+        <a href="#">Group Events</a>
+        <a href="#" class="more-info">More Info <i class="fas fa-sort-down"></i></a>
       </div>
+      <p>Call us <a href="tel:1-805-564-1819"><span class="icon-phone"></span> (805) 564-1819</a></p>
     </div>
-  </header>
+  </section>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      isActive: false
+    }
+  },
+  methods: {
+    toggleMenu() {
+      this.isActive = !this.isActive
+    },
+    closeMenu() {
+      this.isActive = false
+    }
+  }
 };
 </script>
 
-<style>
+<style scoped lang="sass">
 
 </style>
