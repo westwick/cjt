@@ -85,25 +85,33 @@ h1,h2,h3,h4,h5,h6
     justify-content: center
   h2
     width: 100%
-    font-size: 20px
+    font-size: 17px
     font-weight: bold
+    +tablet
+      font-size: 20px
   h3
     width: 100%
     color: darken(#eb2e19, 5%)
     font-weight: bold
-    font-size: 16px
+    font-size: 14px
+    +tablet
+      font-size: 16px
   p
     width: 100%
     margin-top: 16px
-    font-size: 14px
+    font-size: 12px
     overflow: hidden
     text-overflow: ellipsis
     display: -webkit-box
     -webkit-box-orient: vertical
-    -webkit-line-clamp: 5
-    line-height: 20px
+    -webkit-line-clamp: 6
+    line-height: 16px
     height: 100px
     max-height: 100px
+    +tablet
+      font-size: 14px
+      line-height: 20px
+      -webkit-line-clamp: 5
   .button
     margin-top: 16px
     color: $cjblue
