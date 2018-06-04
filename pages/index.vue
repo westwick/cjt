@@ -175,6 +175,7 @@ export default {
     +desktop
       padding: 0
     h1
+      color: #fff
       font-size: 24px
       font-weight: bold
     p
