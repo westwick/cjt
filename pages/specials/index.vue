@@ -36,13 +36,13 @@ export default {
       _path: `/specials/${key.replace('.json', '').replace('./', '')}`
     }));
 
-    // tours.sort((a, b) => {
-    //   if (a.sort < b.sort)
-    //     return -1;
-    //   if (a.sort > b.sort)
-    //     return 1;
-    //   return 0;
-    // })
+    specials.sort((a, b) => {
+      if (a.sort < b.sort)
+        return -1;
+      if (a.sort > b.sort)
+        return 1;
+      return 0;
+    })
 
     return { specials };
   }
