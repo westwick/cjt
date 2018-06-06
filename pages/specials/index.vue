@@ -2,8 +2,19 @@
   <section class="container">
     <h1>Specials</h1>
     <div class="tours-container">
-      <div class="tour" v-for="special in specials" :key="special.title">
-        <p>Special!</p>
+      <div class="tour" v-for="tour in specials" :key="tour.title">
+
+        <div class="card tour-card">
+          <img class="img-main" :src="tour.thumbnail">
+          <div class="card-content">
+            <h2>{{ tour.title }}</h2>
+            <h3>{{ tour.subheader }}</h3>
+            <h3>{{ tour.subheader2 }}</h3>
+            <p>{{ tour.body }}</p>
+
+          </div>
+        </div>
+
       </div>
     </div>
   </section>

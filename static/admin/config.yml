@@ -32,3 +32,42 @@ collections:
       - {label: "Extra Description", name: "extra", widget: "markdown", required: false}
       - {label: "Sort", name: "sort", widget: "number", required: true}
       - {label: "Allow Online Booking", name: "allowBooking", widget: "boolean", required: true}
+  - name: "specials"
+    label: "Specials"
+    folder: "content/specials"
+    create: true
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    format: 'json'
+    fields:
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Subheader", name: "subheader", widget: "string", required: false}
+      - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: true}
+      - {label: "Extra Description", name: "extra", widget: "markdown", required: false}
+      - {label: "Sort", name: "sort", widget: "number", required: true}
+  - name: "events"
+    label: "Group Events"
+    folder: "content/events"
+    create: true
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    format: 'json'
+    fields:
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Subheader", name: "subheader", widget: "string", required: false}
+      - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: true}
+      - {label: "Extra Description", name: "extra", widget: "markdown", required: false}
+      - {label: "Sort", name: "sort", widget: "number", required: true}
+  - name: "boat-charters"
+    label: "Boat Charters"
+    folder: "content/boat-charters"
+    create: true
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    format: 'json'
+    fields:
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Subheader", name: "subheader", widget: "string", required: false}
+      - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: true}
+      - {label: "Extra Description", name: "extra", widget: "markdown", required: false}
+      - {label: "Sort", name: "sort", widget: "number", required: true}
