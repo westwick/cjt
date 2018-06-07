@@ -6,7 +6,7 @@
     <div class="container">
       <div class="columns">
         <div class="column is-3">
-          <img src="~/assets/logofull.jpg" />
+          <!-- <img src="~/assets/logofull.jpg" /> -->
         </div>
         <div class="column is-9">
           <div class="columns">

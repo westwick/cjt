@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <h1>Tours</h1>
+    <h1 class="page-title">Captain Jack's Group Events</h1>
     <div class="tours-container">
       <div class="tour" v-for="tour in tours" :key="tour.title">
 

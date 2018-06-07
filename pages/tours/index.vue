@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <h1>Tours</h1>
+    <h1 class="page-title">Captain Jack's Tours</h1>
     <div class="tours-container">
       <div class="tour" v-for="tour in tours" :key="tour.title">
 
@@ -15,7 +15,7 @@
               <h3><i class="far fa-clock"></i> {{ tour.startTime }}</h3>
               <h3 class="price"><i class="fas fa-money-bill"></i> {{ tour.priceDisplay }}</h3>
               <p>{{ tour.body }}</p>
-
+              <nuxt-link :to="tour._path" class="button">Learn More</nuxt-link>
             </div>
           </div>
 

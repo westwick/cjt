@@ -79,12 +79,25 @@
     </section>
     <section class="home-awards">
       <div class="container">
-        <div class="columns">
-          <div class="column is-6">
-            <p>Voted "Best Wine Tour In Santa Barbara" 5 years in a row!!!</p>
+        <p class="awards-text">
+          <span class="emoji">🥇🎉</span> Voted <strong>"Best Wine Tour In Santa Barbara"</strong> 5 years in a row! <span class="emoji2">🎈🏆</span>
+        </p>
+        <img src="~/assets/readersawards.jpg" class="readers-choice-awards" />
+        <p class="yelp-tripadvisor-text">Great reviews on Yelp and TripAdvisor!</p>
+        <div class="columns is-mobile">
+          <div class="column is-6-mobile is-3-tablet is-offset-3-tablet">
+            <div class="review-container yelp-reviews">
+              <img src="~/assets/yelp.jpg" />
+              <a href="https://www.yelp.com/biz/captain-jacks-tours-and-events-santa-barbara" target="_blank">We have 248 reviews</a>
+            </div>
           </div>
-          <div class="column is-6">
-            <p>Voted "Best Wine Tour In Santa Barbara" 5 years in a row!!!</p>
+          <div class="column is-6-mobile is-3-tablet">
+            <div class="review-container">
+              <img src="~/assets/tripadvisor.jpg" />
+              <a href="https://www.tripadvisor.com/Attraction_Review-g33045-d638786-Reviews-Captain_Jack_s_Santa_Barbara_Tours-Santa_Barbara_California.html" target="_blank">
+                Certificate of Excellence 2012 - 2017
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -231,5 +244,46 @@ export default {
     padding: 48px 8px
   .home-awards
     background: #fff
-    padding: 80px 0
+    padding: 80px 16px
+    text-align: center
+    p
+      margin-bottom: 24px
+      font-size: 18px
+      color: #444
+      +tablet
+        font-size: 20px
+      +desktop
+        font-size: 22px
+      .emoji,.emoji2
+        display: block
+        +tablet
+          display: inline-block
+        +widescreen
+          margin: 0 16px
+    .readers-choice-awards
+      max-height: 192px
+      margin-bottom: 72px
+    .review-container
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      height: 100%
+      font-size: 18px
+      padding: 0 0 0 16px
+      img
+        margin-bottom: 16px
+        max-height: 152px
+    .yelp-reviews
+      position: relative
+      padding: 0 16px 0 0
+      &:after
+        content: ""
+        position: absolute
+        right: -13px
+        top: 40px
+        width: 1px
+        height: 104px
+        background: #eee
+
 </style>
