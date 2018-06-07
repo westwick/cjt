@@ -19,7 +19,7 @@
             <p>Captain Jack's Tours is the #1 Tour &amp; Event company in Santa Barbara, offering more fun choices every day. Captain Jack's Tours will provide that special something to every event whether your group consists of 2 people or 200. With so many fun things to do in Santa Barbara, Captain Jack's Tours &amp; Events has something for everyone!</p>
           </div>
           <div class="column is-7">
-            <div class="greeting-images columns is-mobile">
+            <div class="greeting-images columns is-mobile is-1 is-variable">
               <div class="column is-4">
                 <img src="~/assets/horseride.jpg" />
               </div>
@@ -27,7 +27,7 @@
                 <img src="~/assets/valley4.jpg" />
               </div>
               <div class="column is-4">
-                <img src="~/assets/fun.png" />
+                <img src="~/assets/kayaks.jpg" />
               </div>
             </div>
           </div>
@@ -237,6 +237,11 @@ export default {
       +desktop
         padding: 0
   .greeting-images
+    padding: 0 16px
+    +tablet
+      padding: 0 16px 0 0
+    +desktop
+      padding: 0
     img
       width: 100%
       height: 100%

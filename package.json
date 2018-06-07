@@ -15,7 +15,8 @@
   },
   "dependencies": {
     "bulma": "^0.7.1",
-    "nuxt": "^1.0.0"
+    "nuxt": "^1.0.0",
+    "vue-markdown": "^2.2.4"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

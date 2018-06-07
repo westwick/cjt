@@ -4,13 +4,13 @@
     <div class="tours-container">
       <div class="tour" v-for="tour in specials" :key="tour.title">
 
-        <div class="card tour-card">
+        <div class="card tour-card specials-card">
           <img class="img-main" :src="tour.thumbnail">
           <div class="card-content">
             <h2>{{ tour.title }}</h2>
             <h3>{{ tour.subheader }}</h3>
             <h3>{{ tour.subheader2 }}</h3>
-            <p>{{ tour.body }}</p>
+            <vue-markdown>{{ tour.body }}</vue-markdown>
 
           </div>
         </div>
@@ -22,10 +22,12 @@
 
 <script>
 import AppLogo from '~/components/AppLogo.vue';
+import VueMarkdown from 'vue-markdown'; 
 
 export default {
   components: {
-    AppLogo
+    AppLogo,
+    VueMarkdown
   },
   data() {
     // Using webpacks context to gather all files from a folder
