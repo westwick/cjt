@@ -80,7 +80,7 @@
     <section class="home-awards">
       <div class="container">
         <p class="awards-text">
-          <span class="emoji">🥇🎉</span> Voted <strong>"Best Wine Tour In Santa Barbara"</strong> 5 years in a row! <span class="emoji2">🎈🏆</span>
+          <span class="emoji">🏅🎉</span> Voted <strong>"Best Wine Tour In Santa Barbara"</strong> 5 years in a row! <span class="emoji2">🎈🏆</span>
         </p>
         <img src="~/assets/readersawards.jpg" class="readers-choice-awards" />
         <p class="yelp-tripadvisor-text">Great reviews on Yelp and TripAdvisor!</p>

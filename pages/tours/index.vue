@@ -5,17 +5,21 @@
       <div class="tour" v-for="tour in tours" :key="tour.title">
 
           <div class="card tour-card">
-            <div class="tour-price">
-              ${{ tour.price }}
-            </div>
             <img class="img-main" :src="tour.thumbnail">
             <div class="card-content">
               <h2>{{ tour.title }}</h2>
-              <h3>{{ tour.subheader }}</h3>
-              <h3><i class="far fa-clock"></i> {{ tour.startTime }}</h3>
-              <h3 class="price"><i class="fas fa-money-bill"></i> {{ tour.priceDisplay }}</h3>
               <p>{{ tour.body }}</p>
-              <nuxt-link :to="tour._path" class="button">Learn More</nuxt-link>
+              <div class="tour-stats">
+                <div class="tour-stats-price">
+                  ${{ tour.price }}
+                  <span class="tour-stats-subtext">Per Person</span>
+                </div>
+                <div class="tour-stats-time">
+                  9 - 9:30am
+                  <span class="tour-stats-subtext">Start Time</span>
+                </div>
+                <nuxt-link :to="tour._path" class="button">Learn More</nuxt-link>
+              </div>
             </div>
           </div>
 

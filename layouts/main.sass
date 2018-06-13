@@ -80,7 +80,7 @@ h1.page-title
     background: #FFF
   .img-main
     width: 100%
-    max-width: 440px
+    max-width: 480px
     height: auto
     border-radius: 3px 3px 0 0
   .card-content
@@ -134,7 +134,35 @@ h1.page-title
   +tablet
     flex-direction: row
     max-width: 100%
-  
+  .img-main
+    max-width: 480px
+    border-radius: 0
+    padding: 0
+    +tablet
+      max-width: 30vw
+      padding: 16px 0 16px 16px
+  .tour-stats
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    border: 1px solid #cccccc
+    padding: 16px
+    margin-top: 16px
+    .tour-stats-price, .tour-stats-time
+      display: flex
+      flex-direction: column
+      font-size: 16px
+      color: #111
+      font-weight: bold
+    .tour-stats-subtext
+      color: #b5b5b5
+      text-transform: uppercase
+      font-size: 14px
+      font-weight: bold
+    .button
+      margin-top: 0
+
   .price
     color: #0d1521
     font-size: 16px
