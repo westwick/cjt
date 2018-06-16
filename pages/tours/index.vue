@@ -1,30 +1,33 @@
 <template>
-  <section class="container">
-    <h1 class="page-title">Captain Jack's Tours</h1>
-    <div class="tours-container">
-      <div class="tour" v-for="tour in tours" :key="tour.title">
-
-          <div class="card tour-card">
-            <img class="img-main" :src="tour.thumbnail">
-            <div class="card-content">
-              <h2>{{ tour.title }}</h2>
-              <p>{{ tour.body }}</p>
-              <div class="tour-stats">
-                <div class="tour-stats-price">
-                  ${{ tour.price }}
-                  <span class="tour-stats-subtext">Per Person</span>
-                </div>
-                <div class="tour-stats-time">
-                  9 - 9:30am
-                  <span class="tour-stats-subtext">Start Time</span>
-                </div>
-                <nuxt-link :to="tour._path" class="button">Learn More</nuxt-link>
-              </div>
-            </div>
-          </div>
-
+  <section class="listing-page">
+    <div class="listing-header">
+      <div class="container">
+        <h1 class="page-title">Captain Jack's Tours</h1>
+        <p>All of our tours have been designed with you in mind. All tours are available 7 days a week unless otherwise stated.</p>
       </div>
     </div>
+    <section class="container">
+      <div class="tours-container listing-container">
+        <div class="tour" v-for="tour in tours" :key="tour.title">
+
+            <div class="card tour-card">
+              <img class="img-main" :src="tour.thumbnail">
+              <div class="card-content">
+                <h2>{{ tour.title }}</h2>
+                <div class="tour-infos">
+                  <span class="price">${{tour.price}} per person</span>
+                  <span>11 - 11:30am Start Time</span>
+                </div>
+                <p>{{ tour.body }}</p>
+                <div class="cta">
+                  <button class="button book-now">Book Now</button>
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </section>
   </section>
 </template>
 

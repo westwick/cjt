@@ -26,13 +26,12 @@
               </ul>
             </div>
             <div class="column">
-              <h5>More Info</h5>
+              <h5>About Us</h5>
               <ul>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Useful Links</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><nuxt-link to="/gallery">Gallery</nuxt-link></li>
+                <li><nuxt-link to="/faq">FAQ</nuxt-link></li>
+                <li><nuxt-link to="/links">Useful Links</nuxt-link></li>
+                <li><nuxt-link to="/blog">Blog</nuxt-link></li>
               </ul>
             </div>
           </div>

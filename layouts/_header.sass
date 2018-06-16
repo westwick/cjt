@@ -1,5 +1,7 @@
+@import 'vars'
+  
 header
-  background: #0D1521
+  background: $cjdarkblue
   position: fixed
   top: 0
   left: 0
@@ -48,6 +50,8 @@ header
       a
         color: #e3e3e3
         font-size: 14px
+        &:hover
+          color: $cjblue
         span
           position: relative
           top: 2px
@@ -95,23 +99,32 @@ header
     +tablet
       display: flex
       align-items: center
+      padding-left: 16px
     a
       padding: 0 24px
       color: #e3e3e3
       text-transform: uppercase
       font-weight: bold
       font-size: 14px
+      height: 100%
+      display: flex
+      align-items: center
+      // border-bottom: 2px solid transparent
+      // border-top: 2px solid transparent
       +widescreen
         padding: 0 32px
         font-size: 16px
       &:hover
-        color: #ff0300
+        color: $cjredbold
+      &.nuxt-link-active
+        color: $cjredbold
+        // border-bottom: 2px solid $cjredbold
 .subheader
   position: fixed
   top: 72px
   left: 0
   width: 100%
-  background: #0D1521
+  background: $cjdarkblue
   color: #fff
   line-height: 1rem
   display: flex
