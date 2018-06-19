@@ -11,28 +11,17 @@
         <div class="column is-9">
           <div class="columns">
             <div class="column">
-              <h5>Main Links</h5>
-              <ul>
-                <li><a href="#">Tours</a></li>
-                <li><a href="#">Large Group Events</a></li>
-                <li><a href="#">Current Specials</a></li>
-              </ul>
-            </div>
-            <div class="column">
-              <h5>More Links</h5>
-              <ul>
-                <li><a href="#">Private Sailing Cruises</a></li>
-                <li><a href="#">School Events</a></li>
-              </ul>
-            </div>
-            <div class="column">
-              <h5>About Us</h5>
+              <h5>More Information</h5>
               <ul>
                 <li><nuxt-link to="/gallery">Gallery</nuxt-link></li>
                 <li><nuxt-link to="/faq">FAQ</nuxt-link></li>
                 <li><nuxt-link to="/links">Useful Links</nuxt-link></li>
                 <li><nuxt-link to="/blog">Blog</nuxt-link></li>
               </ul>
+            </div>
+            <div class="column">
+              <h5>Get in touch</h5>
+              <p>Email: <a href="#">hello@captainjackstours.com</a></p>
             </div>
           </div>
           <div class="columns">

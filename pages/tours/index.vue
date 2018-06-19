@@ -3,7 +3,7 @@
     <div class="listing-header">
       <div class="container">
         <h1 class="page-title">Captain Jack's Tours</h1>
-        <p>All of our tours have been designed with you in mind. All tours are available 7 days a week unless otherwise stated.</p>
+        <p>All tours are available 7 days a week unless otherwise stated. Too much fun stuff!</p>
       </div>
     </div>
     <section class="container">
@@ -13,7 +13,7 @@
             <div class="card tour-card">
               <img class="img-main" :src="tour.thumbnail">
               <div class="card-content">
-                <h2>{{ tour.title }}</h2>
+                <h2><nuxt-link :to="tour._path">{{ tour.title }}</nuxt-link></h2>
                 <div class="tour-infos">
                   <span class="price">${{tour.price}} per person</span>
                   <span>11 - 11:30am Start Time</span>
