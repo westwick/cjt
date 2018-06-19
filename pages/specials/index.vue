@@ -1,6 +1,6 @@
 <template>
   <section class="listing-page">
-    <div class="listing-header">
+    <div class="listing-header specials-hero">
       <div class="container">
         <h1 class="page-title">Captain Jack's Specials</h1>
         <p>Something something something</p>

@@ -1,6 +1,6 @@
 <template>
   <section class="listing-page">
-    <div class="listing-header">
+    <div class="listing-header charters-hero">
       <div class="container">
         <h1 class="page-title">Captain Jack's Private Boat Charters</h1>
         <p>Spend a few hours or a whole day aboard our yachts!</p>

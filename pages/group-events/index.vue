@@ -1,6 +1,6 @@
 <template>
   <section class="listing-page">
-    <div class="listing-header">
+    <div class="listing-header events-hero">
       <div class="container">
         <h1 class="page-title">Captain Jack's Group Events</h1>
         <p>If your group has 20 or more people, check out some of our great options below!</p>
