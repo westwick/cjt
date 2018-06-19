@@ -1,6 +1,6 @@
 <template>
   <section class="listing-page">
-    <div class="listing-header">
+    <div class="listing-header tours-hero">
       <div class="container">
         <h1 class="page-title">Captain Jack's Tours</h1>
         <p>All tours are available 7 days a week unless otherwise stated. Too much fun stuff!</p>
@@ -18,6 +18,7 @@
                   <span class="price">${{tour.price}} per person</span>
                   <span>11 - 11:30am Start Time</span>
                 </div>
+                <p>{{ tour.sort }}</p>
                 <p>{{ tour.body }}</p>
                 <div class="cta">
                   <button class="button book-now">Book Now</button>
@@ -48,9 +49,9 @@ export default {
     }));
 
     tours.sort((a, b) => {
-      if (a.sort < b.sort)
+      if (parseInt(a.sort) < parseInt(b.sort))
         return -1;
-      if (a.sort > b.sort)
+      if (parseInt(a.sort) > parseInt(b.sort))
         return 1;
       return 0;
     })
