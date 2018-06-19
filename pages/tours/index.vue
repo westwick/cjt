@@ -18,7 +18,7 @@
                   <span class="price">${{tour.price}} per person</span>
                   <span>11 - 11:30am Start Time</span>
                 </div>
-                <p>{{ tour.sort }}</p>
+                
                 <p>{{ tour.body }}</p>
                 <div class="cta">
                   <button class="button book-now">Book Now</button>
