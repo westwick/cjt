@@ -14,6 +14,9 @@
             <h1>{{ title }}</h1>
             <div class="tour-info-body">
               <vue-markdown>{{ body }}</vue-markdown>
+              <div class="image-preload">
+                <img v-for="g in gallery" :src="g" :key="g"/>
+              </div>
             </div>
           </div>
           <div class="column is-4">
@@ -74,5 +77,7 @@ export default {
 </script>
 
 <style scoped lang="sass">
-
+.image-preload
+  height: 0
+  visibility: hidden
 </style>
