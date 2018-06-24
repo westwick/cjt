@@ -232,16 +232,23 @@ h1,h2,h3,h4,h5,h6
 .gridView
   display: flex
   flex-wrap: wrap
-  justify-content: space-around
+  justify-content: space-evenly
   .tour-card
     max-width: 480px
     margin: 0 auto 16px
     flex-direction: column
     +tablet
-      max-width: calc(50% - 16px)
-      margin: 0 0 16px
+      max-width: calc(50% - 8px)
+      margin: 0 16px 16px 0
+      &:nth-child(2n)
+        margin-right: 0
     +widescreen
-      max-width: calc(33% - 12px)
+      max-width: calc(33.3333% - 12px)
+      margin-right: 16px
+      &:nth-child(2n)
+        margin-right: 16px
+      &:nth-child(3n)
+        margin-right: 0
     .img-main
       padding: 0
       border-radius: 3px 3px 0 0
