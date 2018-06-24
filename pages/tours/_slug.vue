@@ -1,20 +1,26 @@
 <template>
   <section class="tour-page">
-    <div class="tour-img-main" v-bind:style="{ backgroundImage: 'url(' + thumbnail + ')' }">
-      
+    <div class="tour-img-main" v-bind:style="{ backgroundImage: 'url(' + gallery[galleryImageIndex] + ')' }">
+      <i class="fas fa-arrow-circle-left images-btn-left" @click="galleryLeft" v-if="galleryImageCount > 1"></i>
+      <i class="fas fa-arrow-circle-right images-btn-right" @click="galleryRight" v-if="galleryImageCount > 1"></i>
+      <div class="gallery-index" v-if="galleryImageCount > 1">
+        <span v-for="(x, i) in gallery" :key="x" :class="{active: i === galleryImageIndex}"></span>
+      </div>
     </div>
     <div class="tour-page-content">
       <div class="container">
         <div class="columns">
           <div class="column is-8">
             <h1>{{ title }}</h1>
-            <vue-markdown>{{ body }}</vue-markdown>
+            <div class="tour-info-body">
+              <vue-markdown>{{ body }}</vue-markdown>
+            </div>
           </div>
           <div class="column is-4">
-            <h2>Price Per Person</h2>
-            <p class="main-tour-info">${{ price }}
-            <h2 class="start-time">Start Time</h2>
-            <p class="main-tour-info">9 - 9:30am</p>
+            <h2>Pricing</h2>
+            <vue-markdown>{{ priceLong }}</vue-markdown>
+            <h2 class="start-time">Schedule</h2>
+            <vue-markdown>{{ timeLong }}</vue-markdown>
             <button class="button book-now">Book Now</button>
             <div class="contact">
               <p><span class="icon-phone"></span> (805) 564-1819</p>
@@ -32,6 +38,27 @@ import VueMarkdown from 'vue-markdown';
 export default {
   components: {
     VueMarkdown
+  },
+  data() {
+    return {
+      galleryIndex: 0
+    }
+  },
+  methods: {
+    galleryLeft() {
+      this.galleryIndex--
+    },
+    galleryRight() {
+      this.galleryIndex++
+    } 
+  },
+  computed: {
+    galleryImageCount() {
+      return this.gallery.length;
+    },
+    galleryImageIndex() {
+      return Math.abs(this.galleryIndex) % this.gallery.length;
+    }
   },
   async asyncData({ params }) {
     // const postPromise = process.BROWSER_BUILD

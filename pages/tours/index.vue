@@ -8,15 +8,19 @@
     </div>
     <section class="container">
       <div class="tours-container listing-container">
-        <div class="tour" v-for="tour in tours" :key="tour.title">
+        <div class="view-as">
+          <i class="fas fa-th" :class="{selected: viewMode === 'grid'}" @click="viewModeGrid"></i>
+          <i class="fas fa-bars" :class="{selected: viewMode === 'list'}" @click="viewModeList"></i>
+        </div>
+        <div class="tours-view-as" :class="{gridView: viewMode === 'grid'}">
 
-            <div class="card tour-card">
-              <img class="img-main" :src="tour.thumbnail">
+            <div class="card tour-card" v-for="tour in tours" :key="tour.title">
+              <img class="img-main" :src="tour.thumbnail" @click="$router.push({path: tour._path})">
               <div class="card-content">
                 <h2><nuxt-link :to="tour._path">{{ tour.title }}</nuxt-link></h2>
                 <div class="tour-infos">
-                  <span class="price">${{tour.price}} per person</span>
-                  <span>11 - 11:30am Start Time</span>
+                  <span class="price"><i class="fas fa-coins"></i> {{tour.priceShort}}</span>
+                  <span class="starttime"><i class="far fa-clock"></i> {{tour.timeShort}}</span>
                 </div>
                 
                 <p>{{ tour.body }}</p>
@@ -40,6 +44,19 @@ export default {
     AppLogo
   },
   data() {
+    return {
+      viewMode: 'grid'
+    }
+  },
+  methods: {
+    viewModeGrid() {
+      this.viewMode = 'grid';
+    },
+    viewModeList() {
+      this.viewMode = 'list';
+    } 
+  },
+  asyncData() {
     // Using webpacks context to gather all files from a folder
     const toursContext = require.context('~/content/tours/', false, /\.json$/);
 

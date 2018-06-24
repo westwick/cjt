@@ -9,8 +9,8 @@
           <!-- <img src="~/assets/logofull.jpg" /> -->
         </div>
         <div class="column is-9">
-          <div class="columns">
-            <div class="column">
+          <div class="columns is-desktop">
+            <div class="column is-7-widescreen">
               <h5>More Information</h5>
               <ul>
                 <li><nuxt-link to="/gallery">Gallery</nuxt-link></li>
@@ -19,9 +19,10 @@
                 <li><nuxt-link to="/blog">Blog</nuxt-link></li>
               </ul>
             </div>
-            <div class="column">
+            <div class="column is-5-widescreen footer-contact">
               <h5>Get in touch</h5>
-              <p>Email: <a href="#">hello@captainjackstours.com</a></p>
+              <p><i class="fas fa-envelope"></i><a href="mailto:hello@captainjackstours.com">hello@captainjackstours.com</a></p>
+              <p><i class="fas fa-phone"></i><a href="tel:1-805-564-1819">(805) 564-1819</a></p>
             </div>
           </div>
           <div class="columns">

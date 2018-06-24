@@ -21,9 +21,21 @@ body
     padding-top: 96px
 button, .button, input 
   font-family: 'Karla', sans-serif 
+  font-weight: bold
+  border: none
+  text-transform: uppercase
+  border-radius: 36px
+  padding-left: 16px
+  padding-right: 16px
 .button:focus:not(:active), .button.is-focused:not(:active)
   outline: 0
   box-shadow: none
+.btn-dark
+  background: #444
+  color: #fff
+  &:hover
+    background: #222
+    color: #ddd
 html
   font-size: 16px
   word-spacing: 1px
@@ -38,13 +50,13 @@ html
 #shell
   background: $cjbggray
 #main
-  min-height: 80vh
+  // min-height: 80vh
 h1,h2,h3,h4,h5,h6
   color: $cjdarkred
 .card
   border: none
   border-radius: 3px
-  transition: all .3s ease-in-out
+  // transition: all .3s ease-in-out
   box-shadow: 0 0 8px rgba(0,0,0,.1)
   max-width: 440px
   margin: auto
@@ -116,8 +128,7 @@ h1,h2,h3,h4,h5,h6
       -webkit-line-clamp: 5
   .button
     margin-top: 16px
-    color: $cjblue
-    font-weight: bold
+    align-self: flex-start
 
 .error-page
   text-align: center
@@ -139,10 +150,35 @@ h1,h2,h3,h4,h5,h6
     color: #fff
     +tablet
       font-size: 32px
+  .container
+    max-width: 480px
+    +tablet
+      max-width: none
 
 .listing-container
   margin-top: -80px
+  margin-bottom: 32px
   padding: 0 16px
+  +desktop
+    padding: 0
+  .view-as
+    display: none
+    color: rgba(255, 255, 255, .55)
+    position: absolute
+    right: 16px
+    top: -32px
+    font-size: 20px
+    +tablet
+      display: block
+      right: 24px
+    +desktop
+      right: 8px
+    i
+      cursor: pointer
+    i.selected
+      color: rgba(255, 255, 255, .96)
+    i:first-child
+      margin-right: 8px
 
 .tour-card
   display: flex
@@ -151,6 +187,7 @@ h1,h2,h3,h4,h5,h6
   flex-direction: column
   max-width: 480px
   margin-bottom: 16px
+  border-radius: 4px
   +tablet
     flex-direction: row
     max-width: 100%
@@ -158,8 +195,10 @@ h1,h2,h3,h4,h5,h6
     max-width: 480px
     border-radius: 0
     padding: 0
+    cursor: pointer
     +tablet
-      max-width: 25vw
+      width: 412px
+      max-width: 412px
       padding: 16px 0 16px 16px
   h2
     margin-top: 8px
@@ -177,11 +216,10 @@ h1,h2,h3,h4,h5,h6
     text-align: left
     font-weight: bold
     span
-      background: #eee
-      padding: 4px 8px
-      border-radius: 3px
-    span.price
-      margin-right: 32px
+      display: block
+      i
+        margin-right: 8px
+        color: #9c9c9c
   .cta
     width: 100%
   .book-now
@@ -191,6 +229,27 @@ h1,h2,h3,h4,h5,h6
     border-radius: 36px
     text-transform: uppercase
 
+.gridView
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+  .tour-card
+    max-width: 480px
+    margin: 0 auto 16px
+    flex-direction: column
+    +tablet
+      max-width: calc(50% - 16px)
+      margin: 0 0 16px
+    +widescreen
+      max-width: calc(33% - 12px)
+    .img-main
+      padding: 0
+      border-radius: 3px 3px 0 0
+      +tablet
+        width: 100%
+        max-width: 100%
+
+
 
 .specials-card
   p
@@ -199,11 +258,6 @@ h1,h2,h3,h4,h5,h6
     margin-top: 16px
     line-height: 21px
     -webkit-line-clamp: unset
-
-.tours-container
-  padding: 0 16px
-  +tablet
-    padding: 0
 
 .tours-hero
   background: linear-gradient(to bottom, rgba(20,20,21,.59), rgba(20,20,19,.63)), url('~/assets/toursbg.jpg') 66% 80% no-repeat
@@ -225,25 +279,11 @@ h1,h2,h3,h4,h5,h6
   background-size: cover
 
 .tour-page
-  margin-bottom: 32px
-  +tablet
-    padding: 0
+  background: #fff
+  padding: 0 0 32px
   h1
     font-size: 24px
-    padding: 16px 0
-  .img-container-container
-    padding-right: 0
-    +tablet
-      padding-right: 32px
-    +widescreen
-      padding-right: 64px
-  .img-container
-    padding: 32px 64px
-    background: #fff
-    width: 100%
-    margin-right: 0
-    img
-      width: 100%
+    padding: 0 0 16px
   h2
     font-size: 14px
     color: #9a9a9a
@@ -268,9 +308,44 @@ h1,h2,h3,h4,h5,h6
       margin-right: 8px
       font-weight: 
   .tour-page-content
-    padding: 0 16px
+    padding: 32px 16px
+  .tour-info-body
+    p
+      margin-bottom: 16px
 
 .tour-img-main
-  height: 300px
+  height: 400px
   background-size: cover
   background-position: 50% 50%
+  position: relative
+  +tablet
+    height: 544px
+  .images-btn-left, .images-btn-right
+    position: absolute
+    border-radius: 50px
+    background: rgba(0,0,0,.35)
+    color: rgba(255, 255, 255, .78)
+    font-size: 50px
+    cursor: pointer
+  .images-btn-left
+    left: 16px
+    top: calc(50% - 25px)
+  .images-btn-right
+    right: 16px
+    top: calc(50% - 25px)
+  .gallery-index
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+    span
+      width: 12px
+      height: 12px
+      border-radius: 12px
+      background: rgba(255, 255, 255, .55)
+      display: inline-block
+      margin-right: 8px
+      &:last-child
+        margin-right: 0
+      &.active
+        background: #fff

@@ -46,9 +46,9 @@ export default {
     }));
 
     specials.sort((a, b) => {
-      if (a.sort < b.sort)
+      if (parseInt(a.sort) < parseInt(b.sort))
         return -1;
-      if (a.sort > b.sort)
+      if (parseInt(a.sort) > parseInt(b.sort))
         return 1;
       return 0;
     })
