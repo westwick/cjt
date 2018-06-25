@@ -27,8 +27,8 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Karla:400,500,700' },
-      { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.0.13/css/all.css' },
+      { rel: 'preload', as: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Karla:400,500,700' },
+      { rel: 'preload', as: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.0.13/css/all.css' },
       { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
       { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
       { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },

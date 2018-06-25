@@ -244,7 +244,7 @@ export default {
       padding: 0
     img
       width: 100%
-      height: 100%
+      height: auto
   .home-featured
     padding: 48px 16px
   .home-awards
