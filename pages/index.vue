@@ -88,13 +88,13 @@
           <div class="column is-6-mobile is-3-tablet is-offset-3-tablet">
             <div class="review-container yelp-reviews">
               <img src="~/assets/yelp.jpg" alt="Yelp Logo" />
-              <a href="https://www.yelp.com/biz/captain-jacks-tours-and-events-santa-barbara" target="_blank">We have 248 reviews</a>
+              <a rel="noopener" href="https://www.yelp.com/biz/captain-jacks-tours-and-events-santa-barbara" target="_blank">We have 248 reviews</a>
             </div>
           </div>
           <div class="column is-6-mobile is-3-tablet">
             <div class="review-container">
               <img src="~/assets/tripadvisor.jpg" alt="Trip Advisor Logo" />
-              <a href="https://www.tripadvisor.com/Attraction_Review-g33045-d638786-Reviews-Captain_Jack_s_Santa_Barbara_Tours-Santa_Barbara_California.html" target="_blank">
+              <a rel="noopener" href="https://www.tripadvisor.com/Attraction_Review-g33045-d638786-Reviews-Captain_Jack_s_Santa_Barbara_Tours-Santa_Barbara_California.html" target="_blank">
                 Certificate of Excellence 2012&nbsp;-&nbsp;2017
               </a>
             </div>
