@@ -47,7 +47,7 @@
                 <h3>Only $149 per night Oct 15th – March 14th</h3>
                 <h3>Only $169 per night March 15th – Oct 14th</h3>
                 <p>Book any tour through Captain Jack’s Tours and you will qualify for our hotel special. Hotel accommodations are at the newly remodeled La Quinta Inn & Suites. It includes an over-sized room, heated pool, beautiful garden grounds and is located in downtown Santa Barbara. Breakfast, WI-FI & free parking are 'included' in this package – this package is limited in availability. Book any tour with Captain Jack’s tours….and save with our special room rate. Ask for more details.</p>
-                <nuxt-link class="button btn-dark" to="/specials">Learn More</nuxt-link>
+                <nuxt-link class="button btn-dark" to="/specials">View All Specials</nuxt-link>
               </div>
             </div>
           </div>
@@ -61,7 +61,7 @@
                 <h3>Prices start at low as $250 per hour</h3>
                 <h3>Luxury Yachts up to 149 people available</h3>
                 <p>Spend a few hours or a whole day aboard our yachts! You pick the yacht size and Captain Jack's Tours will provide you with a US Coast Guard Certified Captain. Your private group will experience the fun and magic of sailing along the Santa Barbara pristine coastline. You can simply enjoy the views or feel free to help sail the yacht.</p>
-                <nuxt-link class="button btn-dark" to="/boat-charters">Learn More</nuxt-link>
+                <nuxt-link class="button btn-dark" to="/boat-charters">Private Boat Charters</nuxt-link>
               </div>
             </div>
           </div>

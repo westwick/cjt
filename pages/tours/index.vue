@@ -15,7 +15,7 @@
         <div class="tours-view-as" :class="{gridView: viewMode === 'grid'}">
 
             <div class="card tour-card" v-for="tour in tours" :key="tour.title">
-              <img class="img-main" :src="tour.thumbnail" @click="$router.push({path: tour._path})">
+              <img class="img-main" :src="tour.thumbnail" @click="$router.push({path: tour._path})" v-bind:alt="tour.title">
               <div class="card-content">
                 <h2><nuxt-link :to="tour._path">{{ tour.title }}</nuxt-link></h2>
                 <div class="tour-infos">
