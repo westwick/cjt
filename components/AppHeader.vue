@@ -5,8 +5,8 @@
         <div class="header">
           <div class="header-left">
             <div class="logo">
-              <nuxt-link to="/" class="logo-small"><img src="~/assets/cjface.png" @click="closeMenu()" /></nuxt-link>
-              <nuxt-link to="/" class="logo-big"><img src="~/assets/cjlogowhite.png" /></nuxt-link>
+              <nuxt-link to="/" class="logo-small"><img src="~/assets/cjface.png" @click="closeMenu()" alt="Captain Jack's Logo" /></nuxt-link>
+              <nuxt-link to="/" class="logo-big"><img src="~/assets/cjlogowhite.png" alt="Captain Jack's Tours" /></nuxt-link>
             </div>
             <nav>
               <nuxt-link to="/tours">Tours</nuxt-link>
@@ -16,11 +16,11 @@
             </nav>
           </div>
           <div class="header-logo-text">
-            <img src="~/assets/cjtlogotextonly.png" />
+            <img src="~/assets/cjtlogotextonly.png" alt="Captain Jack's Tours Logo" />
           </div>
           <div class="header-right">
             <div class="mobile-menu">
-              <button class="hamburger hamburger--elastic" :class="{'is-active': isActive}" @click="toggleMenu()">
+              <button class="hamburger hamburger--elastic" :class="{'is-active': isActive}" @click="toggleMenu()" aria-label="Menu Button">
                 <span class="hamburger-box">
                   <span class="hamburger-inner"></span>
                 </span>

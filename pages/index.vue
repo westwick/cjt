@@ -21,13 +21,13 @@
           <div class="column is-7">
             <div class="greeting-images columns is-mobile is-1 is-variable">
               <div class="column is-4">
-                <img src="~/assets/horseride.jpg" />
+                <img src="~/assets/horseride.jpg" alt="Horseback Riding" />
               </div>
               <div class="column is-4">
-                <img src="~/assets/valley4.jpg" />
+                <img src="~/assets/valley4.jpg" alt="Santa Ynez Wine Tasting" />
               </div>
               <div class="column is-4">
-                <img src="~/assets/kayaks.jpg" />
+                <img src="~/assets/kayaks.jpg" alt="Santa Barbara Kayaking" />
               </div>
             </div>
           </div>
@@ -39,9 +39,9 @@
         <div class="columns">
           <div class="column is-4">
             <div class="card">
-              <img class="treasure" src="~/assets/treasure.jpg" />
+              <img class="treasure" src="~/assets/treasure.jpg" alt="treasure chest" />
               <div class="treasure-featured">Featured</div>
-              <img class="img-main" src="~/assets/hotel.jpg">
+              <img class="img-main" src="~/assets/hotel.jpg" alt="Hotel and Wine Tour Special">
               <div class="card-content">
                 <h2>Hotel and Wine Tour Combo</h2>
                 <h3>Only $149 per night Oct 15th – March 14th</h3>
@@ -53,9 +53,9 @@
           </div>
           <div class="column is-4">
             <div class="card">
-              <img class="treasure" src="~/assets/treasure.jpg" />
+              <img class="treasure" src="~/assets/treasure.jpg" alt="treasure chest" />
               <div class="treasure-featured">Featured</div>
-              <img class="img-main" src="~/assets/private-charter.jpg">
+              <img class="img-main" src="~/assets/private-charter.jpg" alt="Santa Barbara Private Boat Charters">
               <div class="card-content">
                 <h2>Private Charter Cruises</h2>
                 <h3>Prices start at low as $250 per hour</h3>
@@ -82,18 +82,18 @@
         <p class="awards-text">
           <span class="emoji">🏅🎉</span> Voted <strong>"Best Wine Tour In Santa Barbara"</strong> 5&nbsp;years&nbsp;in&nbsp;a&nbsp;row! <span class="emoji2">🎈🏆</span>
         </p>
-        <img src="~/assets/readersawards.jpg" class="readers-choice-awards" />
+        <img src="~/assets/readersawards.jpg" class="readers-choice-awards" alt="SB News Press Readers Choice Awards" />
         <p class="yelp-tripadvisor-text">Great reviews on Yelp and TripAdvisor!</p>
         <div class="columns is-mobile">
           <div class="column is-6-mobile is-3-tablet is-offset-3-tablet">
             <div class="review-container yelp-reviews">
-              <img src="~/assets/yelp.jpg" />
+              <img src="~/assets/yelp.jpg" alt="Yelp Logo" />
               <a href="https://www.yelp.com/biz/captain-jacks-tours-and-events-santa-barbara" target="_blank">We have 248 reviews</a>
             </div>
           </div>
           <div class="column is-6-mobile is-3-tablet">
             <div class="review-container">
-              <img src="~/assets/tripadvisor.jpg" />
+              <img src="~/assets/tripadvisor.jpg" alt="Trip Advisor Logo" />
               <a href="https://www.tripadvisor.com/Attraction_Review-g33045-d638786-Reviews-Captain_Jack_s_Santa_Barbara_Tours-Santa_Barbara_California.html" target="_blank">
                 Certificate of Excellence 2012&nbsp;-&nbsp;2017
               </a>

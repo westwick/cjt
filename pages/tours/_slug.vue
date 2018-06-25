@@ -1,6 +1,7 @@
 <template>
   <section class="tour-page">
     <div class="tour-img-main" v-bind:style="{ backgroundImage: 'url(' + gallery[galleryImageIndex] + ')'}">
+      <div class="tour-overlay"></div>
       <i class="fas fa-arrow-circle-left images-btn-left" @click="galleryLeft" v-if="galleryImageCount > 1"></i>
       <i class="fas fa-arrow-circle-right images-btn-right" @click="galleryRight" v-if="galleryImageCount > 1"></i>
       <div class="gallery-index" v-if="galleryImageCount > 1">

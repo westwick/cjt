@@ -15,7 +15,10 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'cjtest',
+    title: 'Captain Jack\'s Santa Barbara Tours',
+    htmlAttrs: {
+      lang: 'en',
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

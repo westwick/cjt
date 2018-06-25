@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="crow-container">
-      <img src="~/assets/crowsnest.png" class="crowsnest" />
+      <img src="~/assets/crowsnest.png" class="crowsnest" alt="Pirate in Crowsnest" />
     </div>
     <div class="container">
       <div class="columns">
