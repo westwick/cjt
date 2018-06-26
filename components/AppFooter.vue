@@ -21,8 +21,8 @@
             </div>
             <div class="column is-5-widescreen footer-contact">
               <h5>Get in touch</h5>
-              <p><i class="fas fa-envelope"></i><a href="mailto:hello@captainjackstours.com">hello@captainjackstours.com</a></p>
-              <p><i class="fas fa-phone"></i><a href="tel:1-805-564-1819">(805) 564-1819</a></p>
+              <p><i class="icon-mail"></i><a href="mailto:hello@captainjackstours.com">hello@captainjackstours.com</a></p>
+              <p><i class="icon-phone"></i><a href="tel:1-805-564-1819">(805) 564-1819</a></p>
             </div>
           </div>
           <div class="columns">

@@ -9,8 +9,8 @@
     <section class="container">
       <div class="tours-container listing-container">
         <div class="view-as">
-          <i class="fas fa-th" :class="{selected: viewMode === 'grid'}" @click="viewModeGrid"></i>
-          <i class="fas fa-bars" :class="{selected: viewMode === 'list'}" @click="viewModeList"></i>
+          <span class="icon-view-tile" :class="{selected: viewMode === 'grid'}" @click="viewModeGrid"></span>
+          <span class="icon-view-list" :class="{selected: viewMode === 'list'}" @click="viewModeList"></span>
         </div>
         <div class="tours-view-as" :class="{gridView: viewMode === 'grid'}">
 
@@ -19,8 +19,8 @@
               <div class="card-content">
                 <h2><nuxt-link :to="tour._path">{{ tour.title }}</nuxt-link></h2>
                 <div class="tour-infos">
-                  <span class="price"><i class="fas fa-coins"></i> {{tour.priceShort}}</span>
-                  <span class="starttime"><i class="far fa-clock"></i> {{tour.timeShort}}</span>
+                  <span class="price"><i class="icon-bill"></i> {{tour.priceShort}}</span>
+                  <span class="starttime"><i class="icon-time"></i> {{tour.timeShort}}</span>
                 </div>
                 
                 <p>{{ tour.body }}</p>

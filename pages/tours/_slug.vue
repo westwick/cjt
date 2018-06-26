@@ -2,8 +2,8 @@
   <section class="tour-page">
     <div class="tour-img-main" v-bind:style="{ backgroundImage: 'url(' + gallery[galleryImageIndex] + ')'}">
       <div class="tour-overlay"></div>
-      <i class="fas fa-arrow-circle-left images-btn-left" @click="galleryLeft" v-if="galleryImageCount > 1"></i>
-      <i class="fas fa-arrow-circle-right images-btn-right" @click="galleryRight" v-if="galleryImageCount > 1"></i>
+      <i class="icon-arrow-left images-btn-left" @click="galleryLeft" v-if="galleryImageCount > 1"></i>
+      <i class="icon-arrow-right images-btn-right" @click="galleryRight" v-if="galleryImageCount > 1"></i>
       <div class="gallery-index" v-if="galleryImageCount > 1">
         <span v-for="(x, i) in gallery" :key="x" :class="{active: i === galleryImageIndex}"></span>
       </div>
@@ -27,8 +27,8 @@
             <vue-markdown>{{ timeLong }}</vue-markdown>
             <button class="button book-now">Book Now</button>
             <div class="contact">
-              <p><span class="icon-phone"></span> (805) 564-1819</p>
-              <p><i class="far fa-envelope"></i> hello@captainjackstours.com</p>
+              <p><i class="icon-phone"></i> (805) 564-1819</p>
+              <p><i class="icon-mail"></i> hello@captainjackstours.com</p>
             </div>
           </div>
         </div>
