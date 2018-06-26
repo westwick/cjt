@@ -1,9 +1,8 @@
 {
-  "name": "cjt",
+  "name": "Captain Jacks Tours",
   "version": "1.0.0",
-  "description": "Captain Jack's Tours Homepage",
+  "description": "Captain Jack's Santa Barbara Tours Homepage",
   "author": "Andrew Westwick <awestwick@gmail.com>",
-  "private": true,
   "scripts": {
     "dev": "nuxt",
     "serve": "nuxt",
