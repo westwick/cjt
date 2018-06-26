@@ -28,7 +28,7 @@
             <button class="button book-now">Book Now</button>
             <div class="contact">
               <p><i class="icon-phone"></i> (805) 564-1819</p>
-              <p><i class="icon-mail"></i> hello@captainjackstours.com</p>
+              <p><i class="icon-envelope-o"></i> hello@captainjackstours.com</p>
             </div>
           </div>
         </div>
