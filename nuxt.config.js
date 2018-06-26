@@ -14,6 +14,11 @@ module.exports = {
   modules: [
     '@nuxtjs/pwa',
   ],
+  // manifest for PWA
+  manifest: {
+    short_name: 'Captain Jack\'s Tours',
+    name: 'Captain Jack\'s Santa Barbara Tours and Events'
+  },
   /*
   ** Headers of the page
   */

@@ -162,7 +162,7 @@ export default {
       flex-direction: column
       align-items: center
       .home-btn
-        width: 200px
+        width: 216px
         margin-top: 0
         margin-bottom: 24px
     
