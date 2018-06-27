@@ -13,12 +13,12 @@
     </section>
     <section class="home-greeting">
       <div class="container">
-        <div class="columns">
-          <div class="column is-5">
+        <div class="columns is-desktop">
+          <div class="column is-5-desktop">
             <h3>Welcome to Santa Barbara!</h3>
             <p>Captain Jack's Tours is the #1 Tour &amp; Event company in Santa Barbara, offering more fun choices every day. Captain Jack's Tours will provide that special something to every event whether your group consists of 2 people or 200. With so many fun things to do in Santa Barbara, Captain Jack's Tours &amp; Events has something for everyone!</p>
           </div>
-          <div class="column is-7">
+          <div class="column is-7-desktop">
             <div class="greeting-images columns is-mobile is-1 is-variable">
               <div class="column is-4">
                 <img src="~/assets/horseride.jpg" alt="Horseback Riding" />
@@ -47,7 +47,7 @@
                 <h3>Only $149 per night Oct 15th – March 14th</h3>
                 <h3>Only $169 per night March 15th – Oct 14th</h3>
                 <p>Book any tour through Captain Jack’s Tours and you will qualify for our hotel special. Hotel accommodations are at the newly remodeled La Quinta Inn & Suites. It includes an over-sized room, heated pool, beautiful garden grounds and is located in downtown Santa Barbara. Breakfast, WI-FI & free parking are 'included' in this package – this package is limited in availability. Book any tour with Captain Jack’s tours….and save with our special room rate. Ask for more details.</p>
-                <nuxt-link class="button btn-dark" to="/specials">View All Specials</nuxt-link>
+                <nuxt-link class="button btn-outline" to="/specials">View All Specials</nuxt-link>
               </div>
             </div>
           </div>
@@ -61,7 +61,7 @@
                 <h3>Prices start at low as $250 per hour</h3>
                 <h3>Luxury Yachts up to 149 people available</h3>
                 <p>Spend a few hours or a whole day aboard our yachts! You pick the yacht size and Captain Jack's Tours will provide you with a US Coast Guard Certified Captain. Your private group will experience the fun and magic of sailing along the Santa Barbara pristine coastline. You can simply enjoy the views or feel free to help sail the yacht.</p>
-                <nuxt-link class="button btn-dark" to="/boat-charters">Private Boat Charters</nuxt-link>
+                <nuxt-link class="button btn-outline" to="/boat-charters">Private Boat Charters</nuxt-link>
               </div>
             </div>
           </div>
@@ -144,8 +144,8 @@ export default {
     background-position: 50% 50%
     background-repeat: no-repeat
     border: none
-    border-radius: 3px
-    box-shadow: 0 0 8px rgba(0,0,0,.1)
+    border-radius: 10px
+    box-shadow: 0 4px 12px rgba(0,0,0,.22)
     max-width: 440px
     margin: auto
     display: flex
@@ -162,9 +162,10 @@ export default {
       flex-direction: column
       align-items: center
       .home-btn
-        width: 216px
+        width: 232px
         margin-top: 0
         margin-bottom: 24px
+        text-transform: none
     
   .home-hero
     height: 400px
@@ -204,7 +205,6 @@ export default {
     border: none
     outline: none
     box-shadow: 0 0 8px rgba(0,0,0,.35)
-    padding: 10px 20px
     height: auto
     transition: all .3s ease-in-out
     &:hover
@@ -231,15 +231,14 @@ export default {
         padding-left: 0
     p
       color: #0a0a0a
-      font-size: 14px
+      font-size: 16px
       font-weight: 500
       padding: 0 16px
       +desktop
         padding: 0
+        font-size: 14px
   .greeting-images
     padding: 0 16px
-    +tablet
-      padding: 0 16px 0 0
     +desktop
       padding: 0
     img

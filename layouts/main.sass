@@ -23,19 +23,21 @@ button, .button, input
   font-family: 'Karla', sans-serif 
   font-weight: bold
   border: none
-  text-transform: uppercase
-  border-radius: 36px
-  padding-left: 16px
-  padding-right: 16px
+  // text-transform: uppercase
+  border-radius: 45px
+  padding: 8px 24px
+  height: auto
 .button:focus:not(:active), .button.is-focused:not(:active)
   outline: 0
   box-shadow: none
-.btn-dark
-  background: #444
-  color: #fff
+.btn-outline
+  background: transparent
+  color: $cjred
+  padding: 6px 22px
+  border: 2px solid $cjred
   &:hover
-    background: #222
-    color: #ddd
+    border: 2px solid darken($cjred, 10%)
+    color: darken($cjred, 10%)
 html
   font-size: 16px
   word-spacing: 1px
@@ -55,13 +57,14 @@ h1,h2,h3,h4,h5,h6
   color: $cjdarkred
 .card
   border: none
-  border-radius: 3px
+  border-radius: 10px
   // transition: all .3s ease-in-out
-  box-shadow: 0 0 8px rgba(0,0,0,.1)
+  transition: box-shadow .3s ease-in-out
+  box-shadow: 0 4px 8px rgba(0,0,0,.1)
   max-width: 440px
   margin: auto
   &:hover
-    box-shadow: 0 0 24px rgba(0,0,0,.1)
+    box-shadow: 0 4px 16px rgba(0,0,0,.1)
   .treasure
     position: absolute
     z-index: 2
@@ -90,7 +93,7 @@ h1,h2,h3,h4,h5,h6
     width: 100%
     max-width: 480px
     height: auto
-    border-radius: 3px 3px 0 0
+    border-radius: 10px 10px 0 0
   .card-content
     padding: 16px
     display: flex
@@ -184,7 +187,6 @@ h1,h2,h3,h4,h5,h6
   flex-direction: column
   max-width: 480px
   margin-bottom: 16px
-  border-radius: 4px
   +tablet
     flex-direction: row
     max-width: 100%
@@ -200,9 +202,9 @@ h1,h2,h3,h4,h5,h6
   h2
     margin-top: 8px
     a
-      color: $cjred
+      color: $cjdarkred
       &:hover
-        color: darken($cjred, 10%)
+        color: darken($cjdarkred, 10%)
   p
     -webkit-line-clamp: 3
     line-height: 20px
@@ -222,9 +224,7 @@ h1,h2,h3,h4,h5,h6
   .book-now
     background: $cjred
     color: #fff
-    padding: 5px 16px
-    border-radius: 36px
-    text-transform: uppercase
+    // text-transform: uppercase
 
 .gridView
   display: flex
@@ -234,6 +234,8 @@ h1,h2,h3,h4,h5,h6
     max-width: 480px
     margin: 0 auto 16px
     flex-direction: column
+    h2
+      margin-top: 0
     +tablet
       max-width: calc(50% - 8px)
       margin: 0 16px 16px 0
@@ -248,7 +250,7 @@ h1,h2,h3,h4,h5,h6
         margin-right: 0
     .img-main
       padding: 0
-      border-radius: 3px 3px 0 0
+      border-radius: 10px 10px 0 0
       +tablet
         width: 100%
         max-width: 100%
@@ -302,7 +304,6 @@ h1,h2,h3,h4,h5,h6
     color: #fff
     width: 100%
     font-size: 20px
-    text-transform: uppercase
     margin: 16px 0
   .contact
     margin-bottom: 16px
@@ -318,11 +319,13 @@ h1,h2,h3,h4,h5,h6
       margin-bottom: 16px
 
 .tour-img-main
-  height: 400px
+  height: 280px
   background-size: cover
   background-position: 50% 50%
   position: relative
   +tablet
+    height: 400px
+  +desktop
     height: 544px
   .images-btn-left, .images-btn-right
     position: absolute
