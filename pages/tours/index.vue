@@ -9,8 +9,8 @@
     <section class="container">
       <div class="tours-container listing-container">
         <div class="view-as">
-          <span class="icon-view-tile" :class="{selected: viewMode === 'grid'}" @click="viewModeGrid"></span>
-          <span class="icon-view-list" :class="{selected: viewMode === 'list'}" @click="viewModeList"></span>
+          <i class="icon-grid" :class="{selected: viewMode === 'grid'}" @click="viewModeGrid"></i>
+          <i class="icon-list" :class="{selected: viewMode === 'list'}" @click="viewModeList"></i>
         </div>
         <div class="tours-view-as" :class="{gridView: viewMode === 'grid'}">
 
