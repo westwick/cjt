@@ -1,23 +1,31 @@
 <template>
   <section class="listing-page">
-    <div class="listing-header charters-hero">
+    <div class="listing-header tours-hero">
       <div class="container">
-        <h1 class="page-title">Captain Jack's Private Boat Charters</h1>
-        <p>Spend a few hours or a whole day aboard our yachts!</p>
+        <h1 class="page-title">Captain Jack's Tours</h1>
+        <p>All tours are available 7 days a week unless otherwise stated. Too much fun stuff!</p>
       </div>
     </div>
     <section class="container">
       <div class="tours-container listing-container">
-        <div class="tour" v-for="tour in tours" :key="tour.title">
+        <div class="view-as">
+          <i class="icon-grid" :class="{selected: viewMode === 'grid'}" @click="viewModeGrid"></i>
+          <i class="icon-list" :class="{selected: viewMode === 'list'}" @click="viewModeList"></i>
+        </div>
+        <div class="tours-view-as" :class="{gridView: viewMode === 'grid'}">
 
-            <div class="card tour-card">
-              <img class="img-main" :src="tour.thumbnail">
+            <div class="card tour-card" v-for="tour in tours" :key="tour.title">
+              <img class="img-main" :src="tour.thumbnail" @click="$router.push({path: tour._path})" v-bind:alt="tour.title">
               <div class="card-content">
-                <h2>{{ tour.title }}</h2>
-                <h3>{{ tour.subheader }}</h3>
+                <h2><nuxt-link :to="tour._path">{{ tour.title }}</nuxt-link></h2>
+                <div class="tour-infos">
+                  <span class="price"><i class="icon-bill"></i> {{tour.priceShort}}</span>
+                </div>
+                
                 <p>{{ tour.body }}</p>
-                <p>{{ tour.extra }}</p>
-
+                <div class="cta">
+                  <button class="button book-now">Book Now</button>
+                </div>
               </div>
             </div>
 
@@ -35,6 +43,19 @@ export default {
     AppLogo
   },
   data() {
+    return {
+      viewMode: 'list'
+    }
+  },
+  methods: {
+    viewModeGrid() {
+      this.viewMode = 'grid';
+    },
+    viewModeList() {
+      this.viewMode = 'list';
+    } 
+  },
+  asyncData() {
     // Using webpacks context to gather all files from a folder
     const toursContext = require.context('~/content/boat-charters/', false, /\.json$/);
 
@@ -44,9 +65,9 @@ export default {
     }));
 
     tours.sort((a, b) => {
-      if (a.sort < b.sort)
+      if (parseInt(a.sort) < parseInt(b.sort))
         return -1;
-      if (a.sort > b.sort)
+      if (parseInt(a.sort) > parseInt(b.sort))
         return 1;
       return 0;
     })

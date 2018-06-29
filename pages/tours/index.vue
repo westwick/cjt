@@ -45,7 +45,7 @@ export default {
   },
   data() {
     return {
-      viewMode: 'grid'
+      viewMode: 'list'
     }
   },
   methods: {
