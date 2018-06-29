@@ -68,8 +68,9 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Price Short", name: "priceShort", widget: "string", required: false}
-      - {label: "Price Long", name: "priceLong", widget: "string", required: false}
+      - {label: "Price Long", name: "priceLong", widget: "markdown", required: false}
       - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
+      - {label: "Gallery", name: "gallery", widget: "list", field: {label: Image, name: image, widget: image}}
       - {label: "Body", name: "body", widget: "markdown", required: true}
       - {label: "Sort", name: "sort", widget: "number", required: true}
       - {label: "Allow Online Booking", name: "allowBooking", widget: "boolean", required: false}
