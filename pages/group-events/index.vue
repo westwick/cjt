@@ -1,9 +1,9 @@
 <template>
   <section class="listing-page">
-    <div class="listing-header tours-hero">
+    <div class="listing-header events-hero">
       <div class="container">
-        <h1 class="page-title">Captain Jack's Tours</h1>
-        <p>All tours are available 7 days a week unless otherwise stated. Too much fun stuff!</p>
+        <h1 class="page-title">Captain Jack's Group Events</h1>
+        <p>If your group consists of 8 or more people, check out some of our events below!</p>
       </div>
     </div>
     <section class="container">
