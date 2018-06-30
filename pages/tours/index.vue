@@ -2,7 +2,7 @@
   <section class="listing-page">
     <div class="listing-header tours-hero">
       <div class="container">
-        <h1 class="page-title">Captain Jack's Tours</h1>
+        <h1 class="page-title" @click.alt="handleSort">Captain Jack's Tours</h1>
         <p>All tours are available 7 days a week unless otherwise stated. Too much fun stuff!</p>
       </div>
     </div>
@@ -17,7 +17,7 @@
             <div class="card tour-card" v-for="tour in tours" :key="tour.title">
               <img class="img-main" :src="tour.thumbnail" @click="$router.push({path: tour._path})" v-bind:alt="tour.title">
               <div class="card-content">
-                <h2><nuxt-link :to="tour._path">{{ tour.title }}</nuxt-link></h2>
+                <h2><span class="toursort" v-if="showSort">{{ tour.sort }}</span><nuxt-link :to="tour._path">{{ tour.title }}</nuxt-link></h2>
                 <div class="tour-infos">
                   <span class="price"><i class="icon-bill"></i> {{tour.priceShort}}</span>
                   <span class="starttime"><i class="icon-time"></i> {{tour.timeShort}}</span>
@@ -45,7 +45,8 @@ export default {
   },
   data() {
     return {
-      viewMode: 'list'
+      viewMode: 'list',
+      showSort: false
     }
   },
   methods: {
@@ -54,6 +55,12 @@ export default {
     },
     viewModeList() {
       this.viewMode = 'list';
+    },
+    toggleSort() {
+      this.showSort = !this.showSort
+    },
+    handleSort(e) {
+      this.toggleSort();
     } 
   },
   asyncData() {
@@ -79,5 +86,8 @@ export default {
 </script>
 
 <style scoped lang="sass">
-
+  .toursort
+    color: green
+    margin-right: 2px
+    font-size: 14px
 </style>
