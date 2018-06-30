@@ -6,7 +6,9 @@
   "timeShort": "11:30am Start Time",
   "allowBooking": true,
   "gallery": [
-    "/images/uploads/beertastingwide.jpg"
+    "/images/uploads/beertastingwide.jpg",
+    "/images/uploads/brewery.jpg",
+    "/images/uploads/beers.jpg"
   ],
   "priceShort": "$85 Per Person",
   "title": "Santa Barbara Beer Tasting Tour",
