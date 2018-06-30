@@ -6,7 +6,9 @@
   "timeShort": "10:30am Start Time",
   "allowBooking": true,
   "gallery": [
-    "/images/uploads/horseandwinewide.jpg"
+    "/images/uploads/horseandwinewide.jpg",
+    "/images/uploads/gaineywide.jpg",
+    "/images/uploads/tastingroomwide.jpg"
   ],
   "priceShort": "$195 per person",
   "title": "Horseback Riding and Wine Tasting Tour",
