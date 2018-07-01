@@ -1,6 +1,11 @@
 {
   "title": "Medium Sized Private Charters",
-  "thumbnail": "/images/uploads/hotel.jpg",
+  "priceShort": "Starting at $375 per hour",
+  "priceLong": "$375 per hr. ( 2 hr min) plus 12% port tax & 18% gratuity\r\n\nUp to 15 passengers \r\n\nYou choose your departure time",
+  "thumbnail": "/images/uploads/mediumsailthumb.jpg",
+  "gallery": [
+    "/images/uploads/mediumsailwide.jpg"
+  ],
   "body": "Imagine the entire Yacht, a Private Captain, and a First Mate to serve you Dom Perignon or... and cater to your every desire! Or throw a party for your best friends! When nothing but the best will do... Hire the Captain Jack's Tours for your Private Sailing Dreams!Great for Engagements, Weddings, Anniversaries, Birthday Parties, Bachelorette Parties, Bachelor Parties, Reunions, Company Parties, Corporate Events, Memorials, and Holidays... or reserve the boat just for your significant other and you.\n\nWe offer a Full Bar on board with a variety of Quality Hard Liquor, Fine Santa Barbara Wines, Firestone Beer, Champagne, Sparkling Wine, Juices, Sodas, and Water.\n\nSnacks are available for purchase also.\n\n$375 per hr. ( 2 hr min) plus 12% port tax & 18% gratuity\n\nUp to 15 passengers \n\nYou choose your departure time",
   "sort": "40"
 }
