@@ -15,6 +15,9 @@
             <h1>{{ title }}</h1>
             <div class="tour-info-body">
               <vue-markdown>{{ body }}</vue-markdown>
+              <hr />
+              <h3>Schedule</h3>
+              <vue-markdown>{{ timeLong }}</vue-markdown>
               <div class="image-preload">
                 <img v-for="g in gallery" :src="g" :key="g"/>
               </div>
@@ -23,8 +26,6 @@
           <div class="column is-4">
             <h2>Pricing</h2>
             <vue-markdown>{{ priceLong }}</vue-markdown>
-            <h2 class="start-time">Schedule</h2>
-            <vue-markdown>{{ timeLong }}</vue-markdown>
             <button class="button book-now">Book Now</button>
             <div class="contact">
               <p><i class="icon-phone"></i> (805) 564-1819</p>

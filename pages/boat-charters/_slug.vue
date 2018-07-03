@@ -15,6 +15,9 @@
             <h1>{{ title }}</h1>
             <div class="tour-info-body">
               <vue-markdown>{{ body }}</vue-markdown>
+              <hr />
+              <h3>Group Sizes</h3>
+              <p>{{ groupSizes }}</p>
               <div class="image-preload">
                 <img v-for="g in gallery" :src="g" :key="g"/>
               </div>
