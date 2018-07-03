@@ -20,6 +20,7 @@
                 <h2><nuxt-link :to="tour._path">{{ tour.title }}</nuxt-link></h2>
                 <div class="tour-infos">
                   <span class="price"><i class="icon-bill"></i> {{tour.priceShort}}</span>
+                  <span class="starttime"><i class="icon-users"></i> {{tour.groupSizes}}</span>
                 </div>
                 
                 <p>{{ tour.body }}</p>
