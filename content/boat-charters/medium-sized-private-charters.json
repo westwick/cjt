@@ -1,7 +1,8 @@
 {
   "title": "Medium Sized Private Charters",
   "priceShort": "Starting at $375 per hour",
-  "priceLong": "$375 per hr. ( 2 hr min) plus 12% port tax & 18% gratuity\r\n\nUp to 15 passengers \r\n\nYou choose your departure time",
+  "priceLong": "$375 per hr. ( 2 hr min) plus 12% port tax & 18% gratuity\n\nYou choose your departure time",
+  "groupSizes": "15 passenger maximum",
   "thumbnail": "/images/uploads/mediumsailthumb.jpg",
   "gallery": [
     "/images/uploads/mediumsailwide.jpg"
