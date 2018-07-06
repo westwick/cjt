@@ -1,10 +1,13 @@
 {
-  "title": "Paragliding",
-  "timeShort": "By Appointment",
-  "timeLong": "7 days a week, by appointment",
-  "priceShort": "Starting at $150 per person",
-  "priceLong": "Tandem Flight: **$150 per person**\n\nLessons: **$225 per person**",
-  "gallery": [],
   "body": "Choose from two great paragliding options:\n\n## Tandem Flights\n\nThis flight has amazing views of the Pacific Ocean, the Channel Islands, and the Santa Barbara Mountains. During these 2 short flights we fly out toward the Pacific making gentle turns before landing. There is no prior experience necessary for a tandem flight and age is not a factor. We can get just about anyone up on a tandem flight.\n\nWe use a larger canopy designed to carry the weight of two people. Each person has their own harness, and the passenger and instructor are connected together with spreader bars. The Tandem instructor sits in the back and the passenger sits in front. We organize our equipment and do a simulation before our actual launch. The instructor double checks your buckles and straps, clips you in, and we turn and wait for a nice launch cycle.\n\n## Lessons\n\nParticipants will enjoy the panoramic views during the lunch break (lunch not included in price). After lunch you will use the experience gained during the morning flying to build their skills for the afternoon flying. Most participants are simply amazed they are able to launch, fly, and land the world's most evolutionary aircraft many times on their very first day. We encourage you to organize a family outing, bachelor party, team building event, or birthday party for what has to be one of the most unique adventures on the planet.\n\nThe flight area has great facilities, we contract with top-notch instructors and state-of-the-art training equipment. You will appreciate the concern for safety and the focus on developing paragliding fundamentals that will help provide you with safe secure flights.",
+  "priceLong": "Tandem Flight: **$150 per person**\n\nLessons: **$225 per person**",
+  "timeLong": "7 days a week, by appointment",
+  "thumbnail": "/images/uploads/parathumb.jpg",
+  "timeShort": "By Appointment",
+  "gallery": [
+    "/images/uploads/parawide.jpg"
+  ],
+  "priceShort": "Starting at $150 per person",
+  "title": "Paragliding",
   "sort": "240"
 }
