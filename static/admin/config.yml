@@ -46,7 +46,7 @@ collections:
       - {label: "Sort", name: "sort", widget: "number", required: true}
   - name: "events"
     label: "Group Events"
-    folder: "content/events"
+    folder: "content/group-events"
     create: true
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     format: 'json'

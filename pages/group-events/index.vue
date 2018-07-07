@@ -57,11 +57,11 @@ export default {
   },
   asyncData() {
     // Using webpacks context to gather all files from a folder
-    const toursContext = require.context('~/content/events/', false, /\.json$/);
+    const toursContext = require.context('~/content/group-events/', false, /\.json$/);
 
     const tours = toursContext.keys().map(key => ({
       ...toursContext(key),
-      _path: `/events/${key.replace('.json', '').replace('./', '')}`
+      _path: `/group-events/${key.replace('.json', '').replace('./', '')}`
     }));
 
     tours.sort((a, b) => {

@@ -69,7 +69,7 @@ export default {
     //       require('~/content/blog/posts/' + params.slug + '.json')
     //     );
 
-    let tour = await import('~/content/events/' + params.slug + '.json');
+    let tour = await import('~/content/group-events/' + params.slug + '.json');
     return tour;
   }
 };
