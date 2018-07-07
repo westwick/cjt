@@ -7,7 +7,7 @@ var path = require('path');
 var dynamicRoutes = getDynamicPaths({
   '/blog': 'blog/posts/*.json',
   '/tours': 'tours/*.json',
-  '/events': 'events/*.json',
+  '/group-events': 'group-events/*.json',
   '/boat-charters': 'boat-charters/*.json'
 });
 
