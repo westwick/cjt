@@ -32,6 +32,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown", required: true}
       - {label: "Sort", name: "sort", widget: "number", required: true}
       - {label: "Allow Online Booking", name: "allowBooking", widget: "boolean", required: false}
+      - {label: "BookingID", name: "rezid", widget: "number", required: false}
   - name: "specials"
     label: "Specials"
     folder: "content/specials"
@@ -72,4 +73,3 @@ collections:
       - {label: "Gallery", name: "gallery", widget: "list", field: {label: Image, name: image, widget: image}}
       - {label: "Body", name: "body", widget: "markdown", required: true}
       - {label: "Sort", name: "sort", widget: "number", required: true}
-      - {label: "Allow Online Booking", name: "allowBooking", widget: "boolean", required: false}
