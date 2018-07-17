@@ -5,6 +5,7 @@
   "thumbnail": "/images/uploads/beachhorsethumb.jpg",
   "timeShort": "3 times daily",
   "allowBooking": true,
+  "rezid": "10",
   "gallery": [
     "/images/uploads/beachhorsewide.jpg"
   ],

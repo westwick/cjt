@@ -4,7 +4,8 @@
   "timeLong": "Saturdays / Sundays: 10:00 - 12:00\n\nMonday - Friday: 9:30 - 4:30 by appointment",
   "thumbnail": "/images/uploads/supthumb.jpg",
   "timeShort": "Varies",
-  "allowBooking": false,
+  "allowBooking": true,
+  "rezid": "14",
   "gallery": [
     "/images/uploads/supwide.jpg"
   ],

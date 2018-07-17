@@ -5,6 +5,7 @@
   "thumbnail": "/images/uploads/coastalkayak_thumb.jpg",
   "timeShort": "2.5 - 3 hours",
   "allowBooking": true,
+  "rezid": "12",
   "gallery": [
     "/images/uploads/coastalkayakwide.jpg"
   ],

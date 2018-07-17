@@ -5,6 +5,7 @@
   "thumbnail": "/images/uploads/winetastingroomsmall.jpg",
   "timeShort": "11:00am Start Time",
   "allowBooking": true,
+  "rezid": "1",
   "gallery": [
     "/images/uploads/tastingroom2.jpg",
     "/images/uploads/winewide.jpg"

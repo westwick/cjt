@@ -5,6 +5,7 @@
   "thumbnail": "/images/uploads/valley_small.jpg",
   "timeShort": "9:00am Start Time",
   "allowBooking": true,
+  "rezid": "3",
   "gallery": [
     "/images/uploads/valley.jpg",
     "/images/uploads/winebottleswide.jpg",

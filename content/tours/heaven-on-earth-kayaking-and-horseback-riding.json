@@ -5,6 +5,7 @@
   "thumbnail": "/images/uploads/refugio_thumb.jpg",
   "timeShort": "9:30am Start Time",
   "allowBooking": true,
+  "rezid": "5",
   "gallery": [
     "/images/uploads/refugiowide.jpg",
     "/images/uploads/horsetrailwide.jpg"

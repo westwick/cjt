@@ -5,6 +5,7 @@
   "thumbnail": "/images/uploads/horseandwine_thumb.jpg",
   "timeShort": "10:30am Start Time",
   "allowBooking": true,
+  "rezid": "4",
   "gallery": [
     "/images/uploads/horseandwinewide.jpg",
     "/images/uploads/gaineywide.jpg",

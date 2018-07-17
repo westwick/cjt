@@ -5,6 +5,7 @@
   "thumbnail": "/images/uploads/sidewaysthumb.jpg",
   "timeShort": "9:00am Start Time",
   "allowBooking": true,
+  "rezid": "7",
   "gallery": [
     "/images/uploads/grapeswide.jpg",
     "/images/uploads/vineyardladies.jpg"

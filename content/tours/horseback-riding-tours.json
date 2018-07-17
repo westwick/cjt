@@ -5,6 +5,7 @@
   "thumbnail": "/images/uploads/cowboysunset.jpg",
   "timeShort": "9:30, 11:30, 2:00 & 3:30",
   "allowBooking": true,
+  "rezid": "9",
   "gallery": [
     "/images/uploads/cowboywide.jpg",
     "/images/uploads/horseswide.jpg",

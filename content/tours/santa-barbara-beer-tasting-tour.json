@@ -5,6 +5,7 @@
   "thumbnail": "/images/uploads/beertasting_thumb.jpg",
   "timeShort": "11:30am Start Time",
   "allowBooking": true,
+  "rezid": "8",
   "gallery": [
     "/images/uploads/beertastingwide.jpg",
     "/images/uploads/brewery.jpg",

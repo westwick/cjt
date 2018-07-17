@@ -5,6 +5,7 @@
   "thumbnail": "/images/uploads/harborkayakthumb.jpg",
   "timeShort": "Daily at 10:30 or 1:30",
   "allowBooking": true,
+  "rezid": "11",
   "gallery": [
     "/images/uploads/groupkayakwide.jpg",
     "/images/uploads/harborwhale.jpg",
