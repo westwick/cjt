@@ -9,10 +9,10 @@
               <nuxt-link to="/" class="logo-big"><img src="~/assets/cjlogowhite.png" alt="Captain Jack's Tours" /></nuxt-link>
             </div>
             <nav>
-              <nuxt-link to="/tours">Tours</nuxt-link>
-              <nuxt-link to="/boat-charters">Boat Charters</nuxt-link>
-              <nuxt-link to="/group-events">Group Events</nuxt-link>
-              <nuxt-link to="/specials">Specials</nuxt-link>
+              <nuxt-link to="/tours/">Tours</nuxt-link>
+              <nuxt-link to="/boat-charters/">Boat Charters</nuxt-link>
+              <nuxt-link to="/group-events/">Group Events</nuxt-link>
+              <nuxt-link to="/specials/">Specials</nuxt-link>
             </nav>
           </div>
           <div class="header-logo-text">
@@ -35,10 +35,10 @@
     </header>
     <div class="subheader" :class="{'is-active': isActive}">
       <div class="mobile-menu-expanded" @click="closeMenu()">
-        <nuxt-link to="/tours">Tours</nuxt-link>
-        <nuxt-link to="/boat-charters">Boat Charters</nuxt-link>
-        <nuxt-link to="/group-events">Group Events</nuxt-link>
-        <nuxt-link to="/specials">Specials</nuxt-link>
+        <nuxt-link to="/tours/">Tours</nuxt-link>
+        <nuxt-link to="/boat-charters/">Boat Charters</nuxt-link>
+        <nuxt-link to="/group-events/">Group Events</nuxt-link>
+        <nuxt-link to="/specials/">Specials</nuxt-link>
       </div>
       <p>Call us <a href="tel:1-805-564-1819"><span class="icon-phone"></span> (805) 564-1819</a></p>
     </div>
