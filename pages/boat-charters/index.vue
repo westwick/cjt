@@ -25,7 +25,7 @@
                 
                 <p>{{ tour.body }}</p>
                 <div class="cta">
-                  <button class="button book-now">Book Now</button>
+                  <button class="button book-now" @click="bookTour()">Book Now</button>
                 </div>
               </div>
             </div>
@@ -33,19 +33,21 @@
         </div>
       </div>
     </section>
+    <app-modal v-if="showModal" v-on:modal-clicked="closeModal()"></app-modal>
   </section>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue';
+import AppModal from '~/components/AppModal'
 
 export default {
   components: {
-    AppLogo
+    AppModal
   },
   data() {
     return {
-      viewMode: 'list'
+      viewMode: 'list',
+      showModal: false
     }
   },
   methods: {
@@ -54,7 +56,13 @@ export default {
     },
     viewModeList() {
       this.viewMode = 'list';
-    } 
+    },
+    closeModal() {
+      this.showModal = false;
+    },
+    bookTour() {
+      this.showModal = true;
+    }
   },
   asyncData() {
     // Using webpacks context to gather all files from a folder

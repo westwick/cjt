@@ -3,7 +3,7 @@
     <div class="listing-header specials-hero">
       <div class="container">
         <h1 class="page-title">Captain Jack's Specials</h1>
-        <p>Something something something</p>
+        <p>Check out our current deals. Here be the proverbial treasure map!</p>
       </div>
     </div>
     <section class="container">
