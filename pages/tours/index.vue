@@ -19,7 +19,10 @@
               <div class="card-content">
                 <h2><span class="toursort" v-if="showSort">{{ tour.sort }}</span><nuxt-link :to="tour._path">{{ tour.title }}</nuxt-link></h2>
                 <div class="tour-infos">
-                  <span class="price"><i class="icon-bill"></i> {{tour.priceShort}}</span>
+                  <span class="price">
+                    <i class="icon-bill"></i><span :class="{special: tour.priceSpecial}">{{tour.priceShort}}</span>
+                    <span v-if="tour.priceSpecial">{{tour.priceSpecial}}</span>
+                  </span>
                   <span class="starttime"><i class="icon-time"></i> {{tour.timeShort}}</span>
                 </div>
                 

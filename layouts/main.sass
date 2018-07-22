@@ -234,11 +234,15 @@ h1,h2,h3,h4,h5,h6
     width: 100%
     text-align: left
     font-weight: bold
-    span
+    span.price,span.starttime
       display: block
       i
         margin-right: 8px
         color: #9c9c9c
+      .special
+        text-decoration: line-through
+        margin-right: 4px
+        color: #787878
   .cta
     width: 100%
   .book-now
@@ -344,6 +348,12 @@ h1,h2,h3,h4,h5,h6
       margin-bottom: 8px
     p
       margin-bottom: 16px
+.pricing-md
+  em
+    text-decoration: line-through
+    font-style: normal
+    color: #787878
+    margin-right: 4px
 
 .tour-img-main
   height: 280px

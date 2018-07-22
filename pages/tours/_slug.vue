@@ -25,7 +25,7 @@
           </div>
           <div class="column is-4">
             <h2>Pricing</h2>
-            <vue-markdown>{{ priceLong }}</vue-markdown>
+            <vue-markdown class="pricing-md">{{ priceLong }}</vue-markdown>
             <button class="button book-now" @click="bookTour()">Book Now</button>
             <div class="contact">
               <p><i class="icon-envelope-o"></i><a href="mailto:hello@captainjackstours.com">hello@captainjackstours.com</a></p>
