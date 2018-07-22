@@ -1,4 +1,4 @@
-# cjtest
+# CJT
 
 > Nuxt.js + Netlify CMS project
 
