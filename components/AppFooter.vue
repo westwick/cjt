@@ -13,10 +13,10 @@
             <div class="column is-7-widescreen">
               <h5>More Information</h5>
               <ul>
-                <li><nuxt-link to="/gallery">Gallery</nuxt-link></li>
                 <li><nuxt-link to="/faq">FAQ</nuxt-link></li>
                 <li><nuxt-link to="/links">Useful Links</nuxt-link></li>
                 <li><nuxt-link to="/blog">Blog</nuxt-link></li>
+                <li><nuxt-link to="/terms">Terms</nuxt-link></li>
               </ul>
             </div>
             <div class="column is-5-widescreen footer-contact">

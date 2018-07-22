@@ -1,11 +1,11 @@
 <template>
-  <article>
+  <article class="article">
     <div class="container">
       <div class="columns is-centered">
         <div class="column is-12-mobile is-8-desktop">
           <div class="blog-post">
           <h1>{{ title }}</h1>
-          <p class="blog-date">Posted by Captain Jack</p>
+          <p class="blog-info">Posted by Captain Jack</p>
           <vue-markdown>{{ body }}</vue-markdown>
           </div>
         </div>
@@ -35,9 +35,5 @@ export default {
 </script>
 
 <style lang="sass">
-.blog-post
-  padding: 32px 0
-  h1
-    font-size: 32px
-    margin-bottom: 16px
+
 </style>
