@@ -59,6 +59,9 @@ module.exports = {
   plugins: [
     { src: '~plugins/ga.js', ssr: false }
   ],
+  router: {
+    middleware: ['redirects']
+  },
   /*
   ** Build configuration
   */
