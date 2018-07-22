@@ -24,4 +24,8 @@ export default function ({params, route, redirect}) {
     if (route.path === '/faq.html') {
         redirect('301', '/faq/');
     }
+
+    if (route.path.includes('mob')) {
+        redirect('301', '/');
+    }
 }
