@@ -54,7 +54,8 @@ module.exports = {
   ** Route config for pre-rendering
   */
   generate: {
-    routes: dynamicRoutes
+    routes: dynamicRoutes,
+    fallback: '404.html'
   },
   plugins: [
     { src: '~plugins/ga.js', ssr: false }
