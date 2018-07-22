@@ -56,6 +56,9 @@ module.exports = {
   generate: {
     routes: dynamicRoutes
   },
+  plugins: [
+    { src: '~plugins/ga.js', ssr: false }
+  ],
   /*
   ** Build configuration
   */

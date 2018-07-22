@@ -5,8 +5,9 @@
         <div class="column is-12-mobile is-8-desktop">
           <div class="blogs-container">
             <div v-for="blog in blogs" :key="blog.date" class="blog-post-link">
-              <h2>{{blog.title}}</h2>
+              <h2><router-link :to="blog._path">{{blog.title}}</router-link></h2>
               <p class="posted-on">Posted on {{ getDate(blog.date) }}</p>
+              <p>{{ blog.body.substring(0,340) }}...</p>
             </div>
           </div>
         </div>
@@ -48,10 +49,22 @@ export default {
 
 <style lang="sass">
 .blogs-container
-  padding: 32px 0 80px
+  padding: 0 0 80px
 .blog-post-link
+  border-bottom: 1px solid #e8e8e8
+  &:last-child
+    border-bottom: none
   h2
+    margin-top: 24px
     font-size: 32px
+    a
+      color: #311110
+      &:hover
+        text-decoration: underline
   .posted-on
     color: #9d9d9d
+    margin-bottom: 24px
+  p
+    margin-bottom: 16px
+
 </style>
