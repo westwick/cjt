@@ -1,15 +1,15 @@
 {
-  "body": "Don't see the tour package you were looking for? We are happy to put together a custom tour for groups of 4 or more. Choose a combination of any of our activities: Kayaking, Horseback Riding, Sailing, Wine Tasting, Beer Tasting & even Paragliding! Just give us a call or send an email to discuss the details.\n\nYou may also want to check out our [private chartered boats](/boat-charters) as well as our [group events](/group-events).",
-  "priceLong": "starts as low as $50 per person",
+  "body": "Don't see the tour package you were looking for? We are happy to put together a custom tour for groups of 2 or more. Choose a combination of any of our activities: Kayaking, Horseback Riding, Sailing, Wine Tasting, Beer Tasting & even Paragliding! Just give us a call or send an email to discuss the details.\n\nYou may also want to check out our [private chartered boats](/boat-charters) as well as our [group events](/group-events).",
+  "priceLong": "",
   "timeLong": "7 days a week",
-  "thumbnail": "/images/uploads/topdeck_thumb.jpg",
+  "thumbnail": "",
   "timeShort": "7 days a week",
   "gallery": [
-    "/images/uploads/topdeckwide.jpg",
-    "/images/uploads/winetoast.jpg",
-    "/images/uploads/horsetrailwide.jpg"
+    "/images/uploads/winery_small.jpg",
+    "/images/uploads/beachhorsethumb.jpg",
+    "/images/uploads/sailwide.jpg"
   ],
-  "priceShort": "starting at $50 per person",
+  "priceShort": "",
   "title": "Custom Tour",
   "sort": "260"
 }
