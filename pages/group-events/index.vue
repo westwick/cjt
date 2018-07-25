@@ -3,7 +3,7 @@
     <div class="listing-header events-hero">
       <div class="container">
         <h1 class="page-title">Captain Jack's Group Events</h1>
-        <p>If your group consists of 8 or more people, check out some of our events below!</p>
+        <p>Check out some ideas below for group or custom tours. If you can dream it, chances are we can do it!</p>
       </div>
     </div>
     <section class="container">
