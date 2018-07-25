@@ -9,8 +9,8 @@
   "gallery": [
     "/images/uploads/combowide.jpg",
     "/images/uploads/refugiowide.jpg",
-    "/images/uploads/refugio_thumb.jpg",
-    "/images/uploads/bluffthumb.jpg"
+    "/images/uploads/bluffthumb.jpg",
+    null
   ],
   "priceShort": "$225 per person",
   "title": "Heaven on Earth Kayaking and Horseback Riding",
