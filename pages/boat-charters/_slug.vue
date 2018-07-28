@@ -24,7 +24,7 @@
             </div>
           </div>
           <div class="column is-4">
-            <h2>Pricing</h2>
+            <h3>Pricing</h3>
             <vue-markdown>{{ priceLong }}</vue-markdown>
             <button class="button book-now" @click="bookTour()">Book Now</button>
             <div class="contact">

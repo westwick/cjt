@@ -1,6 +1,8 @@
 {
   "title": "Hotel and Tour Special",
-  "timeShort": "As low as $149 per night",
+  "priceShort": "As low as $149 per night",
+  "priceLong": "As low as $149 per night",
+  "timeLong": "7 days a week",
   "thumbnail": "/images/uploads/hotel.jpg",
   "gallery": [
     "/images/uploads/hotel.jpg"

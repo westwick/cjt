@@ -19,11 +19,11 @@
               <div class="card-content">
                 <h2><span class="toursort" v-if="showSort">{{ tour.sort }}</span><nuxt-link :to="tour._path">{{ tour.title }}</nuxt-link></h2>
                 <div class="tour-infos">
-                  <span class="price">
-                    <i class="icon-bill"></i><span :class="{special: tour.priceSpecial}">{{tour.priceShort}}</span>
+                  <span class="price" v-if="tour.priceShort">
+                    <i class="icon-bill"></i><span :class="{special: tour.priceSpecial}">{{tour.priceShort.trim()}}</span>
                     <span v-if="tour.priceSpecial">{{tour.priceSpecial}}</span>
                   </span>
-                  <span class="starttime"><i class="icon-time"></i> {{tour.timeShort}}</span>
+                  <span class="starttime" v-if="tour.timeShort"><i class="icon-time"></i>{{tour.timeShort.trim()}}</span>
                 </div>
                 
                 <p>{{ tour.body }}</p>
