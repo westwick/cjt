@@ -88,15 +88,15 @@
           <div class="column is-6-mobile is-3-tablet is-offset-3-tablet">
             <div class="review-container yelp-reviews">
               <img src="~/assets/yelp.jpg" alt="Yelp Logo" />
-              <a rel="noopener" href="https://www.yelp.com/biz/captain-jacks-tours-and-events-santa-barbara" target="_blank">We have 248 reviews</a>
+              <p class="reviews-text">4.5 star average on over 250&nbsp;reviews</p>
             </div>
           </div>
           <div class="column is-6-mobile is-3-tablet">
             <div class="review-container">
               <img src="~/assets/tripadvisor.jpg" alt="Trip Advisor Logo" />
-              <a rel="noopener" href="https://www.tripadvisor.com/Attraction_Review-g33045-d638786-Reviews-Captain_Jack_s_Santa_Barbara_Tours-Santa_Barbara_California.html" target="_blank">
+              <p class="reviews-text">
                 Certificate of Excellence 2012&nbsp;-&nbsp;2017
-              </a>
+              </p>
             </div>
           </div>
         </div>
@@ -135,6 +135,8 @@ export default {
 <style lang="sass">
   @import "~bulma/sass/utilities/_all.sass"
   @import '../layouts/vars'
+  .reviews-text
+    font-size: 16px !important
   .parrot-card
     background: url('~/assets/specials.jpg')
     width: 100%
