@@ -1,12 +1,12 @@
 {
   "rezid": "11",
   "body": "Captain Jacks Santa Barbara Tours conducts guided 1.5 - 2 hour kayak tours of the Santa Barbara Harbor at 10:30 & 1:30 daily. Experience California's most beautiful harbor on this fun and easy tour. Our professionally guided tour includes a kayak lesson/briefing, all kayak gear and paddles. This tour is the perfect introduction to kayaking and is fun for the entire family. Your tour starts at the boat launch, winds through the harbor, under Stearns Wharf, and out to the one mile buoy. Chances are good the locals will show up to greet you. Dolphins, California sea lions, and harbor seals may cruise by to say hello.",
-  "priceLong": "_$100 per person_ $50 per person!\n\n2 for 1 special! For groups of 4 + call for special rates",
+  "priceLong": "_$100 per person_ $50 per person!\n\n2 for 1 special!",
   "timeLong": "**Daily at 10:30 or 1:30**",
   "thumbnail": "/images/uploads/harborkayakthumb.jpg",
   "timeShort": "Daily at 10:30 or 1:30",
   "allowBooking": true,
-  "priceSpecial": "$50 per person",
+  "priceSpecial": "$50 per person - for groups of 4 or more call for special pricing",
   "gallery": [
     "/images/uploads/groupkayakwide.jpg",
     "/images/uploads/harborwhale.jpg",
