@@ -6,7 +6,7 @@
           <div class="column is-7">
             <h1>Ahoy Matey!</h1>
             <p>From wine tasting tours, to kayaking and sailing, to horseback-riding and more, Captain Jack's Santa Barbara Tours has something for&nbsp;everyone.</p>
-            <nuxt-link class="home-btn button" to="/tours/"><span class="icon-calendar"></span>Book a Tour</nuxt-link>
+            <nuxt-link class="home-btn button" to="/tours/"><span class="icon-calendar"></span>Browse Tours</nuxt-link>
           </div>
         </div>
       </div>
