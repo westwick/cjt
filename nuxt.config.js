@@ -67,6 +67,9 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vendor: [
+      'babel-polyfill'
+    ],
     postcss: {
       plugins: {
         'postcss-custom-properties': false
