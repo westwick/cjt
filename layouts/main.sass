@@ -231,6 +231,16 @@ h1,h2,h3,h4,h5,h6
     line-height: 20px
     height: 60px
     max-height: 60px
+  .tour-card-body
+    position: relative
+    .read-more-link
+      position: absolute
+      right: 0
+      bottom: 0
+      background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.98) 25%, rgba(255,255,255,1) 40%)
+      background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.98) 25%,rgba(255,255,255,1) 40%)
+      background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0.98) 25%,rgba(255,255,255,1) 40%)
+      padding-left: 40px
   .tour-infos
     width: 100%
     text-align: left
@@ -428,3 +438,25 @@ h1,h2,h3,h4,h5,h6
   display: block
   margin: 120px auto 16px
   text-align: center
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+  /* IE10+ CSS styles go here */
+  #shell
+    .tour-card
+      display: block
+      clear: both
+      overflow: hidden
+      .img-main
+        float: left
+        height: 272px
+        width: 440px
+    .specials-card
+      display: block
+      min-height: 272px
+      .img-main
+        position: absolute
+        left: 0
+        top: 0
+      .card-content
+        padding-left: 440px
+        display: block

@@ -22,7 +22,9 @@
                   <span class="starttime"><i class="icon-users"></i> {{tour.groupSizes}}</span>
                 </div>
                 
-                <p>{{ tour.body }}</p>
+                <p class="tour-card-body">{{ tour.body }}
+                  <span class="read-more-link">. . . <nuxt-link :to="tour._path">Read More</nuxt-link></span>
+                </p>
                 <div class="cta">
                   <button class="button book-now" @click="bookTour()">Book Now</button>
                 </div>

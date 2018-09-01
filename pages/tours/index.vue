@@ -26,7 +26,9 @@
                   <span class="starttime" v-if="tour.timeShort"><i class="icon-time"></i>{{tour.timeShort.trim()}}</span>
                 </div>
                 
-                <p>{{ tour.body }}</p>
+                <p class="tour-card-body">{{ tour.body }}
+                  <span class="read-more-link">. . . <nuxt-link :to="tour._path">Read More</nuxt-link></span>
+                </p>
                 <div class="cta">
                   <button class="button book-now" @click="bookTour(tour)">Book Now</button>
                 </div>
@@ -75,7 +77,12 @@ export default {
     },
     bookTour(tour) {
       if(tour.allowBooking && tour.rezid) {
-        tour.showBooking = true;
+        // if its IE, open booking page without iFrame
+        if (this.detectIE()) {
+          window.location.href = this.getFrameSrc(tour);
+        } else {
+          tour.showBooking = true;
+        }
       } else {
         this.showModal = true;
       }
@@ -88,7 +95,34 @@ export default {
     },
     getFrameSrc(tour) {
       return 'https://booking.bookinghound.com/rezfe/book.aspx?og=34ebafa9-092a-4e28-aa18-cbd5c5d7cd11&g=null&fcs=null&fca=null&fcg=null&af=null&uniqueId=' + tour.rezid + '&mode=a&phref=http://captainjackstours.com&ifstyle=overlay';
-    } 
+    },
+    detectIE() {
+        var ua = window.navigator.userAgent;
+
+        var msie = ua.indexOf('MSIE ');
+        if (msie > 0) {
+          // IE 10 or older => return version number
+          // return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+          return true;
+        }
+
+        var trident = ua.indexOf('Trident/');
+        if (trident > 0) {
+          // IE 11 => return version number
+          // var rv = ua.indexOf('rv:');
+          // return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+          return true;
+        }
+
+        // var edge = ua.indexOf('Edge/');
+        // if (edge > 0) {
+          // Edge (IE 12+) => return version number
+          // return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+        // }
+
+        // other browser
+        return false;
+    }
   },
   asyncData() {
     // Using webpacks context to gather all files from a folder
