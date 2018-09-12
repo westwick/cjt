@@ -1,17 +1,17 @@
 {
   "rezid": "13",
   "body": "Enjoy the beauty of Santa Barbara and have a toast of the bubbly with that someone special. You can choose between Champagne or Sparkling Cider. Capture the Romance of Santa Barbara. Our professionally guided tour includes a kayak lesson/briefing, all kayak gear and paddles. Your tour starts at the boat launch, winds through the harbor, under Stearns Wharf, and out to the one mile buoy. Chances are good the locals will show up to greet you. Dolphins, California sea lions, and harbor seals may cruise by to say hello.",
-  "priceLong": "**_$150 per person_  $75 per person**",
+  "priceLong": "**$70 per person**",
   "timeLong": "Timing is flexible, call to book\n\nTour typically lasts 60-90 minutes",
   "thumbnail": "/images/uploads/champagnekayak_thumb.jpg",
   "timeShort": "By Appointment",
   "allowBooking": true,
-  "priceSpecial": "$75 person",
+  "priceSpecial": "$70 person",
   "gallery": [
     "/images/uploads/champagnekayak.jpg",
     "/images/uploads/sunset2.jpg"
   ],
-  "priceShort": "$150 per person",
+  "priceShort": "$70 per person",
   "title": "Champagne Kayak Tour",
   "sort": "160"
 }
