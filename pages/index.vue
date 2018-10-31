@@ -95,11 +95,12 @@
             <div class="review-container">
               <img src="~/assets/tripadvisor.jpg" alt="Trip Advisor Logo" />
               <p class="reviews-text">
-                Certificate of Excellence 2012&nbsp;-&nbsp;2017
+                Certificate of Excellence 2012&nbsp;-&nbsp;2018
               </p>
             </div>
           </div>
         </div>
+        <a href="https://www.bbb.org/us/ca/santa-barbara/profile/tour-operators/captain-jack-s-tours-events-1236-92027231/#sealclick" target="_blank" rel="nofollow"><img src="~/assets/bbb-seal.png" alt="Captain Jack's Tours BBB Business Review" /></a>
       </div>
     </section>
   </section>
