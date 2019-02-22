@@ -28,12 +28,12 @@
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue';
+// import AppLogo from '~/components/AppLogo.vue';
 import VueMarkdown from 'vue-markdown'; 
 
 export default {
   components: {
-    AppLogo,
+    // AppLogo,
     VueMarkdown
   },
   data() {

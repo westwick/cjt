@@ -107,11 +107,11 @@
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue';
+// import AppLogo from '~/components/AppLogo.vue';
 
 export default {
   components: {
-    AppLogo
+    // AppLogo
   },
   data() {
     // Using webpacks context to gather all files from a folder
@@ -139,7 +139,7 @@ export default {
   .reviews-text
     font-size: 16px !important
   .parrot-card
-    background: url('~/assets/specials.jpg')
+    background: url('~assets/specials.jpg')
     width: 100%
     height: 100%
     min-height: 500px
@@ -175,7 +175,7 @@ export default {
     max-height: 400px
     min-height: 400px
     width: 100vw
-    background: linear-gradient(to bottom, rgba(20,20,21,.59), rgba(20,20,19,.63)), url('~/assets/cjt-bg.jpg')
+    background: linear-gradient(to bottom, rgba(20,20,21,.59), rgba(20,20,19,.63)), url('~assets/cjt-bg.jpg')
     background-size: cover
     background-position: 50% 100%
     background-repeat: no-repeat

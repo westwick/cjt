@@ -13,8 +13,11 @@ var dynamicRoutes = getDynamicPaths({
 
 
 module.exports = {
+  mode: 'universal',
   modules: [
-    '@nuxtjs/pwa',
+    '@nuxtjs/axios',
+    // '@nuxtjs/bulma',
+    '@nuxtjs/pwa'
   ],
   // manifest for PWA
   manifest: {
@@ -67,9 +70,6 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: [
-      'babel-polyfill'
-    ],
     postcss: {
       plugins: {
         'postcss-custom-properties': false
