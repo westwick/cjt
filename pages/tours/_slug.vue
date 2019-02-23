@@ -46,6 +46,7 @@
 </template>
 
 <script>
+import axios from 'axios';
 import VueMarkdown from 'vue-markdown'; 
 import AppSpinner from '~/components/AppSpinner'
 import AppModal from '~/components/AppModal'
@@ -97,7 +98,7 @@ export default {
       });
     },
     async chargeCard(token) {
-      const hello = await this.$axios.$post('/.netlify/functions/hello', {
+      const hello = await axios.post('/.netlify/functions/hello', {
         token,
         amount: 1234
       });
