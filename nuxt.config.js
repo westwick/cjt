@@ -20,12 +20,12 @@ module.exports = {
     '@nuxtjs/pwa',
     // '@nuxtjs/proxy'
   ],
-  proxy: {
-    '/.netlify': {
-      target: 'http://localhost:9000',
-      pathRewrite: {'^/.netlify/functions': ''},
-    },
-  },
+  // proxy: {
+  //   '/.netlify': {
+  //     target: 'http://localhost:9000',
+  //     pathRewrite: {'^/.netlify/functions': ''},
+  //   },
+  // },
   // manifest for PWA
   manifest: {
     short_name: 'Captain Jack\'s Tours',
