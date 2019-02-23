@@ -18,7 +18,7 @@ module.exports = {
     '@nuxtjs/axios',
     // '@nuxtjs/bulma',
     '@nuxtjs/pwa',
-    '@nuxtjs/proxy'
+    // '@nuxtjs/proxy'
   ],
   proxy: {
     '/.netlify': {

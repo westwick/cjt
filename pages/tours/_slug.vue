@@ -99,7 +99,7 @@ export default {
     async chargeCard(token) {
       const hello = await this.$axios.$post('/.netlify/functions/hello', {
         token,
-        amount: 123
+        amount: 1234
       });
       console.log('charge card result!', hello);
     },
