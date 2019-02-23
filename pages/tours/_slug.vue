@@ -54,11 +54,17 @@ export default {
   components: {
     VueMarkdown, AppSpinner, AppModal
   },
+  head() {
+    return {
+      script: [{ src: 'https://checkout.stripe.com/checkout.js' }],
+    }
+  },
   data() {
     return {
       galleryIndex: 0,
       showBooking: false,
-      showModal: false
+      showModal: false,
+      stripe: undefined
     }
   },
   methods: {
@@ -75,11 +81,27 @@ export default {
       this.showModal = false;
     },
     bookTour() {
-      if(this.allowBooking && this.rezid) {
-        this.showBooking = true;
-      } else {
-        this.showModal = true;
-      }
+      this.stripe = StripeCheckout.configure({
+        key: 'pk_test_xAGAZgjFcuyzjB1CTB3v60zp',
+        image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+        locale: 'auto',
+        token: (token) => {
+          this.chargeCard(token.id)
+        }
+      });
+      this.stripe.open({
+        email: 'something@alreadydone.com',
+        name: 'Carbonxleague',
+        description: 'hehehe',
+        amount: 2000
+      });
+    },
+    async chargeCard(token) {
+      const hello = await this.$axios.$post('/.netlify/functions/hello', {
+        token,
+        amount: 123
+      });
+      console.log('charge card result!', hello);
     },
     getFrameSrc() {
       return 'https://booking.bookinghound.com/rezfe/book.aspx?og=34ebafa9-092a-4e28-aa18-cbd5c5d7cd11&g=null&fcs=null&fca=null&fcg=null&af=null&uniqueId=' + this.rezid + '&mode=a&phref=http://captainjackstours.com&ifstyle=overlay';

@@ -17,8 +17,15 @@ module.exports = {
   modules: [
     '@nuxtjs/axios',
     // '@nuxtjs/bulma',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/proxy'
   ],
+  proxy: {
+    '/.netlify': {
+      target: 'http://localhost:9000',
+      pathRewrite: {'^/.netlify/functions': ''},
+    },
+  },
   // manifest for PWA
   manifest: {
     short_name: 'Captain Jack\'s Tours',
