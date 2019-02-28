@@ -1,6 +1,6 @@
 <template>
   <section class="header-container">
-    <header>
+    <header class="cjt">
       <div class="container">
         <div class="header">
           <div class="header-left">

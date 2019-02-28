@@ -174,8 +174,8 @@ export default {
     height: 400px
     max-height: 400px
     min-height: 400px
-    width: 100vw
-    background: linear-gradient(to bottom, rgba(20,20,21,.59), rgba(20,20,19,.63)), url('~assets/cjt-bg.jpg')
+    width: 100vw  
+    background: linear-gradient(to bottom, rgba(20,20,21,.59), rgba(20,20,19,.63)), url('https://ucarecdn.com/63a10e9e-bdbf-44a5-9bd8-d45a1ebd5ef7/-/blur/100/-/quality/lightest/-/resize/x300/cjtbg.jpg')
     background-size: cover
     background-position: 50% 100%
     background-repeat: no-repeat

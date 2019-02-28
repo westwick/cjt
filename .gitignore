@@ -12,3 +12,6 @@ dist
 
 # PWA
 sw.*
+
+# netlify-lambda built functions
+func

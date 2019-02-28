@@ -39,7 +39,9 @@ export default {
 
 <style lang="sass">
   @import './icon.css'
+  @import './loading.css'
   @import './hamburger.css'
+  @import './checkbox.css'
 
   .holiday-special
     min-width: 300px

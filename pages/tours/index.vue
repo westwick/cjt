@@ -76,16 +76,18 @@ export default {
       this.toggleSort();
     },
     bookTour(tour) {
-      if(tour.allowBooking && tour.rezid) {
-        // if its IE, open booking page without iFrame
-        if (this.detectIE()) {
-          window.location.href = this.getFrameSrc(tour);
-        } else {
-          tour.showBooking = true;
-        }
-      } else {
-        this.showModal = true;
-      }
+      this.$store.commit('setTour', tour);
+      this.$router.push({ path: '/checkout' });
+      // if(tour.allowBooking && tour.rezid) {
+      //   // if its IE, open booking page without iFrame
+      //   if (this.detectIE()) {
+      //     window.location.href = this.getFrameSrc(tour);
+      //   } else {
+      //     tour.showBooking = true;
+      //   }
+      // } else {
+      //   this.showModal = true;
+      // }
     },
     closeBooking(tour) {
       tour.showBooking = false;

@@ -1,7 +1,37 @@
 @import '~bulma/bulma'
+@import '~bulma-tooltip'
 @import 'vars'
 @import 'header'
 @import 'footer'
+$vdpColor: $cjblue;
+@import 'vue-date-pick/src/vueDatePick.scss'
+.vdpCell.today
+  color: inherit
+  .vdpCellContent
+    border: 1px solid #e8e8e8
+.vdpCell.disabled
+  color: #c7c7c7
+  opacity: 1
+.vdpCell.outOfRange
+  opacity: .5
+.vdpClearInput
+  display: none
+.vdpComponent
+  display: block
+  font-size: 13px
+.vdpComponent.vdpWithInput > input
+  padding-right: 0
+// .vdpCell.selectable .vdpCellContent
+//   color: #fff
+//   background: $cjblue
+// @media (hover: hover)
+//   .vdpCell.selectable:hover .vdpCellContent
+//     color: #fff
+//     background: lighten($cjblue, 10%)
+.input[disabled]
+  border-color: #dbdbdb
+  box-shadow: inherit
+  cursor: default
 
 a
   transition: all .3s ease-in-out
@@ -321,8 +351,11 @@ h1,h2,h3,h4,h5,h6
   background: linear-gradient(to bottom, rgba(20,20,21,.48), rgba(20,20,19,.55)), url('~assets/eventsbg.jpg') 50% 50% no-repeat
   background-size: cover
 
+.listing-page
+  background: #f8f8f8
+
 .tour-page
-  background: #fff
+  background: #f8f8f8
   padding: 0 0 32px
   h1
     font-size: 24px
@@ -347,6 +380,11 @@ h1,h2,h3,h4,h5,h6
     padding: 32px 16px
   .tour-info-body
     padding-right: 0
+    h2
+      font-size: 18px
+      margin: 16px 0 8px
+    hr
+      background-color: #d6d5d6
     +tablet
       padding-right: 40px
     +desktop
@@ -356,22 +394,32 @@ h1,h2,h3,h4,h5,h6
     margin-bottom: 8px
     p
       margin-bottom: 16px
+.book-now-card
+  border: 1px solid #e8e8e8
+  background: #ffffff
+  position: relative
+  top: -80px
+  padding: 24px
+  z-index: 98
+  border-radius: 6px
 .pricing-md
   em
     text-decoration: line-through
     font-style: normal
     color: #787878
     margin-right: 4px
+  strong
+    font-size: 24px
 
 .tour-img-main
-  height: 280px
+  height: 40vh
   background-size: cover
   background-position: 50% 50%
   position: relative
   +tablet
-    height: 400px
+    height: 47vh
   +desktop
-    height: 544px
+    height: 55vh
   .images-btn-left, .images-btn-right
     position: absolute
     border-radius: 50px
