@@ -21,7 +21,7 @@ function downloadImage() {
       console.log('wrote jpg, starting sqip');
       const result = sqip({
         filename: './modules/temp/test.jpg',
-        numberOfPrimitives: 30,
+        numberOfPrimitives: 5,
         blur: 12
       });
       console.log('sqip worked!');
