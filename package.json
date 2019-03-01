@@ -25,6 +25,7 @@
     "moment": "^2.22.2",
     "netlify-lambda": "^1.4.2",
     "nuxt": "^2.4.0",
+    "sqip": "^0.3.3",
     "stripe": "^6.25.1",
     "vue-date-pick": "^1.1.0",
     "vue-markdown": "^2.2.4",
