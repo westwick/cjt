@@ -46,9 +46,10 @@ export default {
   },
   methods: {
     loadImage() {
-      const img = new Image();
-      img.onload = () => this.loaded = true;
-      img.src = this.fullImgPath;
+      this.loaded = true;
+      // const img = new Image();
+      // img.onload = () => this.loaded = true;
+      // img.src = this.fullImgPath;
     },
     imgDone() {
       this.done = true;
