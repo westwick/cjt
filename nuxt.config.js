@@ -128,7 +128,16 @@ module.exports = {
   workbox: {
     runtimeCaching: [{
       urlPattern: 'https://ucarecdn.com/.*',
-      handler: 'cacheFirst'
+      handler: 'cacheFirst',
+      method: 'GET',
+      strategyOptions: {
+        cacheName: 'ucare-cdn-images',
+        cacheableResponse: { statuses: [0, 200] },
+        cacheExpiration: {
+          maxEntries: 50,
+          maxAgeSeconds: 300
+        }
+      }
     }]
   }
 }

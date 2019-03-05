@@ -2,7 +2,7 @@
   <figure @click="$emit('click', $event)" class="omg-img">
     <img v-if="!done" :src="previewImgPath" :alt="alt" class="preview" />
     <transition name="reveal" v-on:after-enter="imgDone()">
-      <img v-if="loaded" class="loaded" :class="{ 'complete': done }" :src="fullImgPath" :alt="alt" />
+      <img v-if="loaded" class="loaded" :class="{ 'complete': done }" :src="fullImgPath" :alt="alt" crossorigin="anonymous" />
     </transition>
   </figure>
 </template>
