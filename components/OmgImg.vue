@@ -2,7 +2,7 @@
   <figure @click="$emit('click', $event)" class="omg-img">
     <img v-if="!done" :src="previewImgPath" :alt="alt" class="preview" />
     <transition name="reveal" v-on:after-enter="imgDone()">
-      <img v-if="loaded" class="loaded" :class="{ 'complete': done }" :src="fullImgPath" :alt="alt" crossorigin="anonymous" />
+      <img v-if="loaded" class="loaded" :class="{ 'complete': done }" :src="fullImgPath" :alt="alt" crossorigin="anonymous" @error="imgError()" />
     </transition>
   </figure>
 </template>
@@ -53,6 +53,10 @@ export default {
     },
     imgDone() {
       this.done = true;
+    },
+    imgError() {
+      this.loaded = false;
+      this.done = false;
     }
   }
 };
