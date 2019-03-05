@@ -15,7 +15,7 @@
         <div class="tours-view-as" :class="{gridView: viewMode === 'grid'}">
 
             <div class="card tour-card" v-for="tour in tours" :key="tour.title">
-              <img class="img-main" src="~/assets/generated/test.svg" @click="$router.push({path: tour._path})" v-bind:alt="tour.title">
+              <omgimg :src="tour.thumbnail" :alt="tour.title" @click="$router.push({path: tour._path})"></omgimg>
               <div class="card-content">
                 <h2><span class="toursort" v-if="showSort">{{ tour.sort }}</span><nuxt-link :to="tour._path">{{ tour.title }}</nuxt-link></h2>
                 <div class="tour-infos">
@@ -50,10 +50,11 @@
 <script>
 import AppSpinner from '~/components/AppSpinner.vue';
 import AppModal from '~/components/AppModal.vue';
+import OmgImg from '~/components/OmgImg.vue';
 
 export default {
   components: {
-    AppSpinner, AppModal
+    AppSpinner, AppModal, 'omgimg': OmgImg
   },
   data() {
     return {
