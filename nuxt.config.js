@@ -127,7 +127,7 @@ module.exports = {
   },
   workbox: {
     runtimeCaching: [{
-      urlPattern: 'https://my-cdn.com/.*',
+      urlPattern: 'https://ucarecdn.com/.*',
       handler: 'cacheFirst'
     }]
   }
