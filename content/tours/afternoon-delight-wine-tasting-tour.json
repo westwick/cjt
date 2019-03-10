@@ -1,9 +1,7 @@
 {
-  "rezid": "2",
   "body": "See the Santa Ynez valley and enjoy a later start time without missing the fun! Please Note: There is no stop for lunch on this tour. We recommend that you have a late breakfast or an early lunch before your tour. If you would like a lunch stop included please see our 'Wine Country Tour' below. Tour includes door to door transportation from anywhere in Santa Barbara. Your guide will escort you through the beautiful Santa Ynez wine country where you will enjoy wine tasting at 3 unique venues plus a stop at a working olive oil farm for a olive oil tasting. All tasting fee's are included. Note: due to time restraints we do not include a lunch stop on this tour. You are welcome to bring a snack. A little \"afternoon delight anyone\"?",
   "priceLong": "**$110 Per Person**\n\nIncludes all wine tasting fees and transportation",
   "timeLong": "11:30am - 12:00 Start Time",
-  "ucare": true,
   "thumbnail": "https://ucarecdn.com/277ae637-95cd-4073-ab72-380475ae361a/",
   "timeShort": "11:30am Start Time",
   "allowBooking": true,
@@ -13,6 +11,33 @@
     "/images/uploads/afternoon8.jpg"
   ],
   "priceShort": "$110 Per Person",
+  "tourId": 200,
   "title": "Afternoon Delight Wine Tasting Tour",
+  "booking": {
+    "tickets": [
+      {
+        "label": "Adult",
+        "description": "Ages 21+",
+        "price": 11000
+      },
+      {
+        "label": "Non-Drinker",
+        "price": 7900
+      }
+    ],
+    "includesPickup": true,
+    "startTimes": [
+      {
+        "time": "11:30am"
+      }
+    ],
+    "email": {
+      "startTime": "Between 11:30 - 12:00pm (We will call you on your cell phone when we are almost there to pick you up). The tour leaves the Santa Ynez Valley at 4:45 pm and is designed to get you back to Santa Barbara no later than 5:30 pm. If you do not leave the Santa Ynez Valley at 4:45 pm you maybe charged $85 for any part of that additional hour.",
+      "private": "If you would like to make your tour private, there is a one time fee of $100 to buy out the vehicle. You can call our office at (805) 564-1819 to make your tour private.",
+      "description": "The tour will visit two of the region's top vineyards and one tasting room. We will also head into the country side and visit a working olive farm where you can taste locally produced olive oil and vinegar. This tour does not stop for lunch, so eat before you come or eat bring along some snacks!",
+      "description2": "All wine tour guests must be over 21 years old and provide valid ID in order to go wine tasting. We do reserve the right to change wineries based on availability or quality/value of the wine being offered.",
+      "gratuity": "Our guides will do everything to make your tour special, please make sure to tip your guide. A standard tip is around $60 - $75."
+    }
+  },
   "sort": "20"
 }
