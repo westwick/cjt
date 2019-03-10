@@ -1,5 +1,4 @@
 {
-  "rezid": "12",
   "body": "This 2.5 - 3 hour guided Santa Barbara kayak tour is an extension of our Harbor kayak tour. Our professionally guided tour includes a kayak lesson/briefing, all kayak gear and paddles. The coastal tour offers breathtaking views of Santa Barbara's famous \"Riviera Coast\". Tour starts at the Harbor and paddles south along the coast before turning around and returning to the Harbor. Hopefully the locals, dolphins, sea lion, harbor seals and marine birds will stop by to say hello. Too much fun! We provide snacks, water, towels, and even a plastic bag to store your wet clothes will be provided.",
   "priceLong": "**$75 per person**",
   "timeLong": "Flexible times, call to schedule!",
@@ -12,6 +11,35 @@
     "/images/uploads/kayakspecial.jpg"
   ],
   "priceShort": "$75 per person",
+  "tourId": 1400,
   "title": "Coastal Kayak Tour",
+  "booking": {
+    "tickets": [
+      {
+        "label": "General",
+        "price": 7500
+      }
+    ],
+    "startTimes": [
+      {
+        "time": "10:30am"
+      },
+      {
+        "time": "12:00pm"
+      },
+      {
+        "time": "1:30pm"
+      },
+      {
+        "time": "3:00pm"
+      }
+    ],
+    "email": {
+      "description": "Our professionally guided 2.5 - 3 hour tour includes a kayak lesson/briefing, all kayak gear and paddles. The coastal tour offers breathtaking views of Santa Barbara's famous \"Riviera Coast\". Tour starts at the Harbor and paddles south along the coast before turning around and returning to the Harbor. Hopefully the dolphins, sea lions, harbor seals, and marine birds will stop by to say hello. We provide snacks, water, towels, and a plastic bag to store your wet clothes.",
+      "description2": "You will want to wear shorts or a swim suit and a light shirt. You may want to bring a sweat shirt, a waterproof jacket or a windbreaker (dress in layers) in case it is cool. You will warm up as you paddle. You might want to bring a change of clothes to change into after the tour. You'll get wet from the water dripping off the paddles. You’re welcome to bring a beverage to enjoy while paddling. We also recommend wearing sunscreen, sunglasses and a hat or visor.",
+      "directions": "PLEASE FOLLOW THE WRITTEN DIRECTIONS BELOW TO MEET YOUR GUIDE. WE DO NOT PROVIDE TRANSPORTATION TO OR FROM THE HARBOR.  Directions: Arrive 15 minutes early for check-in. Our guide will meet you at the boat launch inside the Santa Barbara Harbor.  Exit the 101 freeway at Garden Street.At Garden Street turn away from the mountains (toward the ocean) go 0.3 miles. Turn right on E. Cabrillo Blvd. Drive 0.5 miles and turn left onto HARBOR WAY. Take the FIRST LEFT into the parking lot. Please make sure to take your FIRST LEFT. Take a ticket at Kiosk. (There is a small hourly parking fee.) Then drive forward through the gate. Continue until you come to a second gate, the gate will open automatically; you must get close to the gate.  Continue forward, the BOAT LAUNCH will be on the right about 200 yards. The address is 302 Cabrillo Blvd Santa Barbara CA 93101",
+      "gratuity": "Our guides will do everything to make your tour special, please make sure to tip your guide. A standard tip is around $20 per person"
+    }
+  },
   "sort": "140"
 }
