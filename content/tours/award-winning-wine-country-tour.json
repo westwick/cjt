@@ -1,5 +1,4 @@
 {
-  "rezid": "3",
   "body": "Our most popular tour and an experience you will never forget! This wine country tour will escort your party out of Santa Barbara and through the Los Padres National Forest, offering amazing views of mountains, lakes and sprawling hills.\n\nThis tour will include stops in both of our popular AVAs, the Santa Rita Hills and the Santa Ynez Valley. You will taste wine a 4 unique locations. You’ll also enjoy an olive oil tasting at a local farm  which will enhance your experience of this unique agricultural area. To many of our guests this is the highlight of their day. To further enhance your epicurean adventure we will make a lunch stop (not included in the price) at the Santa Ynez Valley’s Number 1 rated restaurant Trattoria Grappolo. (Mondays a different location will be chosen.)\n\nThe price includes door to door transportation, as well as all tasting fees. We start this tour between 9:00 & 9:30 and drop back off around 5:00 & 5:30. This is a one of a kind experience for those looking for that \"special\" day. Captain Jack guarantees it!\n\nWe have many partner vineyards, and the tour is designed to work with them. If you would like to go to wineries outside of our partners we can book a private/ custom tour. We can also adjust start and end times for the tour as well. If you are interested in putting together a private/ custom tour of the Santa Ynez Valley, just give us a call at 805-564-1819 to go over the details. We are happy to create a tour that can fit in any time constraints or special requests that you may have.",
   "priceLong": "**$125 Per Person**",
   "timeLong": "9:00 - 9:30 am Start Time",
@@ -12,6 +11,35 @@
     "/images/uploads/entrancewide.jpg"
   ],
   "priceShort": "$125 per person",
+  "tourId": 100,
   "title": "Award Winning Wine Country Tour",
+  "booking": {
+    "tickets": [
+      {
+        "label": "Adult",
+        "description": "ages 21+",
+        "price": 12500
+      },
+      {
+        "label": "Non-Drinker",
+        "description": "x",
+        "price": 10500
+      }
+    ],
+    "includesPickup": true,
+    "startTimes": [
+      {
+        "time": "9:00am"
+      }
+    ],
+    "email": {
+      "startTime": "9:00 - 9:30 am (we will call you on your cell phone when we are almost there to pick you up). The tour leaves the Santa Ynez Valley at 4:45 pm and is designed to get you back to Santa Barbara no later than 5:30 pm. If you do not leave the Santa Ynez Valley at 4:45 pm you may be charged $85 for any part of that additional hour.",
+      "private": "(If you would like to make your tour private, there is a one-time fee of $100 to buy out the vehicle).",
+      "description": "We will visit four of the region's top wine tasting rooms and stop for lunch at a famous restaurant (lunch not included in price). You will drive through the beautiful country side of the Santa Ynez Valley on your way to the tasting rooms. The tour will visit three of the region's top vineyards and a Santa Ynez Valley tasting room.  We will also head into the country side and visit a working olive farm where you can taste locally produced olive oils and vinegars.",
+      "description2": "All wine tour guests must be over 21 years old and provide valid ID in order to go wine tasting.",
+      "directions": "x",
+      "gratuity": "Our guides will do everything to make your tour special, please make sure to tip your guide. A standard tip is around $25 - $35 per person."
+    }
+  },
   "sort": "23"
 }
