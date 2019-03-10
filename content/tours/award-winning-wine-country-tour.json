@@ -22,7 +22,7 @@
       },
       {
         "label": "Non-Drinker",
-        "description": "x",
+        "description": "",
         "price": 10500
       }
     ],
@@ -37,7 +37,7 @@
       "private": "(If you would like to make your tour private, there is a one-time fee of $100 to buy out the vehicle).",
       "description": "We will visit four of the region's top wine tasting rooms and stop for lunch at a famous restaurant (lunch not included in price). You will drive through the beautiful country side of the Santa Ynez Valley on your way to the tasting rooms. The tour will visit three of the region's top vineyards and a Santa Ynez Valley tasting room.  We will also head into the country side and visit a working olive farm where you can taste locally produced olive oils and vinegars.",
       "description2": "All wine tour guests must be over 21 years old and provide valid ID in order to go wine tasting.",
-      "directions": "x",
+      "directions": "",
       "gratuity": "Our guides will do everything to make your tour special, please make sure to tip your guide. A standard tip is around $25 - $35 per person."
     }
   },
