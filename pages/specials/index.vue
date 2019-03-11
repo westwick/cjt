@@ -1,11 +1,11 @@
 <template>
   <section class="listing-page">
-    <div class="listing-header specials-hero">
+    <omg-cover class="listing-header specials-hero" :preview="require('~/assets/backgrounds/specialsbg.svg')" :full="require('~/assets/backgrounds/specialsbg.jpg')">
       <div class="container">
         <h1 class="page-title">Captain Jack's Specials</h1>
         <p>Check out our current deals. Here be the proverbial treasure map!</p>
       </div>
-    </div>
+    </omg-cover>
     <section class="container">
       <div class="tours-container listing-container">
         <div class="tour" v-for="tour in specials" :key="tour.title">
@@ -28,12 +28,12 @@
 </template>
 
 <script>
-// import AppLogo from '~/components/AppLogo.vue';
+import OmgCover from '~/components/OmgCover.vue';
 import VueMarkdown from 'vue-markdown'; 
 
 export default {
   components: {
-    // AppLogo,
+    OmgCover,
     VueMarkdown
   },
   data() {

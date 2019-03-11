@@ -1,16 +1,19 @@
 <template>
   <section class="home">
-    <section class="home-hero">
+    <omg-cover class="home-hero"
+      :preview="require('~/assets/backgrounds/cjtbg.svg')" 
+      :full="require('~/assets/backgrounds/cjtbg.jpg')"
+    >
       <div class="container">
         <div class="columns">
           <div class="column is-7">
             <h1>Ahoy Matey!</h1>
             <p>From wine tasting tours, to kayaking and sailing, to horseback-riding and more, Captain Jack's Santa Barbara Tours has something for&nbsp;everyone.</p>
-            <nuxt-link class="home-btn button" to="/tours/"><span class="icon-calendar"></span>Browse Tours</nuxt-link>
+            <nuxt-link class="home-btn button" to="/tours/" style="background: #E22813; width: 204px; color: #fff"><span class="icon-calendar"></span>Browse Tours</nuxt-link>
           </div>
         </div>
       </div>
-    </section>
+    </omg-cover>
     <section class="home-greeting">
       <div class="container">
         <div class="columns is-desktop">
@@ -107,11 +110,11 @@
 </template>
 
 <script>
-// import AppLogo from '~/components/AppLogo.vue';
+import OmgCover from '~/components/OmgCover.vue';
 
 export default {
   components: {
-    // AppLogo
+    OmgCover
   },
   data() {
     // Using webpacks context to gather all files from a folder
@@ -128,7 +131,12 @@ export default {
       _path: `/tours/${key.replace('.json', '').replace('./', '')}`
     }));
 
-    return { posts, tours };
+    const loaded = false;
+
+    return { posts, tours, loaded };
+  },
+  mounted() {
+    
   }
 };
 </script>
@@ -170,16 +178,11 @@ export default {
         margin-bottom: 24px
         text-transform: none
     
-  .home-hero
+  .home-hero.omg-cover-img
     height: 400px
     max-height: 400px
     min-height: 400px
     width: 100vw  
-    background: linear-gradient(to bottom, rgba(20,20,21,.59), rgba(20,20,19,.63)), url('https://ucarecdn.com/63a10e9e-bdbf-44a5-9bd8-d45a1ebd5ef7/-/blur/100/-/quality/lightest/-/resize/x300/cjtbg.jpg')
-    background-size: cover
-    background-position: 50% 100%
-    background-repeat: no-repeat
-    // background-attachment: fixed
     display: flex
     flex-direction: column
     justify-content: center
@@ -189,6 +192,8 @@ export default {
     padding: 0 16px
     @media screen and (min-width: 1400px)
       background-position: 50% 40%
+      .omg-cover-loaded
+        object-position: 50% 40%
 
     +desktop
       padding: 0
@@ -212,7 +217,7 @@ export default {
     transition: all .3s ease-in-out
     &:hover
       color: #fff
-      background: darken($cjred, 5%)
+      background: darken($cjred, 5%) !important
     &:focus
       color: #fff
     span

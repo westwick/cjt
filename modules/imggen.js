@@ -28,7 +28,7 @@ function downloadImage(ucareUrl) {
         const result = sqip({
           filename: './modules/temp/temp.jpg',
           numberOfPrimitives: 30,
-          blur: 0
+          blur: 10
         });
         console.log('sqip worked!');
         fs.writeFile(finalpath, result.final_svg, (err) => {

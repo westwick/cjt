@@ -17,7 +17,7 @@
     "tickets": [
       {
         "label": "Adult",
-        "description": "ages 21+",
+        "description": "Ages 21+",
         "price": 12500
       },
       {

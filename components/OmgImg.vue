@@ -1,8 +1,15 @@
 <template>
   <figure @click="$emit('click', $event)" class="omg-img">
     <img v-if="!done" :src="previewImgPath" :alt="alt" class="preview" />
+    <img v-if="started" 
+           class="omg-preload" 
+           :src="fullImgPath" 
+           crossorigin="anonymous"
+           @load="imgLoaded()"
+           @error="imgError()"
+      />
     <transition name="reveal" v-on:after-enter="imgDone()">
-      <img v-if="loaded" class="loaded" :class="{ 'complete': done }" :src="fullImgPath" :alt="alt" crossorigin="anonymous" @error="imgError()" />
+      <img v-if="loaded" class="loaded" :class="{ 'complete': done }" :src="fullImgPath" :alt="done ? alt : ''" crossorigin="anonymous" @error="imgError()" />
     </transition>
   </figure>
 </template>
@@ -14,6 +21,7 @@ export default {
   props: ['src', 'alt'],
   data() {
     return {
+      started: false,
       loaded: false,
       done: false,
       observer: null
@@ -35,7 +43,7 @@ export default {
         const image = entries[0];
         if (image.isIntersecting) {
           this.observer.disconnect();
-          this.loadImage();
+          this.started = true;
         }
       }, {});
       this.observer.observe(this.$el);
@@ -45,11 +53,8 @@ export default {
     this.observer.disconnect();
   },
   methods: {
-    loadImage() {
+    imgLoaded() {
       this.loaded = true;
-      // const img = new Image();
-      // img.onload = () => this.loaded = true;
-      // img.src = this.fullImgPath;
     },
     imgDone() {
       this.done = true;
@@ -63,6 +68,9 @@ export default {
 </script>
 
 <style lang="sass">
+.omg-preload
+  position: absolute
+  opacity: 0
 .omg-img
   position: relative
   display: block
@@ -75,24 +83,13 @@ export default {
     border: 0
     display: block
   img.preview
-    filter: blur(2vw)
-    transform: scale(1.01)
+    // filter: blur(10px)
+    // transform: scale(1.01)
   img.loaded
     position: absolute
     top: 0
     left: 0
-    will-change: transform, opacity
+    will-change: opacity
   img.loaded.complete
     position: relative
-
-.reveal-enter-active
-  animation: reveal .67s
-
-@keyframes reveal
-  0%
-    transform: scale(1.01)
-    opacity: 0
-  100%
-    transform: scale(1)
-    opacity: 1
 </style>

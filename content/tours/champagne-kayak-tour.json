@@ -17,13 +17,13 @@
     "tickets": [
       {
         "label": "Adult",
-        "description": "Champagne (Ages 21+)",
+        "description": "Champagne",
         "price": 7500
       },
       {
         "label": "General",
         "description": "Sparkling Cider",
-        "price": 7000
+        "price": 7500
       }
     ],
     "startTimes": [

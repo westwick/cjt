@@ -85,6 +85,18 @@ html
   // min-height: 80vh
 h1,h2,h3,h4,h5,h6
   color: $cjdarkred
+.container
+  z-index: 4
+
+.reveal-enter-active
+  animation: reveal 1.67s
+
+@keyframes reveal
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
 .card
   border: none
   border-radius: 10px
@@ -315,12 +327,14 @@ h1,h2,h3,h4,h5,h6
         margin-right: 16px
       &:nth-child(3n)
         margin-right: 0
-    .img-main
+    .omg-img
       padding: 0
       border-radius: 10px 10px 0 0
+      margin: 0
       +tablet
         width: 100%
         max-width: 100%
+        min-width: 100%
 
 
 
@@ -334,24 +348,26 @@ h1,h2,h3,h4,h5,h6
   .img-main
     cursor: auto
 
-.tours-hero
-  background: linear-gradient(to bottom, rgba(20,20,21,.48), rgba(20,20,19,.55)), url('~assets/toursbg.jpg') 66% 80% no-repeat
-  background-size: cover
+.tours-hero.omg-cover-img
+  background-position: 66% 80%
+  .omg-cover-loaded
+    object-position: 66% 80%
   +widescreen
-    background: linear-gradient(to bottom, rgba(20,20,21,.48), rgba(20,20,19,.55)), url('~assets/toursbg.jpg') 66% 66% no-repeat
-    background-size: cover
+    background-position: 66% 66%
+    .omg-cover-loaded
+      object-position: 66% 66%
 
 .charters-hero
-  background: linear-gradient(to bottom, rgba(20,20,21,.48), rgba(20,20,19,.55)), url('~assets/boatchartersbg.jpg') 35% 100% no-repeat
-  background-size: cover
+  background-position: 35% 100%
+  .omg-cover-loaded
+    object-position: 35% 100%
 
 .specials-hero
-  background: linear-gradient(to bottom, rgba(20,20,21,.48), rgba(20,20,19,.55)), url('~assets/specialsbg.jpg') 100% 25% no-repeat
-  background-size: cover
+  background-position: 100% 25%
+  .omg-cover-loaded
+    object-position: 100% 25%
 
 .events-hero
-  background: linear-gradient(to bottom, rgba(20,20,21,.48), rgba(20,20,19,.55)), url('~assets/eventsbg.jpg') 50% 50% no-repeat
-  background-size: cover
 
 .listing-page
   background: #f8f8f8
@@ -496,14 +512,14 @@ h1,h2,h3,h4,h5,h6
       display: block
       clear: both
       overflow: hidden
-      .img-main
+      .omg-img
         float: left
         height: 272px
         width: 440px
     .specials-card
       display: block
       min-height: 272px
-      .img-main
+      .omg-img
         position: absolute
         left: 0
         top: 0

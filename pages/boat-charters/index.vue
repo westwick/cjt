@@ -1,11 +1,11 @@
 <template>
   <section class="listing-page">
-    <div class="listing-header charters-hero">
+    <omg-cover class="listing-header charters-hero" :preview="require('~/assets/backgrounds/boatsbg.svg')" :full="require('~/assets/backgrounds/boatsbg.jpg')">
       <div class="container">
         <h1 class="page-title">Captain Jack's Private Boat Charters</h1>
         <p>Spend a few hours or a whole day aboard our yachts!</p>
       </div>
-    </div>
+    </omg-cover>
     <section class="container">
       <div class="tours-container listing-container">
         <div class="view-as">
@@ -41,10 +41,11 @@
 
 <script>
 import AppModal from '~/components/AppModal'
+import OmgCover from '~/components/OmgCover'
 
 export default {
   components: {
-    AppModal
+    AppModal, OmgCover
   },
   data() {
     return {

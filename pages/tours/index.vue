@@ -1,16 +1,16 @@
 <template>
   <section class="listing-page">
-    <div class="listing-header tours-hero">
+    <omg-cover class="listing-header tours-hero" :preview="require('~/assets/backgrounds/toursbg.svg')" :full="require('~/assets/backgrounds/toursbg.jpg')">
       <div class="container">
         <h1 class="page-title" @click.alt="handleSort">Captain Jack's Tours</h1>
         <p>All tours are available 7 days a week unless otherwise stated. Too much fun stuff!</p>
       </div>
-    </div>
+    </omg-cover>
     <section class="container">
       <div class="tours-container listing-container">
         <div class="view-as">
-          <i class="icon-grid" :class="{selected: viewMode === 'grid'}" @click="viewModeGrid"></i>
-          <i class="icon-list" :class="{selected: viewMode === 'list'}" @click="viewModeList"></i>
+          <i class="icon-grid" :class="{selected: viewMode === 'grid'}" @click="viewModeGrid()"></i>
+          <i class="icon-list" :class="{selected: viewMode === 'list'}" @click="viewModeList()"></i>
         </div>
         <div class="tours-view-as" :class="{gridView: viewMode === 'grid'}">
 
@@ -51,10 +51,11 @@
 import AppSpinner from '~/components/AppSpinner.vue';
 import AppModal from '~/components/AppModal.vue';
 import OmgImg from '~/components/OmgImg.vue';
+import OmgCover from '~/components/OmgCover.vue';
 
 export default {
   components: {
-    AppSpinner, AppModal, 'omgimg': OmgImg
+    AppSpinner, AppModal, 'omgimg': OmgImg, OmgCover
   },
   data() {
     return {
@@ -66,9 +67,16 @@ export default {
   methods: {
     viewModeGrid() {
       this.viewMode = 'grid';
+      if (process.browser) {
+        localStorage.setItem('viewmode', 'grid');
+      }
+      
     },
     viewModeList() {
       this.viewMode = 'list';
+      if (process.browser) {
+        localStorage.setItem('viewmode', 'list');
+      }
     },
     toggleSort() {
       this.showSort = !this.showSort;
@@ -147,8 +155,11 @@ export default {
 
     return { tours };
   },
-  created() {
-
+  mounted() {
+    if (process.browser) {
+      const setting = localStorage.getItem('viewmode');
+      this.viewMode = setting ? setting : 'list';
+    }
   }
 };
 </script>

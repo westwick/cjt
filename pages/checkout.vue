@@ -2,7 +2,7 @@
   <div class="checkout">
     <div class="container" v-if="tour">
       <div class="columns">
-        <div class="column is-5 is-offset-1 is-6-tablet">
+        <div class="column is-5 is-6-tablet is-offset-1-desktop">
           <h1>Tour Details</h1>
           <div class="checkout-card">
             <div class="field">
@@ -65,20 +65,20 @@
               <div class="column is-5">
                 <div class="field">
                   <label class="label">Start Time</label>
-                  <div class="select">
+                  <div class="select" v-if="tour.booking.startTimes.length > 1">
                     <select v-model="time">
-                      <option value="10:30 am">10:30 am</option>
-                      <option value="1:30 pm">1:30 pm</option>
+                      <option v-for="startTime in tour.booking.startTimes" :key="startTime.time" :value="startTime.time">
+                        {{startTime.time}}
+                      </option>
                     </select>
                   </div>
-                  <!--
-                  <div class="control">
-                    <input class="input" type="text" v-model="time" disabled="disabled">
-                  </div>-->
+                  <div class="control" v-if="tour.booking.startTimes.length === 1">
+                    <input class="input" type="text" v-model="time" disabled="true">
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="field">
+            <div class="field" v-if="tour.booking.includesPickup">
               <label class="label optional">Pickup Location <span>(optional)</span></label>
               <div class="control">
                 <input class="input" type="text" placeholder="Hotel or address" v-model="pickup">
@@ -133,17 +133,18 @@
                 <label class="label">Phone Number</label>
                 <input class="input" type="email" placeholder="310-555-1234" v-model="phone"
                   :class="{ 'is-danger': $v.phone.$dirty && $v.phone.$anyError }">
-                <p class="help">Your guide will call you when they are on the way to pick you up.</p>
+                <p class="help" v-if="tour.booking.includesPickup">Your guide will call you when they are on the way to pick you up.</p>
+                <p class="help" v-else>In case we need to reach you on the day of the tour.</p>
                 <p class="error help" v-if="$v.phone.$dirty && !$v.phone.required">* Phone number is required</p>
                 <p class="error help" v-if="$v.email.$dirty && !$v.phone.validPhone">* Invalid phone number</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="column is-4 is-offset-1">
+        <div class="column is-5-tablet is-4-desktop is-offset-1">
           <h1>Summary</h1>
           <div class="checkout-summary checkout-card">
-            <img class="tour-thumbnail" :src="tour.thumbnail" />
+            <img class="tour-thumbnail" :src="tour.thumbnail + '-/scale_crop/220x136/'" />
             <h2>{{ tour.title | noBreak }}</h2>
             <p class="datetime"><i class="icon-calendar"></i> {{ date | dateDisplay }}</p>
             <p class="datetime time"><i class="icon-time"></i> {{ time }}</p>
@@ -155,7 +156,11 @@
             </p>
             <p class="line-item">Booking fee <span>${{ bookingFee | priceFormat }}</span></p>
             <p class="line-item total">Total <span>${{ totalPrice | priceFormat }}</span></p>
-            <button class="button book" @click="bookTour()" :disabled="$v.$dirty && $v.$anyError">Continue to Payment</button>
+            <button class="button book" @click="bookTour()" 
+              :disabled="($v.$dirty && $v.$anyError) || checkingOut || charging">
+              {{ checkingOut || charging ? 'Checking Out' : 'Continue to Payment' }}
+              <div v-if="checkingOut" class="ld-ring ld-spin"></div>
+            </button>
             <span class="help error" v-if="$v.$dirty && !$v.termsAgreed.agreed">
               * You must agree to the terms to continue
             </span>
@@ -169,13 +174,21 @@
     </div>
     <div class="container">
       <div class="columns">
-        <div class="column is-5 is-offset-1 is-6-tablet">
+        <div class="column is-5 is-6-tablet is-offset-1-desktop">
           <div class="assurances">
             <p>All data is sent over a secured and encrypted SSL connection.</p>
             <p>We will never sell your information to any 3rd parties.</p>
             <p>Credit card processing is managed by Stripe.com. Your payment information is never stored or transmitted by our servers.</p>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="checkout-error" v-if="checkoutError">
+      <div class="error-text">
+        <h2>Error</h2>
+        <h4>Sorry, something went wrong during checkout.</h4>
+        <p>Please call or e-mail us to complete your reservation.</p>
+        <button class="button btn-outline" @click="closeError()">Close</button>
       </div>
     </div>
   </div>
@@ -199,6 +212,9 @@ export default {
   },
   data() {
     return {
+      checkingOut: false,
+      charging: false,
+      checkoutError: false,
       dropdownActive: false,
       showVcInfo: false,
       guestname: 'test',
@@ -206,23 +222,11 @@ export default {
       phone: '1231231234',
       pickup: '',
       date: '',
-      time: '10:30 am',
+      time: '',
       dateFormat: 'dddd, MMM D YYYY',
       termsAgreed: false,
-      tickets: [
-        {
-          label: 'Adult',
-          description: '$80.00 - Ages 21+',
-          price: 8000,
-          qty: 2
-        },
-        {
-          label: 'Non-drinker',
-          description: '$50.00',
-          price: 5000,
-          qty: 0
-        }
-      ]
+      tickets: [],
+      stripe: undefined
     }
   },
   validations: {
@@ -278,10 +282,20 @@ export default {
       this.$router.push({path: '/tours'});
     } else {
       document.body.addEventListener('click', this.hideDropdown);
+      this.tickets = this.tour.booking.tickets.map((ticket, idx) => ({
+        label: ticket.label,
+        description: `$${(ticket.price / 100).toFixed(2)}` + (ticket.description ? ` - ${ticket.description}` : ``),
+        price: ticket.price,
+        qty: idx === 0 ? 2 : 0
+      }));
+      this.time = this.tour.booking.startTimes[0].time;
     }
   },
   destroyed() {
     document.body.removeEventListener('click', this.hideDropdown);
+    if (this.stripe) {
+      this.stripe.close();
+    }
   },
   filters: {
     noBreak(value) {
@@ -333,9 +347,9 @@ export default {
       this.showVcInfo = false;
     },
     bookTour() {
-      console.log(this.$v);
       this.$v.$touch()
       if (!this.$v.$invalid) {
+        this.checkingOut = true;
         this.openStripe();
       }
     },
@@ -349,7 +363,13 @@ export default {
         zipCode: true,
         allowRememberMe: false,
         token: (token) => {
-          this.chargeCard(token.id)
+          this.charging = true;
+          this.chargeCard(token.id);
+        },
+        closed: () => {
+          if (!this.charging) {
+            this.checkingOut = false;
+          }
         }
       });
       this.stripe.open({
@@ -360,25 +380,43 @@ export default {
       });
     },
     async chargeCard(token) {
-      const hello = await axios.post('/.netlify/functions/hello', {
-        token,
-        amount: this.totalPrice,
-        totalGuests: this.totalGuests,
-        tour: this.tour,
-        guest: {
-          name: this.guestname,
-          email: this.email,
-          phone: this.phone,
-          pickup: this.pickup
+      try {
+        const result = await axios.post('/.netlify/functions/checkout', {
+          token,
+          tourId: this.tour.tourId,
+          amount: this.totalPrice,
+          tickets: this.ticketsWithQty,
+          date: moment(this.date).format('dddd, MMM D YYYY'),
+          time: this.time,
+          guest: {
+            name: this.guestname,
+            email: this.email,
+            phone: this.phone,
+            pickup: this.pickup
+          }
+        });
+
+        if (result.status === 200 && result.data === 'success') {
+          this.$router.push({path: '/thankyou'});
+        } else {
+          throw new Error('something went wrong');
         }
-      });
-      console.log('charge card result!', hello);
+      } catch(e) {
+        console.error(e);
+        this.checkoutError = true;
+        this.checkingOut = false;
+        this.charging = false;
+      }
     },
+    closeError() {
+      this.checkoutError = false;
+    }
   }
 };
 </script>
 
 <style lang="sass">
+@import "~bulma/sass/utilities/_all.sass"
 .ddbutton
   width: 320px
   justify-content: flex-start
@@ -424,7 +462,9 @@ export default {
     border-color: #363636
 .checkout
   min-height: 50vh
-  padding: 40px 0
+  padding: 40px 16px
+  +desktop
+    padding: 40px 0
   select, .select
     width: 100%
   h1
@@ -585,9 +625,36 @@ export default {
     font-size: 13px
     position: relative
 .assurances
- margin-top: 24px
- padding-top: 32px
- border-top: 1px solid #e8e8e8
- color: #999
- font-size: 13px
+  margin-top: 24px
+  padding-top: 32px
+  border-top: 1px solid #e8e8e8
+  color: #999
+  font-size: 13px
+.checkout-error
+  width: 100vw
+  height: 100vh
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 99999
+  display: flex
+  align-items: center
+  justify-content: center
+  background: rgba(0,0,0,.5)
+  .error-text
+    padding: 24px
+    background: #fff
+    border-radius: 6px
+    text-align: center
+    width: auto
+    max-width: 100%
+    h2
+      font-size: 28px
+      font-weight: bold
+      margin-bottom: 8px
+    h4
+      font-size: 20px
+      margin-bottom: 8px
+    p
+      margin-bottom: 24px
 </style>

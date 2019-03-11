@@ -26,6 +26,8 @@ collections:
     create: true
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     format: 'json'
+    editor:
+      preview: false
     fields:
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Time Short", name: "timeShort", widget: "string", required: false}
@@ -38,12 +40,38 @@ collections:
       - {label: "Body", name: "body", widget: "markdown", required: true}
       - {label: "Sort", name: "sort", widget: "number", required: true}
       - {label: "Allow Online Booking", name: "allowBooking", widget: "boolean", required: false}
-      - {label: "BookingID", name: "rezid", widget: "number", required: false}
+      - {label: "BookingID", name: "tourId", widget: "number", required: false}
+      - label: 'Booking Options'
+        name: 'booking'
+        required: false
+        widget: 'object'
+        fields:
+          - label: 'Tickets'
+            name: 'tickets'
+            widget: 'list'
+            required: false
+            fields:
+              - {label: 'Name', name: 'label', widget: 'string', required: false}
+              - {label: 'Description', name: 'description', widget: 'string', required: false}
+              - {label: 'Price (in cents)', name: 'price', widget: 'number', required: false}
+          - { label: 'Includes Pickup?', name: 'includesPickup', widget: 'boolean', default: false, required: false }
+          - { label: 'Start Times', name: 'startTimes', widget: 'list', required: false, fields: [{label: 'time', name: 'time', widget: 'string'}]}
+          - label: 'Confirmation Email Options'
+            name: 'email'
+            widget: 'object'
+            required: false
+            fields:
+              - { label: 'Start Time', name: 'startTime', widget: 'string', required: false }
+              - { label: 'Private Upgrade', name: 'private', hint: 'Will show after: "This is a PUBLIC tour."', widget: 'string', required: false }
+              - { label: 'Tour Info', name: 'description', widget: 'string', required: false }
+              - { label: 'Other Info', name: 'description2', widget: 'string', required: false }
+              - { label: 'Directions', name: 'directions', widget: 'string', required: false }
+              - { label: 'Gratuity', name: 'gratuity', widget: 'string', required: false }
   - name: "specials"
     label: "Specials"
     folder: "content/specials"
     create: true
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{slug}}"
     format: 'json'
     fields:
       - {label: "Title", name: "title", widget: "string", required: true}
@@ -55,7 +83,7 @@ collections:
     label: "Group Events"
     folder: "content/group-events"
     create: true
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{slug}}"
     format: 'json'
     fields:
       - {label: "Title", name: "title", widget: "string", required: true}
@@ -68,7 +96,7 @@ collections:
     label: "Boat Charters"
     folder: "content/boat-charters"
     create: true
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{slug}}"
     format: 'json'
     fields:
       - {label: "Title", name: "title", widget: "string", required: true}
