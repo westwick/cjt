@@ -65,8 +65,8 @@ collections:
               - { label: 'Private Upgrade', name: 'private', hint: 'Will show after: "This is a PUBLIC tour."', widget: 'string', required: false }
               - { label: 'Tour Info', name: 'description', widget: 'string', required: false }
               - { label: 'Other Info', name: 'description2', widget: 'string', required: false }
-              - { label: 'Directions', name: 'directions', widget: 'string', required: false }
               - { label: 'Gratuity', name: 'gratuity', widget: 'string', required: false }
+              - { label: 'Include Boatlaunch Directions', name: 'directions', widget: 'boolean', default: false, required: false }
   - name: "specials"
     label: "Specials"
     folder: "content/specials"
