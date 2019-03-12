@@ -1,13 +1,9 @@
-if (!process.env.CJT_ENV) {
-  require('dotenv').config()
-}
-
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+const stripe = require("stripe")('xx');
 const SNS = require('aws-sdk/clients/sns');
 const AWS = require('aws-sdk/global');
 AWS.config.update({
-  accessKeyId: process.env.AWS_KEY_ID,
-  secretAccessKey: process.env.AWS_SECRET_KEY,
+  accessKeyId: 'xx',
+  secretAccessKey: 'xx',
   region: 'us-west-2'
 });
 

@@ -381,7 +381,7 @@ export default {
     },
     async chargeCard(token) {
       try {
-        const result = await axios.post('/.netlify/functions/reserve', {
+        const result = await axios.post('/.netlify/functions/hello', {
           token,
           tourId: this.tour.tourId,
           amount: this.totalPrice,
