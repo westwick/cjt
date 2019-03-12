@@ -90,7 +90,7 @@ module.exports = {
         automaticNameDelimiter: '.',
         name: undefined,
         cacheGroups: {},
-        minSize: 3000,
+        minSize: 50000,
         maxSize: 200000
       }
     },
