@@ -1,5 +1,4 @@
 {
-  "rezid": "7",
   "body": "This tour will visit many of the prominent sites featured in the movie Sideways and is one of our premium wine tours.\n\nOur guides will fill in the day with facts about wine, the Santa Ynez Valley, and most importantly, tidbits about the movie. We will also stop at an Ostrich Farm where you will get a chance to feed the ostriches!\n\nAt the end of the day we will head to dinner at the Hitching Post, Miles' favorite restaurant, and where his love interest begins. Here you can treat yourself to a delicious meal. (not included in the price) [Learn more about the restaurant here](http://www.hitchingpost2.com/). The tour includes all tasting fees as well as round trip transportation from anywhere in Santa Barbara or Santa Ynez. Tour ends approximately 7:30pm.",
   "priceLong": "**$150 per person**",
   "timeLong": "11:00 - 11:30 am Start Time",
@@ -11,6 +10,33 @@
     "/images/uploads/vineyardladies.jpg"
   ],
   "priceShort": "$150 per person",
+  "tourId": 800,
   "title": "\"Sideways Inspired\" Wine Tour",
+  "booking": {
+    "tickets": [
+      {
+        "label": "Adult",
+        "description": "Ages 21+",
+        "price": 15000
+      },
+      {
+        "label": "Non-Drinker",
+        "price": 12000
+      }
+    ],
+    "includesPickup": true,
+    "startTimes": [
+      {
+        "time": "11:00am"
+      }
+    ],
+    "email": {
+      "startTime": "11:00 - 11:30 (we will call you when we are on the way to pick you up)",
+      "private": "If you would like to make your tour private, there is a one- time fee of $100 to buy out the vehicle. You can call our office at (805) 564-1819 if you would like to make your tour private. ",
+      "description": "We will visit four of the region's top wineries for wine tasting and lunch at a famous restaurant (lunch not included in price). You will drive through a beautiful country side on your way to the Santa Ynez Valley where you will enjoy wine tasting at three of the region's top vineyards and a Santa Ynez Valley tasting room.  We will also stop at an Ostrich Farm where you will get a chance to feed the ostriches!  At the end of the day we will head to dinner at the Hitching Post, Miles' favorite restaurant and where his love interest begins. Here you can treat yourself to a delicious meal (not included in the price). The tour price includes all tasting fees as well as a visit to the ostrich farm and round trip transportation from anywhere in Santa Barbara or Santa Ynez. Tour ends approximately 7:30pm.",
+      "description2": "All wine tour guests must be over 21 years old and provide valid ID in order to go wine tasting.",
+      "gratuity": "Our guides will do everything to make your tour special, please make sure to tip your guide. A standard tip is around $65 - $75."
+    }
+  },
   "sort": "80"
 }
