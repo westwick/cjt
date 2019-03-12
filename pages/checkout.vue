@@ -381,7 +381,7 @@ export default {
     },
     async chargeCard(token) {
       try {
-        const result = await axios.post('/.netlify/functions/checkout', {
+        const result = await axios.post('/.netlify/functions/reserve', {
           token,
           tourId: this.tour.tourId,
           amount: this.totalPrice,
@@ -397,6 +397,14 @@ export default {
         });
 
         if (result.status === 200 && result.data === 'success') {
+          this.$store.commit('setReservation', {
+            guestName: this.guestname,
+            email: this.email,
+            tour: this.tour.title,
+            date: moment(this.date).format('dddd, MMM D YYYY'),
+            totalGuests: this.totalGuests,
+            amountCharged: (this.totalPrice / 100).toFixed(2)
+          });
           this.$router.push({path: '/thankyou'});
         } else {
           throw new Error('something went wrong');

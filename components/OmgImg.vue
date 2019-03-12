@@ -45,7 +45,7 @@ export default {
           this.observer.disconnect();
           setTimeout(() => {
             this.started = true;
-          }, 50);
+          }, 100);
         }
       }, {});
       this.observer.observe(this.$el);
@@ -58,7 +58,7 @@ export default {
     imgLoaded() {
       setTimeout(() => {
         this.loaded = true;
-      }, 50)
+      }, 100)
     },
     imgDone() {
       // console.log('transition end?')

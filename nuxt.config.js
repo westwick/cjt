@@ -84,6 +84,16 @@ module.exports = {
         'postcss-custom-properties': false
       }
     },
+    optimization: {
+      splitChunks: {
+        chunks: 'all',
+        automaticNameDelimiter: '.',
+        name: undefined,
+        cacheGroups: {},
+        minSize: 3000,
+        maxSize: 200000
+      }
+    },
     extend(config, ctx) {
       // Excludes /assets/svg from url-loader
       // console.log('config', config.module.rules);

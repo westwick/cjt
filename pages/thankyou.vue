@@ -12,12 +12,13 @@
                 <p>Please check your inbox for a confirmation email with important information about your&nbsp;tour.</p>
               </div>
               <div class="thank-you-receipt">
-                <div class="booked-tour-info">
-                  <div class="receipt-line"><p>Guest</p><p>John Doe</p></div>
-                  <div class="receipt-line"><p>Tour</p><p>Santa Barbara Wine Tasting</p></div>
-                  <div class="receipt-line"><p>Date</p><p>Saturday, Feb 28 2019</p></div>
-                  <div class="receipt-line"><p>Total Guests</p><p>2</p></div>
-                  <div class="receipt-line"><p>Amount Charged</p><p>$178.23</p></div>
+                <div class="booked-tour-info" v-if="reservation">
+                  <div class="receipt-line"><p>Guest</p><p>{{reservation.guestName}}</p></div>
+                  <div class="receipt-line"><p>Email</p><p>{{reservation.email}}</p></div>
+                  <div class="receipt-line"><p>Tour</p><p>{{reservation.tour}}</p></div>
+                  <div class="receipt-line"><p>Date</p><p>{{reservation.date}}</p></div>
+                  <div class="receipt-line"><p>Total Guests</p><p>{{reservation.totalGuests}}</p></div>
+                  <div class="receipt-line"><p>Amount Charged</p><p>${{reservation.amountCharged}}</p></div>
                 </div>
               </div>
               <div class="thank-you-foot">
@@ -35,21 +36,18 @@
 export default {
   data() {
     return {
-      bookedTour: undefined
-    }
-  },
-  computed: {
-    tour() {
-      return this.$store.state.tour;
+      reservation: undefined
     }
   },
   created() {
-    // if (!this.tour) {
-    //   this.$router.push({path: '/tours'});
-    // } else {
-    //   this.bookedTour = this.tour;
-    //   this.$store.commit('clearTour');
-    // }
+    const rez = this.$store.state.reservation;
+    if (!rez) {
+      this.$router.push({path: '/tours'});
+    } else {
+      this.reservation = rez;
+      this.$store.commit('clearReservation');
+      this.$store.commit('clearTour');
+    }
   }
 }
 </script>
