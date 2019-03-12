@@ -5,7 +5,6 @@
   "thumbnail": "https://ucarecdn.com/60c18c6c-0152-4ffb-87f1-620a3b2dfadc/",
   "timeShort": "9:30, 11:30, 2:00 & 3:30",
   "allowBooking": true,
-  "rezid": "9",
   "gallery": [
     "/images/uploads/cowboywide.jpg",
     "/images/uploads/horseswide.jpg",
@@ -13,5 +12,35 @@
   ],
   "priceShort": "$90 Per Person",
   "title": "Horseback Riding Tours",
-  "sort": "120"
+  "sort": "120",
+  "tourId": 1200,
+  "booking": {
+    "tickets": [
+      {
+        "label": "General",
+        "price": 9500
+      }
+    ],
+    "includesPickup": false,
+    "startTimes": [
+      {
+        "time": "9:30am"
+      },
+      {
+        "time": "11:30am"
+      },
+      {
+        "time": "2:00pm"
+      },
+      {
+        "time": "3:30pm"
+      }
+    ],
+    "email": {
+      "description": "Please Arrive 15 minutes early for scheduled ride. After a brief orientation, your wrangler will take you on a spectacular horseback ride which winds through the forests, past a seasonal waterfall and up to the top of a nearby mountain where you will have beautiful ocean views. Our guides will even stop and take your picture during the tour.",
+      "description2": "Recommendations for horseback riding: Tennis shoes or boots (must wear closed toe shoes). Long pants strongly recommended. Wear a short or long sleeve shirt depending on weather. You may also want to bring sunscreen/sunglasses and a hat or visor. Children must be at least 7 years of age in order to ride.",
+      "gratuity": "Please remember to pat your horse and tip your guide!",
+      "stableDirections": true
+    }
+  }
 }

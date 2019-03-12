@@ -80,22 +80,12 @@ export default {
       this.showModal = false;
     },
     bookTour() {
-      this.$store.commit('setTour', this.tour);
-      this.$router.push({ path: '/checkout' });
-      // this.stripe = StripeCheckout.configure({
-      //   key: 'pk_test_xAGAZgjFcuyzjB1CTB3v60zp',
-      //   image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
-      //   locale: 'auto',
-      //   token: (token) => {
-      //     this.chargeCard(token.id)
-      //   }
-      // });
-      // this.stripe.open({
-      //   email: 'something@alreadydone.com',
-      //   name: 'Carbonxleague',
-      //   description: 'hehehe',
-      //   amount: 2000
-      // });
+      if (this.allowBooking) {
+        this.$store.commit('setTour', this.tour);
+        this.$router.push({ path: '/checkout' });
+      } else {
+        this.showModal = true;
+      }
     },
     getFrameSrc() {
       return 'https://booking.bookinghound.com/rezfe/book.aspx?og=34ebafa9-092a-4e28-aa18-cbd5c5d7cd11&g=null&fcs=null&fca=null&fcg=null&af=null&uniqueId=' + this.rezid + '&mode=a&phref=http://captainjackstours.com&ifstyle=overlay';
