@@ -20,6 +20,7 @@
     "bulma": "^0.7.1",
     "bulma-tooltip": "^2.0.2",
     "cross-env": "^5.2.0",
+    "dotenv": "^6.2.0",
     "lodash": "^4.17.11",
     "moment": "^2.22.2",
     "netlify-lambda": "^1.4.2",
