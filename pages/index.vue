@@ -103,7 +103,7 @@
             </div>
           </div>
         </div>
-        <a href="https://www.bbb.org/us/ca/santa-barbara/profile/tour-operators/captain-jack-s-tours-events-1236-92027231/#sealclick" target="_blank" rel="nofollow"><img src="~/assets/bbb-seal.png" alt="Captain Jack's Tours BBB Business Review" /></a>
+        <a href="https://www.bbb.org/us/ca/santa-barbara/profile/tour-operators/captain-jack-s-tours-events-1236-92027231/#sealclick" target="_blank" rel="noreferrer"><img src="~/assets/bbb-seal.png" alt="Captain Jack's Tours BBB Business Review" /></a>
       </div>
     </section>
   </section>

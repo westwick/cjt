@@ -4,6 +4,7 @@
            class="omg-preload" 
            :class="{ 'omg-cover-loaded': loaded}" 
            :src="fullImgPath" 
+           alt="cover photo"
            crossorigin="anonymous"
            @load="imgLoaded()"
            @error="imgError()"
@@ -38,9 +39,9 @@ export default {
     }
   },
   mounted() {
-    this.$nextTick(() => {
+    setTimeout(() => {
       this.started = true;
-    });
+    }, 200);
   },
   methods: {
     imgLoaded() {
