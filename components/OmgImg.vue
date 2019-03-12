@@ -2,15 +2,15 @@
   <figure @click="$emit('click', $event)" class="omg-img">
     <img v-if="!done" :src="previewImgPath" :alt="alt" class="preview" />
     <img v-if="started" 
-           class="omg-preload" 
+           class="omg-full" 
            :src="fullImgPath" 
            crossorigin="anonymous"
+           :class="{ 'omg-preload': !done && !loaded, 'complete': done, 'loaded': loaded }"
+           :alt="done ? alt : ''"
+           @transitionend="imgDone()"
            @load="imgLoaded()"
            @error="imgError()"
       />
-    <transition name="reveal" v-on:after-enter="imgDone()">
-      <img v-if="loaded" class="loaded" :class="{ 'complete': done }" :src="fullImgPath" :alt="done ? alt : ''" crossorigin="anonymous" @error="imgError()" />
-    </transition>
   </figure>
 </template>
 
@@ -43,7 +43,9 @@ export default {
         const image = entries[0];
         if (image.isIntersecting) {
           this.observer.disconnect();
-          this.started = true;
+          setTimeout(() => {
+            this.started = true;
+          }, 50);
         }
       }, {});
       this.observer.observe(this.$el);
@@ -54,12 +56,18 @@ export default {
   },
   methods: {
     imgLoaded() {
-      this.loaded = true;
+      setTimeout(() => {
+        this.loaded = true;
+      }, 50)
     },
     imgDone() {
-      this.done = true;
+      // console.log('transition end?')
+      setTimeout(() => {
+        this.done = true;
+      }, 2000)
     },
     imgError() {
+      this.started = false;
       this.loaded = false;
       this.done = false;
     }
@@ -82,14 +90,15 @@ export default {
     height: auto
     border: 0
     display: block
-  img.preview
-    // filter: blur(10px)
-    // transform: scale(1.01)
-  img.loaded
-    position: absolute
-    top: 0
-    left: 0
-    will-change: opacity
-  img.loaded.complete
-    position: relative
+    &.omg-full
+      will-change: opacity
+      opacity: 0
+      transition: opacity .95s ease-in-out
+      &.loaded
+        position: absolute
+        top: 0
+        left: 0
+        opacity: 1
+      &.complete
+        position: relative
 </style>

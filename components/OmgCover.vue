@@ -2,20 +2,12 @@
   <div class="omg-cover-img" :style="previewBackgroundStyle">
     <img v-if="started" 
            class="omg-preload" 
+           :class="{ 'omg-cover-loaded': loaded}" 
            :src="fullImgPath" 
            crossorigin="anonymous"
            @load="imgLoaded()"
            @error="imgError()"
-      />
-    <transition name="reveal" v-on:after-enter="imgDone()">
-      <img v-if="loaded" 
-           class="omg-cover-loaded" 
-           :class="{ 'complete': done }" 
-           :src="fullImgPath" 
-           crossorigin="anonymous"
-           @error="imgError()"
-      />
-    </transition>
+    />
     <div class="omg-content"><slot></slot></div>
   </div>
 </template>
@@ -46,19 +38,15 @@ export default {
     }
   },
   mounted() {
-    setTimeout(() => {
+    this.$nextTick(() => {
       this.started = true;
-    }, 50);
-  },
-  destroyed() {
-    
+    });
   },
   methods: {
-    imgDone() {
-      this.done = true;
-    },
     imgLoaded() {
-      this.loaded = true;
+      this.$nextTick(() => {
+        this.loaded = true;
+      });
     },
     imgError() {
       this.loaded = false;
@@ -70,8 +58,19 @@ export default {
 
 <style lang="sass">
 .omg-preload
-  position: absolute
   opacity: 0
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  object-fit: cover
+  object-position: center
+  z-index: 2
+  will-change: opacity
+  transition: opacity 1.67s ease-in-out
+  &.omg-cover-loaded
+    opacity: 1
 .omg-cover-img
   position: relative
   background-size: cover
@@ -86,16 +85,6 @@ export default {
     height: 100%
     background: linear-gradient(to bottom, rgba(20, 20, 21, 0.59), rgba(20, 20, 19, 0.63))
     z-index: 3
-
-.omg-cover-loaded
-  position: absolute
-  top: 0
-  left: 0
-  width: 100%
-  height: 100%
-  object-fit: cover
-  object-position: center
-  z-index: 2
 
 .omg-content, .omg-content *
   z-index: 4
