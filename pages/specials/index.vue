@@ -11,7 +11,7 @@
         <div class="tour" v-for="tour in specials" :key="tour.title">
 
           <div class="card tour-card specials-card">
-            <img class="img-main" :src="tour.thumbnail">
+            <img class="omg-img" :src="tour.thumbnail">
             <div class="card-content">
               <h2>{{ tour.title }}</h2>
               <h3>{{ tour.subheader }}</h3>

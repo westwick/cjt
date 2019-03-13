@@ -260,11 +260,20 @@ h1,h2,h3,h4,h5,h6
     cursor: pointer
     +tablet
       border-radius: 0
+      min-width: 350px
+      width: 350px
+      max-width: 350px
+      margin: 16px 0 16px 16px
+      padding: 0
+    +desktop
+      min-width: 380px
+      width: 380px
+      max-width: 380px
+    @media screen and (min-width: 1700px)
       min-width: 412px
       width: 412px
       max-width: 412px
-      margin: 16px 0 16px 16px
-      padding: 0
+
   h2
     margin-top: 8px
     a

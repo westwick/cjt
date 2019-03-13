@@ -18,34 +18,81 @@ const tours = toursContext.keys().map(key => ({
   _path: `/tours/${key.replace('.json', '').replace('./', '')}`
 }));
 
+function validateAndParseInput(req) {
+  if (!req.tourId || !req.amount || !req.token || !req.tickets || !req.date || !req.time) {
+    throw new Error('missing required tour information');
+  }
+
+  if (!req.guest || !req.guest.name || !req.guest.email || !req.guest.phone) {
+    throw new Error('missing required guest information');
+  }
+
+  const tour = tours.find((tour) => tour.tourId === req.tourId);
+
+  if (!tour || !tour.booking || !tour.booking.tickets) {
+    throw new Error('tour not found or missing tickets');
+  }
+  
+  const tickets = [];
+  for (const ticket of req.tickets) {
+    const foundTicket = tour.booking.tickets.find(t => t.label === ticket.label && t.price === ticket.price);
+    if (!foundTicket) {
+      console.log(ticket, tour.booking.tickets);
+      throw new Error('no matching ticket found')
+    }
+    tickets.push({
+      label: foundTicket.label,
+      description: foundTicket.description,
+      price: foundTicket.price,
+      qty: ticket.qty
+    });
+  }
+
+  if (tickets.length < 1) {
+    throw new Error('tickets qty was 0');
+  }
+
+  const itemsForEmail = tickets.map(ticket => ({
+    text: `${ticket.qty} ${(ticket.qty > 1 ? 'Guests' : 'Guest')} @ $${(ticket.price/100).toFixed(2)}`,
+    description: ticket.label + (ticket.description ? ` (${ticket.description})`:''),
+    price: '$ ' + ((ticket.price * ticket.qty)/100).toFixed(2)
+  }));
+  const totalGuests = tickets.reduce((guests, ticket) => guests + ticket.qty, 0);
+  const subtotal = tickets.reduce((t, ticket) => t + (ticket.qty * ticket.price), 0);
+  const total = subtotal + Math.round(subtotal * 0.115, 2);
+  const bookingFee = (Math.round(subtotal * 0.115, 2)/100).toFixed(2);
+  itemsForEmail.push({
+    text: 'Booking fee',
+    price: '$ ' + bookingFee
+  });
+
+  if (!totalGuests || totalGuests < 1) {
+    throw new Error('total guests missing');
+  }
+
+  if (!itemsForEmail || itemsForEmail < 2 || !subtotal || subtotal < 1) {
+    throw new Error('tickets or subtotal was 0');
+  }
+
+  if (total !== req.amount) {
+    throw new Error('reqested total did not match calculated total')
+  }
+
+  return { tour, itemsForEmail, totalGuests, total };
+}
+
 exports.handler = async (event, context) => {
   const req = JSON.parse(event.body);
-  
-  // TODO: validate!!
 
   try {
-    const tour = tours.find((tour) => tour.tourId === req.tourId);
+
+    const { tour, itemsForEmail, totalGuests, total } = validateAndParseInput(req);
 
     const charge = await stripe.charges.create({
-      amount: req.amount,
+      amount: total,
       currency: 'usd',
-      description: 'Example charge',
+      description: tour.title,
       source: req.token,
-    });
-
-    const tickets = req.tickets.map(ticket => ({
-      text: `${ticket.qty} ${(ticket.qty > 1 ? 'Guests' : 'Guest')} @ $${(ticket.price/100).toFixed(2)}`,
-      description: ticket.label + (ticket.description ? ` (${ticket.description})`:''),
-      price: '$ ' + ((ticket.price * ticket.qty)/100).toFixed(2)
-    }));
-    const totalGuests = req.tickets.reduce((guests, ticket) => guests + ticket.qty, 0);
-    console.log(totalGuests);
-    const subtotal = req.tickets.reduce((t, ticket) => t + (ticket.qty * ticket.price), 0);
-    console.log(subtotal);
-    const bookingFee = (Math.round(subtotal * 0.115, 2)/100).toFixed(2);
-    tickets.push({
-      text: 'Booking fee',
-      price: '$ ' + bookingFee
     });
 
     const snsParams = {
@@ -54,8 +101,8 @@ exports.handler = async (event, context) => {
         default: JSON.stringify({
           tourId: tour.tourId,
           tourName: tour.title,
-          items: tickets,
-          total: '$ ' + (req.amount/100).toFixed(2),
+          items: itemsForEmail,
+          total: '$ ' + (total/100).toFixed(2),
           tourIncludesPickup: !!tour.booking.includesPickup,
           tourDate: req.date,
           tourTime: tour.booking.email.startTime ? tour.booking.email.startTime : req.time,
@@ -63,13 +110,14 @@ exports.handler = async (event, context) => {
           tourDescription2: tour.booking.email.description2,
           tourGratuity: tour.booking.email.gratuity,
           tourPrivate: tour.booking.email.private,
-          tourDirections: tour.booking.email.directions,
+          tourBoatlaunchDirections: tour.booking.email.boatlaunchDirections,
+          tourStableDirections: tour.booking.email.stableDirections,
           tourImage: tour.thumbnail + '-/scale_crop/220x136/',
           totalGuests: totalGuests,
           guestName: req.guest.name,
           guestEmail: req.guest.email,
           guestPhone: req.guest.phone,
-          guestPickup: req.guest.pickup
+          guestPickup: tour.booking.includesPickup && !req.guest.pickup ? '(Please let us know)' : req.guest.pickup
         })
       }),
       TopicArn: 'arn:aws:sns:us-west-2:633019810821:orders'

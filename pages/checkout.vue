@@ -32,11 +32,13 @@
                           &mdash;
                         </div>
                         <div class="ticker-count">{{ ticket.qty }}</div>
-                        <div class="ticker-add" @click="addGuest(ticket)">+</div>
+                        <div class="ticker-add" @click="addGuest(ticket)" :class="{ 'disabled': totalGuests >= 12 }">
+                          +
+                        </div>
                       </div>
                     </div>
                     <div class="dropdown-item">
-                      <p>Some ticket notes or whatever?</p>
+                      <p>Please call us for groups over 12 people.</p>
                     </div>
                   </div>
                 </div>
@@ -217,9 +219,9 @@ export default {
       checkoutError: false,
       dropdownActive: false,
       showVcInfo: false,
-      guestname: 'test',
-      email: 'testing@test.com',
-      phone: '1231231234',
+      guestname: '',
+      email: '',
+      phone: '',
       pickup: '',
       date: '',
       time: '',
@@ -318,6 +320,7 @@ export default {
     },
     isDateDisabled(date) {
       const currentDate = new Date();
+      currentDate.setDate(currentDate.getDate() + 1);
       return date <= currentDate;
     },
     toggleDropdown() {
@@ -333,7 +336,7 @@ export default {
       this.showVcInfo = false;
     },
     addGuest(ticket) {
-      if (ticket.qty < 15) {
+      if (this.totalGuests < 12) {
         ticket.qty++;
       }
     },
