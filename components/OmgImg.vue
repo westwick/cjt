@@ -55,7 +55,9 @@ export default {
     }
   },
   destroyed() {
-    this.observer.disconnect();
+    if ("IntersectionObserver" in window) {
+      this.observer.disconnect();
+    }
   },
   methods: {
     imgLoaded() {
