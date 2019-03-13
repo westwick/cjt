@@ -90,8 +90,8 @@ module.exports = {
         automaticNameDelimiter: '.',
         name: undefined,
         cacheGroups: {},
-        minSize: 50000,
-        maxSize: 200000
+        // minSize: 50000,
+        // maxSize: 200000
       }
     },
     extend(config, ctx) {
@@ -145,7 +145,7 @@ module.exports = {
         cacheableResponse: { statuses: [0, 200] },
         cacheExpiration: {
           maxEntries: 50,
-          maxAgeSeconds: 300
+          maxAgeSeconds: 3000
         }
       }
     }]
