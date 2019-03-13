@@ -4,7 +4,6 @@
     <img v-if="started" 
            class="omg-full" 
            :src="fullImgPath" 
-           crossorigin="anonymous"
            :class="{ 'omg-preload': !done && !loaded, 'complete': done, 'loaded': loaded }"
            :alt="done ? alt : ''"
            @transitionend="imgDone()"
