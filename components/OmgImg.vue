@@ -49,6 +49,10 @@ export default {
         }
       }, {});
       this.observer.observe(this.$el);
+    } else {
+      setTimeout(() => {
+        this.started = true;
+      }, 500);
     }
   },
   destroyed() {
