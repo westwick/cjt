@@ -80,7 +80,7 @@ export default {
       this.showModal = false;
     },
     bookTour() {
-      if (this.allowBooking) {
+      if (this.tour.allowBooking) {
         this.$store.commit('setTour', this.tour);
         this.$router.push({ path: '/checkout' });
       } else {

@@ -97,36 +97,6 @@ export default {
     },
     closeModal() {
       this.showModal = false;
-    },
-    getFrameSrc(tour) {
-      return 'https://booking.bookinghound.com/rezfe/book.aspx?og=34ebafa9-092a-4e28-aa18-cbd5c5d7cd11&g=null&fcs=null&fca=null&fcg=null&af=null&uniqueId=' + tour.rezid + '&mode=a&phref=http://captainjackstours.com&ifstyle=overlay';
-    },
-    detectIE() {
-        var ua = window.navigator.userAgent;
-
-        var msie = ua.indexOf('MSIE ');
-        if (msie > 0) {
-          // IE 10 or older => return version number
-          // return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
-          return true;
-        }
-
-        var trident = ua.indexOf('Trident/');
-        if (trident > 0) {
-          // IE 11 => return version number
-          // var rv = ua.indexOf('rv:');
-          // return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
-          return true;
-        }
-
-        // var edge = ua.indexOf('Edge/');
-        // if (edge > 0) {
-          // Edge (IE 12+) => return version number
-          // return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
-        // }
-
-        // other browser
-        return false;
     }
   },
   asyncData() {
