@@ -3,11 +3,6 @@
 
 <head>
   {{ HEAD }}
-</head>
-
-<body {{ BODY_ATTRS }}>
-  {{ APP }}
-
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
   <script>
     WebFont.load({
@@ -16,6 +11,10 @@
       }
     });
   </script>
+</head>
+
+<body {{ BODY_ATTRS }}>
+  {{ APP }}
 </body>
 
 </html>
