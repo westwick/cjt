@@ -16,7 +16,7 @@
               <h2>{{ tour.title }}</h2>
               <h3>{{ tour.subheader }}</h3>
               <h3>{{ tour.subheader2 }}</h3>
-              <vue-markdown>{{ tour.body }}</vue-markdown>
+              <vue-marked>{{ tour.body }}</vue-marked>
 
             </div>
           </div>
@@ -29,12 +29,12 @@
 
 <script>
 import OmgCover from '~/components/OmgCover.vue';
-import VueMarkdown from 'vue-markdown'; 
+import VueMarked from 'vue-marked'; 
 
 export default {
   components: {
     OmgCover,
-    VueMarkdown
+    VueMarked
   },
   data() {
     // Using webpacks context to gather all files from a folder

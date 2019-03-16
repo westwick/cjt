@@ -6,7 +6,7 @@
           <div class="blog-post booking-complete" v-if="true">
             <div class="thank-you-card">
               <div class="thank-you-head">
-                <img src="~/assets/success.jpg" />
+                <img src="~/assets/images/success.jpg" />
                 <h1>Thank You!</h1>
                 <p>Your tour has been booked.</p>
                 <p>Please check your inbox for a confirmation email with important information about your&nbsp;tour.</p>

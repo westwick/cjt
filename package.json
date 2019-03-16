@@ -22,13 +22,13 @@
     "cross-env": "^5.2.0",
     "dotenv": "^6.2.0",
     "lodash": "^4.17.11",
-    "moment": "^2.22.2",
+    "moment-mini": "^2.22.1",
     "netlify-lambda": "^1.4.2",
     "nuxt": "^2.4.5",
     "sqip": "^0.3.3",
     "stripe": "^6.25.1",
     "vue-date-pick": "^1.1.0",
-    "vue-markdown": "^2.2.4",
+    "vue-marked": "^0.1.1",
     "vuelidate": "^0.7.4"
   },
   "devDependencies": {

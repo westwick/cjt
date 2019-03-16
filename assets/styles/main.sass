@@ -1,33 +1,19 @@
-@import '~bulma/bulma'
+// dont '~bulma/bulma'
+@import '~bulma/sass/utilities/_all.sass'
+@import '~bulma/sass/base/_all.sass'
+@import '~bulma/sass/grid/columns.sass'
+@import '~bulma/sass/elements/button.sass'
+@import '~bulma/sass/elements/container.sass'
+@import '~bulma/sass/elements/form.sass'
+@import '~bulma/sass/elements/icon.sass'
+@import '~bulma/sass/components/card.sass'
+@import '~bulma/sass/components/dropdown.sass'
+
 @import '~bulma-tooltip'
 @import 'vars'
 @import 'header'
 @import 'footer'
-$vdpColor: $cjblue;
-@import 'vue-date-pick/src/vueDatePick.scss'
-.vdpCell.today
-  color: inherit
-  .vdpCellContent
-    border: 1px solid #e8e8e8
-.vdpCell.disabled
-  color: #c7c7c7
-  opacity: 1
-.vdpCell.outOfRange
-  opacity: .5
-.vdpClearInput
-  display: none
-.vdpComponent
-  display: block
-  font-size: 13px
-.vdpComponent.vdpWithInput > input
-  padding-right: 0
-// .vdpCell.selectable .vdpCellContent
-//   color: #fff
-//   background: $cjblue
-// @media (hover: hover)
-//   .vdpCell.selectable:hover .vdpCellContent
-//     color: #fff
-//     background: lighten($cjblue, 10%)
+
 .input[disabled]
   border-color: #dbdbdb
   box-shadow: inherit
@@ -377,8 +363,6 @@ h1,h2,h3,h4,h5,h6
   .omg-cover-loaded
     object-position: 100% 25%
 
-.events-hero
-
 .listing-page
   background: #f8f8f8
 
@@ -502,13 +486,6 @@ h1,h2,h3,h4,h5,h6
   z-index: 88888
   background: rgba(0,0,0,.765)
 
-.booking-widget
-  width: 320px
-  height: 100vh
-  position: fixed
-  z-index: 99999
-  top: 80px
-  left: calc(50vw - 160px)
 .pleasewait
   color: #fff
   display: block

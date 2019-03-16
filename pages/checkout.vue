@@ -199,7 +199,7 @@
 <script>
 import axios from 'axios';
 import DatePick from 'vue-date-pick';
-import * as moment from 'moment';
+import * as moment from 'moment-mini';
 import Vue from 'vue';
 import Vuelidate from 'vuelidate';
 import { required, minLength, maxLength, email, sameAs, helpers } from 'vuelidate/lib/validators';
@@ -428,6 +428,25 @@ export default {
 
 <style lang="sass">
 @import "~bulma/sass/utilities/_all.sass"
+@import "../assets/styles/vars"
+$vdpColor: $cjblue;
+@import "vue-date-pick/src/vueDatePick.scss"
+.vdpCell.today
+  color: inherit
+  .vdpCellContent
+    border: 1px solid #e8e8e8
+.vdpCell.disabled
+  color: #c7c7c7
+  opacity: 1
+.vdpCell.outOfRange
+  opacity: .5
+.vdpClearInput
+  display: none
+.vdpComponent
+  display: block
+  font-size: 13px
+.vdpComponent.vdpWithInput > input
+  padding-right: 0
 .ddbutton
   width: 320px
   justify-content: flex-start

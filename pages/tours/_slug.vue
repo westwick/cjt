@@ -14,10 +14,10 @@
           <div class="column is-8">
             <h1 @click="test()">{{ tour.title }}</h1>
             <div class="tour-info-body">
-              <vue-markdown>{{ tour.body }}</vue-markdown>
+              <vue-marked>{{ tour.body }}</vue-marked>
               <hr />
               <h3>Schedule</h3>
-              <vue-markdown>{{ tour.timeLong }}</vue-markdown>
+              <vue-marked>{{ tour.timeLong }}</vue-marked>
               <div class="image-preload">
                 <img v-for="g in tour.gallery" :src="g" :key="g"/>
               </div>
@@ -25,7 +25,7 @@
           </div>
           <div class="column is-4">
             <div class="book-now-card">
-              <vue-markdown class="pricing-md" v-if="tour.priceLong">{{ tour.priceLong }}</vue-markdown>
+              <vue-marked class="pricing-md" v-if="tour.priceLong">{{ tour.priceLong }}</vue-marked>
               <button class="button book-now ld-ext-right" @click="bookTour()">
                 Book Now
                 <!-- <div class="ld ld-ring ld-spin"></div> -->
@@ -40,28 +40,21 @@
       </div>
     </div>
 
-    <div class="booking-overlay" v-if="tour.showBooking" @click="closeBooking()">
-      <span class="pleasewait">Please Wait</span>
-      <app-spinner></app-spinner>
-      <iframe class="booking-widget" :src="getFrameSrc()"></iframe>
-    </div>
     <app-modal v-if="showModal" v-on:modal-clicked="closeModal()"></app-modal>
   </section>
 </template>
 
 <script>
-import VueMarkdown from 'vue-markdown'; 
-import AppSpinner from '~/components/AppSpinner'
+import VueMarked from 'vue-marked'; 
 import AppModal from '~/components/AppModal'
 
 export default {
   components: {
-    VueMarkdown, AppSpinner, AppModal
+    VueMarked, AppModal
   },
   data() {
     return {
       galleryIndex: 0,
-      showBooking: false,
       showModal: false,
       stripe: undefined
     }
@@ -73,9 +66,6 @@ export default {
     galleryRight() {
       this.galleryIndex++
     },
-    closeBooking() {
-      this.showBooking = false;
-    },
     closeModal() {
       this.showModal = false;
     },
@@ -86,9 +76,6 @@ export default {
       } else {
         this.showModal = true;
       }
-    },
-    getFrameSrc() {
-      return 'https://booking.bookinghound.com/rezfe/book.aspx?og=34ebafa9-092a-4e28-aa18-cbd5c5d7cd11&g=null&fcs=null&fca=null&fcg=null&af=null&uniqueId=' + this.rezid + '&mode=a&phref=http://captainjackstours.com&ifstyle=overlay';
     }
   },
   computed: {

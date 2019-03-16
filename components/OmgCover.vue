@@ -41,13 +41,13 @@ export default {
   mounted() {
     setTimeout(() => {
       this.started = true;
-    }, 200);
+    }, 80);
   },
   methods: {
     imgLoaded() {
-      this.$nextTick(() => {
+      setTimeout(() => {
         this.loaded = true;
-      });
+      }, 80);
     },
     imgError() {
       this.loaded = false;

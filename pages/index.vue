@@ -24,13 +24,13 @@
           <div class="column is-7-desktop">
             <div class="greeting-images columns is-mobile is-1 is-variable">
               <div class="column is-4">
-                <img src="~/assets/horseride.jpg" alt="Horseback Riding" />
+                <img src="~/assets/images/horseride.jpg" alt="Horseback Riding" />
               </div>
               <div class="column is-4">
-                <img src="~/assets/valley4.jpg" alt="Santa Ynez Wine Tasting" />
+                <img src="~/assets/images/valley4.jpg" alt="Santa Ynez Wine Tasting" />
               </div>
               <div class="column is-4">
-                <img src="~/assets/kayaks.jpg" alt="Santa Barbara Kayaking" />
+                <img src="~/assets/images/kayaks.jpg" alt="Santa Barbara Kayaking" />
               </div>
             </div>
           </div>
@@ -42,9 +42,9 @@
         <div class="columns">
           <div class="column is-4">
             <div class="card">
-              <img class="treasure" src="~/assets/treasure.jpg" alt="treasure chest" />
+              <img class="treasure" src="~/assets/images/treasure.jpg" alt="treasure chest" />
               <div class="treasure-featured">Featured</div>
-              <img class="img-main" src="~/assets/hotel.jpg" alt="Hotel and Wine Tour Special">
+              <img class="img-main" src="~/assets/images/hotel.jpg" alt="Hotel and Wine Tour Special">
               <div class="card-content">
                 <h2>Hotel and Wine Tour Combo</h2>
                 <h3>Only $149 per night Oct 15th – March 14th</h3>
@@ -56,9 +56,9 @@
           </div>
           <div class="column is-4">
             <div class="card">
-              <img class="treasure" src="~/assets/treasure.jpg" alt="treasure chest" />
+              <img class="treasure" src="~/assets/images/treasure.jpg" alt="treasure chest" />
               <div class="treasure-featured">Featured</div>
-              <img class="img-main" src="~/assets/private-charter.jpg" alt="Santa Barbara Private Boat Charters">
+              <img class="img-main" src="~/assets/images/private-charter.jpg" alt="Santa Barbara Private Boat Charters">
               <div class="card-content">
                 <h2>Private Charter Cruises</h2>
                 <h3>Prices start at low as $250 per hour</h3>
@@ -85,25 +85,25 @@
         <p class="awards-text">
           <span class="emoji">🏅🎉</span> Voted <strong>"Best Wine Tour In Santa Barbara"</strong> 5&nbsp;years&nbsp;in&nbsp;a&nbsp;row! <span class="emoji2">🎈🏆</span>
         </p>
-        <img src="~/assets/readersawards.jpg" class="readers-choice-awards" alt="SB News Press Readers Choice Awards" />
+        <img src="~/assets/images/readersawards.jpg" class="readers-choice-awards" alt="SB News Press Readers Choice Awards" />
         <p class="yelp-tripadvisor-text">Great reviews on Yelp and TripAdvisor!</p>
         <div class="columns is-mobile">
           <div class="column is-6-mobile is-3-tablet is-offset-3-tablet">
             <div class="review-container yelp-reviews">
-              <img src="~/assets/yelp.jpg" alt="Yelp Logo" />
+              <img src="~/assets/images/yelp.jpg" alt="Yelp Logo" />
               <p class="reviews-text">4.5 star average on over 250&nbsp;reviews</p>
             </div>
           </div>
           <div class="column is-6-mobile is-3-tablet">
             <div class="review-container">
-              <img src="~/assets/tripadvisor.jpg" alt="Trip Advisor Logo" />
+              <img src="~/assets/images/tripadvisor.jpg" alt="Trip Advisor Logo" />
               <p class="reviews-text">
                 Certificate of Excellence 2012&nbsp;-&nbsp;2018
               </p>
             </div>
           </div>
         </div>
-        <a href="https://www.bbb.org/us/ca/santa-barbara/profile/tour-operators/captain-jack-s-tours-events-1236-92027231/#sealclick" target="_blank" rel="noreferrer"><img src="~/assets/bbb-seal.png" alt="Captain Jack's Tours BBB Business Review" /></a>
+        <a href="https://www.bbb.org/us/ca/santa-barbara/profile/tour-operators/captain-jack-s-tours-events-1236-92027231/#sealclick" target="_blank" rel="noreferrer"><img src="~/assets/images/bbb-seal.png" alt="Captain Jack's Tours BBB Business Review" /></a>
       </div>
     </section>
   </section>
@@ -143,11 +143,11 @@ export default {
 
 <style lang="sass">
   @import "~bulma/sass/utilities/_all.sass"
-  @import '../layouts/vars'
+  @import '../assets/styles/vars'
   .reviews-text
     font-size: 16px !important
   .parrot-card
-    background: url('~assets/specials.jpg')
+    background: url('~assets/images/specials.jpg')
     width: 100%
     height: 100%
     min-height: 500px

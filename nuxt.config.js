@@ -49,7 +49,7 @@ module.exports = {
     ]
   },
   css: [
-    { src: '~layouts/main.sass', lang: 'sass' }
+    { src: '~assets/styles/main.sass', lang: 'sass' }
     // Load a Node.js module directly (here it's a Sass file)
     // 'bulma',
     // CSS file in the project

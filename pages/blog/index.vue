@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import * as moment from 'moment';
+import * as moment from 'moment-mini';
 
 export default {
   methods: {

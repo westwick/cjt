@@ -33,11 +33,6 @@
                   <button class="button book-now" @click="bookTour(tour)">Book Now</button>
                 </div>
               </div>
-              <div class="booking-overlay" v-if="tour.showBooking" @click="closeBooking(tour)">
-                <span class="pleasewait">Please Wait</span>
-                <app-spinner></app-spinner>
-                <iframe class="booking-widget" :src="getFrameSrc(tour)"></iframe>
-              </div>
             </div>
 
         </div>
@@ -48,14 +43,13 @@
 </template>
 
 <script>
-import AppSpinner from '~/components/AppSpinner.vue';
 import AppModal from '~/components/AppModal.vue';
 import OmgImg from '~/components/OmgImg.vue';
 import OmgCover from '~/components/OmgCover.vue';
 
 export default {
   components: {
-    AppSpinner, AppModal, 'omgimg': OmgImg, OmgCover
+    AppModal, 'omgimg': OmgImg, OmgCover
   },
   data() {
     return {
@@ -91,9 +85,6 @@ export default {
       } else {
         this.showModal = true;
       }
-    },
-    closeBooking(tour) {
-      tour.showBooking = false;
     },
     closeModal() {
       this.showModal = false;
