@@ -6,6 +6,10 @@ var requireContext = require('require-context');
 
 function downloadImage(ucareUrl) {
   return new Promise(async (resolve, reject) => {
+    // make sure ucareUrl doesnt have any filters applied
+    if (ucareUrl.indexOf('/-') > 0) {
+      ucareUrl = ucareUrl.substring(0, ucareUrl.indexOf('/-') + 1)
+    }
     const id = ucareUrl.substring(ucareUrl.indexOf('.com/')+5, ucareUrl.length - 1);
     const finalpath = path.resolve(__dirname, '../assets/generated', id + '.svg')
 
