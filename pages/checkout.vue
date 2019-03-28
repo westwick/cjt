@@ -361,7 +361,7 @@ export default {
         return;
       }
       this.stripe = StripeCheckout.configure({
-        key: 'pk_test_sHJs1gS0MV4DC3530Edy7iFF',
+        key: 'pk_live_4zSenUfp7SBxms0r2ZTBQ5ei',
         locale: 'auto',
         zipCode: true,
         allowRememberMe: false,
