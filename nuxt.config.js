@@ -13,9 +13,20 @@ var dynamicRoutes = getDynamicPaths({
 
 
 module.exports = {
+  mode: 'universal',
   modules: [
+    // '@nuxtjs/axios',
+    // '@nuxtjs/bulma',
     '@nuxtjs/pwa',
+    '@nuxtjs/proxy',
+    '~/modules/imggen'
   ],
+  // proxy: {
+  //   '/.netlify': {
+  //     target: 'http://localhost:9000',
+  //     pathRewrite: {'^/.netlify/functions': ''},
+  //   },
+  // },
   // manifest for PWA
   manifest: {
     short_name: 'Captain Jack\'s Tours',
@@ -38,7 +49,7 @@ module.exports = {
     ]
   },
   css: [
-    { src: '~layouts/main.sass', lang: 'sass' }
+    { src: '~assets/styles/main.sass', lang: 'sass' }
     // Load a Node.js module directly (here it's a Sass file)
     // 'bulma',
     // CSS file in the project
@@ -67,19 +78,54 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: [
-      'babel-polyfill'
-    ],
+    // analyze: true,
     postcss: {
       plugins: {
         'postcss-custom-properties': false
       }
     },
-    /*
-    ** Run ESLint on save
-    */
-    extend(config, { isDev, isClient }) {
-      if (isDev && isClient) {
+    optimization: {
+      splitChunks: {
+        chunks: 'all',
+        automaticNameDelimiter: '.',
+        name: undefined,
+        cacheGroups: {},
+        // minSize: 50000,
+        // maxSize: 200000
+      }
+    },
+    extend(config, ctx) {
+      // Excludes /assets/svg from url-loader
+      // console.log('config', config.module.rules);
+      config.module.rules.forEach(rule => {
+        // console.log(rule)
+        if (rule.use) {
+          // console.log('*** Rule:')
+          // console.log(rule)
+          // console.log('*** use:')
+          // console.log(rule.use)
+        }
+      })
+      const urlLoader = config.module.rules.find((rule) => rule.use && rule.use[0].loader === 'url-loader')
+      console.log(urlLoader);
+      urlLoader.use[0].options.limit = 3000;
+      // console.log(urlLoader);
+      // urlLoader.exclude = /(assets\/svg)/
+      // urlLoader.query.limit = 3000;
+      
+
+
+      // config.module.rules.push({
+      //   test: /\.(jpe?g|svg)$/,
+      //   loader: 'url-loader',
+      //   query: {
+      //     limit: 3000, // 1kB
+      //     name: 'img/[name].[hash:7].[ext]'
+      //   }
+      // });
+
+      // run eslint on save
+      if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
@@ -88,6 +134,21 @@ module.exports = {
         })
       }
     }
+  },
+  workbox: {
+    runtimeCaching: [{
+      urlPattern: 'https://ucarecdn.com/.*',
+      handler: 'staleWhileRevalidate',
+      method: 'GET',
+      strategyOptions: {
+        cacheName: 'ucare-cdn-images',
+        // cacheableResponse: { statuses: [0, 200] },
+        // cacheExpiration: {
+        //   maxEntries: 50,
+        //   maxAgeSeconds: 3000
+        // }
+      }
+    }]
   }
 }
 

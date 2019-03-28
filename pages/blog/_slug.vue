@@ -6,7 +6,7 @@
           <div class="blog-post">
           <h1>{{ title }}</h1>
           <p class="blog-info">Posted by Captain Jack</p>
-          <vue-markdown>{{ body }}</vue-markdown>
+          <vue-marked>{{ body }}</vue-marked>
           </div>
         </div>
       </div>
@@ -15,11 +15,11 @@
 </template>
 
 <script>
-import VueMarkdown from 'vue-markdown'; 
+import VueMarked from 'vue-marked'; 
 
 export default {
   components: {
-    VueMarkdown
+    VueMarked
   },
   async asyncData({ params }) {
     // const postPromise = process.BROWSER_BUILD

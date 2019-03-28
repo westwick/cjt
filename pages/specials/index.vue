@@ -1,22 +1,22 @@
 <template>
   <section class="listing-page">
-    <div class="listing-header specials-hero">
+    <omg-cover class="listing-header specials-hero" :preview="require('~/assets/backgrounds/specialsbg.svg')" :full="require('~/assets/backgrounds/specialsbg.jpg')">
       <div class="container">
         <h1 class="page-title">Captain Jack's Specials</h1>
         <p>Check out our current deals. Here be the proverbial treasure map!</p>
       </div>
-    </div>
+    </omg-cover>
     <section class="container">
       <div class="tours-container listing-container">
         <div class="tour" v-for="tour in specials" :key="tour.title">
 
           <div class="card tour-card specials-card">
-            <img class="img-main" :src="tour.thumbnail">
+            <img class="omg-img" :src="tour.thumbnail">
             <div class="card-content">
               <h2>{{ tour.title }}</h2>
               <h3>{{ tour.subheader }}</h3>
               <h3>{{ tour.subheader2 }}</h3>
-              <vue-markdown>{{ tour.body }}</vue-markdown>
+              <vue-marked>{{ tour.body }}</vue-marked>
 
             </div>
           </div>
@@ -28,13 +28,13 @@
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue';
-import VueMarkdown from 'vue-markdown'; 
+import OmgCover from '~/components/OmgCover.vue';
+import VueMarked from 'vue-marked'; 
 
 export default {
   components: {
-    AppLogo,
-    VueMarkdown
+    OmgCover,
+    VueMarked
   },
   data() {
     // Using webpacks context to gather all files from a folder

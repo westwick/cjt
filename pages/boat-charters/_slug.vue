@@ -14,7 +14,7 @@
           <div class="column is-8">
             <h1>{{ title }}</h1>
             <div class="tour-info-body">
-              <vue-markdown>{{ body }}</vue-markdown>
+              <vue-marked>{{ body }}</vue-marked>
               <hr />
               <h3>Group Sizes</h3>
               <p>{{ groupSizes }}</p>
@@ -25,7 +25,7 @@
           </div>
           <div class="column is-4">
             <h3>Pricing</h3>
-            <vue-markdown>{{ priceLong }}</vue-markdown>
+            <vue-marked>{{ priceLong }}</vue-marked>
             <button class="button book-now" @click="bookTour()">Book Now</button>
             <div class="contact">
               <p><i class="icon-envelope-o"></i><a href="mailto:hello@captainjackstours.com">hello@captainjackstours.com</a></p>
@@ -40,12 +40,12 @@
 </template>
 
 <script>
-import VueMarkdown from 'vue-markdown';
+import VueMarked from 'vue-marked';
 import AppModal from '~/components/AppModal'
 
 export default {
   components: {
-    VueMarkdown, AppModal
+    VueMarked, AppModal
   },
   data() {
     return {

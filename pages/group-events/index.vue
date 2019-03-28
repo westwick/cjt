@@ -1,11 +1,11 @@
 <template>
   <section class="listing-page">
-    <div class="listing-header events-hero">
+    <omg-cover class="listing-header events-hero" :preview="require('~/assets/backgrounds/eventsbg.svg')" :full="require('~/assets/backgrounds/eventsbg.jpg')">
       <div class="container">
         <h1 class="page-title">Captain Jack's Group Events</h1>
         <p>Check out some ideas below for group or custom tours. If you can dream it, chances are we can do it!</p>
       </div>
-    </div>
+    </omg-cover>
     <section class="container">
       <div class="tours-container listing-container">
         <div class="view-as">
@@ -15,7 +15,7 @@
         <div class="tours-view-as" :class="{gridView: viewMode === 'grid'}">
 
             <div class="card tour-card" v-for="tour in tours" :key="tour.title">
-              <img class="img-main" :src="tour.thumbnail" @click="$router.push({path: tour._path})" v-bind:alt="tour.title">
+              <img class="omg-img" :src="tour.thumbnail" @click="$router.push({path: tour._path})" v-bind:alt="tour.title">
               <div class="card-content">
                 <h2><nuxt-link :to="tour._path">{{ tour.title }}</nuxt-link></h2>
                 <div class="tour-infos">
@@ -40,10 +40,11 @@
 
 <script>
 import AppModal from '~/components/AppModal'
+import OmgCover from '~/components/OmgCover.vue';
 
 export default {
   components: {
-    AppModal
+    AppModal, OmgCover
   },
   data() {
     return {
@@ -63,6 +64,12 @@ export default {
     },
     bookTour() {
       this.showModal = true;
+    }
+  },
+  mounted() {
+    if (process.browser) {
+      const setting = localStorage.getItem('viewmode');
+      this.viewMode = setting ? setting : 'list';
     }
   },
   asyncData() {

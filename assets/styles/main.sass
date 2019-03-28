@@ -1,7 +1,23 @@
-@import '~bulma/bulma'
+// dont '~bulma/bulma'
+@import '~bulma/sass/utilities/_all.sass'
+@import '~bulma/sass/base/_all.sass'
+@import '~bulma/sass/grid/columns.sass'
+@import '~bulma/sass/elements/button.sass'
+@import '~bulma/sass/elements/container.sass'
+@import '~bulma/sass/elements/form.sass'
+@import '~bulma/sass/elements/icon.sass'
+@import '~bulma/sass/components/card.sass'
+@import '~bulma/sass/components/dropdown.sass'
+
+@import '~bulma-tooltip'
 @import 'vars'
 @import 'header'
 @import 'footer'
+
+.input[disabled]
+  border-color: #dbdbdb
+  box-shadow: inherit
+  cursor: default
 
 a
   transition: all .3s ease-in-out
@@ -55,6 +71,18 @@ html
   // min-height: 80vh
 h1,h2,h3,h4,h5,h6
   color: $cjdarkred
+.container
+  z-index: 4
+
+.reveal-enter-active
+  animation: reveal 1.67s
+
+@keyframes reveal
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
 .card
   border: none
   border-radius: 10px
@@ -81,7 +109,8 @@ h1,h2,h3,h4,h5,h6
     padding-left: 60px
     padding-right: 20px
     top: 11px
-    color: #fec210
+    // color: #fec210
+    color: #886A11
     z-index: 1
     font-size: 20px
     line-height: 23px
@@ -210,16 +239,27 @@ h1,h2,h3,h4,h5,h6
   +tablet
     flex-direction: row
     max-width: 100%
-  .img-main
+  .omg-img
     max-width: 480px
     border-radius: 10px 10px 0 0
     padding: 0
     cursor: pointer
     +tablet
       border-radius: 0
+      min-width: 350px
+      width: 350px
+      max-width: 350px
+      margin: 16px 0 16px 16px
+      padding: 0
+    +desktop
+      min-width: 380px
+      width: 380px
+      max-width: 380px
+    @media screen and (min-width: 1700px)
+      min-width: 412px
       width: 412px
       max-width: 412px
-      padding: 16px 0 16px 16px
+
   h2
     margin-top: 8px
     a
@@ -283,12 +323,14 @@ h1,h2,h3,h4,h5,h6
         margin-right: 16px
       &:nth-child(3n)
         margin-right: 0
-    .img-main
+    .omg-img
       padding: 0
       border-radius: 10px 10px 0 0
+      margin: 0
       +tablet
         width: 100%
         max-width: 100%
+        min-width: 100%
 
 
 
@@ -302,27 +344,30 @@ h1,h2,h3,h4,h5,h6
   .img-main
     cursor: auto
 
-.tours-hero
-  background: linear-gradient(to bottom, rgba(20,20,21,.48), rgba(20,20,19,.55)), url('~/assets/toursbg.jpg') 66% 80% no-repeat
-  background-size: cover
+.tours-hero.omg-cover-img
+  background-position: 66% 80%
+  .omg-cover-loaded
+    object-position: 66% 80%
   +widescreen
-    background: linear-gradient(to bottom, rgba(20,20,21,.48), rgba(20,20,19,.55)), url('~/assets/toursbg.jpg') 66% 66% no-repeat
-    background-size: cover
+    background-position: 66% 66%
+    .omg-cover-loaded
+      object-position: 66% 66%
 
-.charters-hero
-  background: linear-gradient(to bottom, rgba(20,20,21,.48), rgba(20,20,19,.55)), url('~/assets/boatchartersbg.jpg') 35% 100% no-repeat
-  background-size: cover
+.charters-hero.omg-cover-img
+  background-position: 35% 100%
+  .omg-cover-loaded
+    object-position: 35% 100%
 
-.specials-hero
-  background: linear-gradient(to bottom, rgba(20,20,21,.48), rgba(20,20,19,.55)), url('~/assets/specialsbg.jpg') 100% 25% no-repeat
-  background-size: cover
+.specials-hero.omg-cover-img
+  background-position: 100% 25%
+  .omg-cover-loaded
+    object-position: 100% 25%
 
-.events-hero
-  background: linear-gradient(to bottom, rgba(20,20,21,.48), rgba(20,20,19,.55)), url('~/assets/eventsbg.jpg') 50% 50% no-repeat
-  background-size: cover
+.listing-page
+  background: #f8f8f8
 
 .tour-page
-  background: #fff
+  background: #f8f8f8
   padding: 0 0 32px
   h1
     font-size: 24px
@@ -336,9 +381,9 @@ h1,h2,h3,h4,h5,h6
     color: #fff
     width: 100%
     font-size: 20px
-    margin: 16px 0
+    margin: 24px 0
   .contact
-    margin-bottom: 16px
+    margin-bottom: 0
     font-size: 18px
     span, i
       margin-right: 8px
@@ -347,6 +392,11 @@ h1,h2,h3,h4,h5,h6
     padding: 32px 16px
   .tour-info-body
     padding-right: 0
+    h2
+      font-size: 18px
+      margin: 16px 0 8px
+    hr
+      background-color: #d6d5d6
     +tablet
       padding-right: 40px
     +desktop
@@ -356,22 +406,32 @@ h1,h2,h3,h4,h5,h6
     margin-bottom: 8px
     p
       margin-bottom: 16px
+.book-now-card
+  border: 1px solid #e8e8e8
+  background: #ffffff
+  position: relative
+  top: -80px
+  padding: 24px
+  z-index: 98
+  border-radius: 6px
 .pricing-md
   em
     text-decoration: line-through
     font-style: normal
     color: #787878
     margin-right: 4px
+  strong
+    font-size: 24px
 
 .tour-img-main
-  height: 280px
+  height: 40vh
   background-size: cover
   background-position: 50% 50%
   position: relative
   +tablet
-    height: 400px
+    height: 47vh
   +desktop
-    height: 544px
+    height: 55vh
   .images-btn-left, .images-btn-right
     position: absolute
     border-radius: 50px
@@ -426,13 +486,6 @@ h1,h2,h3,h4,h5,h6
   z-index: 88888
   background: rgba(0,0,0,.765)
 
-.booking-widget
-  width: 320px
-  height: 100vh
-  position: fixed
-  z-index: 99999
-  top: 80px
-  left: calc(50vw - 160px)
 .pleasewait
   color: #fff
   display: block
@@ -446,14 +499,14 @@ h1,h2,h3,h4,h5,h6
       display: block
       clear: both
       overflow: hidden
-      .img-main
+      .omg-img
         float: left
         height: 272px
         width: 440px
     .specials-card
       display: block
       min-height: 272px
-      .img-main
+      .omg-img
         position: absolute
         left: 0
         top: 0

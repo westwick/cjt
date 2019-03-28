@@ -14,7 +14,7 @@
           <div class="column is-8">
             <h1>{{ title }}</h1>
             <div class="tour-info-body">
-              <vue-markdown>{{ body }}</vue-markdown>
+              <vue-marked>{{ body }}</vue-marked>
               <div class="image-preload">
                 <img v-for="g in gallery" :src="g" :key="g"/>
               </div>
@@ -35,12 +35,12 @@
 </template>
 
 <script>
-import VueMarkdown from 'vue-markdown'; 
+import VueMarked from 'vue-marked'; 
 import AppModal from '~/components/AppModal'
 
 export default {
   components: {
-    VueMarkdown, AppModal
+    VueMarked, AppModal
   },
   data() {
     return {

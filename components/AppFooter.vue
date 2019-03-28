@@ -1,12 +1,11 @@
 <template>
   <footer>
     <div class="crow-container">
-      <img src="~/assets/crowsnest.png" class="crowsnest" alt="Pirate in Crowsnest" />
+      <img src="~assets/images/crowsnest.png" class="crowsnest" alt="Pirate in Crowsnest" />
     </div>
     <div class="container">
       <div class="columns">
         <div class="column is-3">
-          <!-- <img src="~/assets/logofull.jpg" /> -->
         </div>
         <div class="column is-9">
           <div class="columns is-desktop">

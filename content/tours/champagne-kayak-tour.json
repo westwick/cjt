@@ -1,9 +1,8 @@
 {
-  "rezid": "13",
   "body": "Enjoy the beauty of Santa Barbara and have a toast of the bubbly with that someone special. You can choose between Champagne or Sparkling Cider. Capture the Romance of Santa Barbara. Our professionally guided tour includes a kayak lesson/briefing, all kayak gear and paddles. Your tour starts at the boat launch, winds through the harbor, under Stearns Wharf, and out to the one mile buoy. Chances are good the locals will show up to greet you. Dolphins, California sea lions, and harbor seals may cruise by to say hello.",
-  "priceLong": "**$70 per person**",
+  "priceLong": "**$75 per person**",
   "timeLong": "Timing is flexible, call to book\n\nTour typically lasts 60-90 minutes",
-  "thumbnail": "/images/uploads/champagnekayak_thumb.jpg",
+  "thumbnail": "https://ucarecdn.com/b124519f-0f51-421c-855f-bbcb696253ce/",
   "timeShort": "By Appointment",
   "allowBooking": true,
   "priceSpecial": "",
@@ -11,7 +10,33 @@
     "/images/uploads/champagnekayak.jpg",
     "/images/uploads/sunset2.jpg"
   ],
-  "priceShort": "$70 per person",
+  "priceShort": "$75 per person",
+  "tourId": 1600,
   "title": "Champagne Kayak Tour",
+  "booking": {
+    "tickets": [
+      {
+        "label": "Adult",
+        "description": "Champagne",
+        "price": 7500
+      },
+      {
+        "label": "General",
+        "description": "Sparkling Cider",
+        "price": 7500
+      }
+    ],
+    "startTimes": [
+      {
+        "time": "4:00pm"
+      }
+    ],
+    "email": {
+      "description": "Enjoy the beauty of Santa Barbara and have a toast of the bubbly with that someone special. You can choose between Champagne or Sparkling Cider. Capture the Romance of Santa Barbara. Our professionally guided tour includes a kayak lesson/briefing, all kayak gear and paddles. Your tour starts at the boat launch, winds through the harbor, under Stearns Wharf, and out to the one mile buoy. You’ll stop twice along the way to have a toast and drink some bubbly. Chances are good the locals will show up to greet you. Dolphins, California sea lions, and harbor seals may cruise by to say hello.",
+      "description2": "You will want to wear shorts or a swim suit and a light shirt. You may want to bring a sweat shirt, a waterproof jacket or a windbreaker (dress in layers) in case it is cool. You will warm up as you paddle. You might want to bring a change of clothes to change into after the tour. You'll get wet from the water dripping off the paddles. You’re welcome to bring a beverage to enjoy while paddling. We also recommend wearing sunscreen, sunglasses and a hat or visor.",
+      "boatlaunchDirections": true,
+      "gratuity": "Gratuity: Our guides will do everything to make your tour special, please make sure to tip your guide. A standard tip is around $20 per person."
+    }
+  },
   "sort": "160"
 }

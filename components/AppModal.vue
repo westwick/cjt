@@ -1,10 +1,8 @@
 <template>
   <div class="calltobook-container">
     <div class="modal-overlay" @click="$emit('modal-clicked')">
-      <span class="pleasewait">Please Wait</span>
-      <app-spinner></app-spinner>
     </div>
-    <div class="calltobook" v-if="showContent">
+    <div class="calltobook">
       <h2>Online Booking Unavailable</h2>
       <p class="notice">To book this tour, please call or e-mail&nbsp;us.</p>
       <div class="contact">
@@ -16,24 +14,7 @@
 </template>
 
 <script>
-import AppSpinner from './AppSpinner'
-
 export default {
-  data() {
-    return {
-      showContent: false
-    }
-  },
-  components: { AppSpinner },
-  created() {
-    const i = Math.random() * (2000 - 500) + 500;
-    setTimeout(() => {
-      this.showContent = true;
-    }, i);
-  },
-  methods: {
-
-  }
 };
 </script>
 
