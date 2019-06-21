@@ -7,7 +7,7 @@
           <h1>Frequently Asked Questions</h1>
           <p class="blog-info">Posted by Captain Jack</p>
           <h2>How do I make a reservation?</h2>
-          <p>Some tours can be booked online and other bookings over the phone. We are open from 8am - 5pm every day. Please call us at (805) 886-1697 to make your reservation. Payment is due at the time of booking and can be made by visa or mastercard.</p>
+          <p>Some tours can be booked online and other bookings over the phone. We are open from 8am - 5pm every day. Please call us at (805) 564-1819 to make your reservation. Payment is due at the time of booking and can be made by visa or mastercard.</p>
 
           <h2>How far in advance do I need to reserve?</h2>
           <p>If you are planning your tour for a Saturday, which is always our busiest day, we recommend booking 2 - 3 weeks in advance. For any other day of the week, we appreciate 2 - 3 days notice. For large groups it is always best to give us as much advance notice as possible. In some cases we can accommodate same day requests, but we appreciate as much notice as you can give us.</p>

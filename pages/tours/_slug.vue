@@ -32,7 +32,7 @@
               </button>
               <div class="contact">
                 <p><i class="icon-envelope-o"></i><a href="mailto:hello@captainjackstours.com">hello@captainjackstours.com</a></p>
-                <p><i class="icon-phone"></i><a href="tel:1-805-886-1697">(805) 886-1697</a></p>
+                <p><i class="icon-phone"></i><a href="tel:1-805-564-1819">(805) 564-1819</a></p>
               </div>
             </div>
           </div>

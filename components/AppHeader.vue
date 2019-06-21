@@ -27,7 +27,7 @@
               </button>
             </div>
             <div class="contact">
-              <a href="tel:1-805-886-1697"><span class="icon-phone"></span> (805) 886-1697</a>
+              <a href="tel:1-805-564-1819"><span class="icon-phone"></span> (805) 564-1819</a>
             </div>
           </div>
         </div>
@@ -40,7 +40,7 @@
         <nuxt-link to="/group-events/">Group Events</nuxt-link>
         <nuxt-link to="/specials/">Specials</nuxt-link>
       </div>
-      <p>Call us <a href="tel:1-805-886-1697"><span class="icon-phone"></span> (805) 886-1697</a></p>
+      <p>Call us <a href="tel:1-805-564-1819"><span class="icon-phone"></span> (805) 564-1819</a></p>
     </div>
   </section>
 </template>
