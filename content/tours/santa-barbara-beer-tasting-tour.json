@@ -18,11 +18,11 @@
       {
         "label": "Adult",
         "description": "Ages 21+",
-        "price": 8500
+        "price": 9900
       },
       {
         "label": "Non-Drinker",
-        "price": 7500
+        "price": 8500
       },
       {},
       {}
