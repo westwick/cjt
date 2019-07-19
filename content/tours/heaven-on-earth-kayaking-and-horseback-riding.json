@@ -1,7 +1,6 @@
 {
-  "rezid": "5",
   "body": "This may well be the closest to \"heaven\" you will ever get...in this lifetime. Captain Jack's Santa Barbara Tours is proud to offer our most breathtaking tour ever. This tour combines an ocean kayak tour with a horseback ride. During your morning kayak tour at the beautiful and famous \"smugglers cove\" (Refugio Beach) chances are good that the locals will show up to greet you. Dolphins, sea lions, and the migratory Grey Whale may cruise by (in the distance) to say hello. Next, you'll be transported to a secluded resort nestled between a babbling brook and evergreen sycamore trees where you'll enjoy a delicious lunch (lunch not included in price).\n\nAfter lunch, back into the transport, and off to one of the most breathtaking, scenic guided horseback rides on earth. This ride features spectacular oceans views throughout the ride. Find out why President Ronald Reagan, Michael Jackson, and Brad Pitt, having the ability to live anywhere in the world, chose California’s Central Coast to call their home. Spend the day with Captain Jack, and you too will see why Captain Jack calls this the \"Heaven on Earth\" Tour.\n\n**Tour Includes**: Round-trip transportation, all kayak gear, kayak lesson/brief (kayak knowledge and special athletic ability NOT required), scenic guided horseback ride, no previous riding experience necessary (must be 12 or older), all California Park and Recreation fees, professional, knowledgeable and courteous guides.",
-  "priceLong": "**$225 per person**",
+  "priceLong": "**$250 per person**",
   "timeLong": "**9:30am Start Time**\n\nStart time can vary based on season, weather or other factors, please call for questions about specific dates.",
   "thumbnail": "https://ucarecdn.com/e54e31b6-0658-4286-95f5-48579341b7ef/",
   "timeShort": "9:30am Start Time",
@@ -10,10 +9,9 @@
     "/images/uploads/refugiowide.jpg",
     "/images/uploads/bluffthumb.jpg"
   ],
-  "priceShort": "$225 per person",
-  "title": "Heaven on Earth Kayaking and Horseback Riding",
-  "sort": "60",
+  "priceShort": "$250 per person",
   "tourId": 600,
+  "title": "Heaven on Earth Kayaking and Horseback Riding",
   "booking": {
     "tickets": [
       {
@@ -34,5 +32,6 @@
       "description2": "All wine tour guests must be over 21 years old and provide valid ID in order to go wine tasting.",
       "gratuity": "Our guides will do everything to make your tour special, please make sure to tip your guide. A standard tip is around $60 - $75."
     }
-  }
+  },
+  "sort": "60"
 }
