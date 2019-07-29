@@ -1,9 +1,9 @@
 {
   "body": "This tour includes three of Captain Jack’s favorite things. You’ll share his love of horses, great wine and the beauty of the Central Coast. We offer door to door transportation from any location in the Santa Barbara area. The day begins with a scenic drive up the coast to a privately owned rustic ranch. It may look a little like a movie set than a ranch but you can rest assured this ranch and the wranglers are the real deal. Your wrangler will guide you on this beautiful horseback ride that winds through the forest and up into the Santa Ynez Mountains where you’ll enjoy spectacular views of the Pacific Ocean and the Channel Islands. They’ll tell you stories, some of these stories may even be true! After the ride you will be driven a popular local restaurant for lunch(lunch not included in price). Following lunch, we will head to the Santa Rita Hills Wine Trail. Here you will witness some of the most beautiful scenery in the Santa Ynez Valley. We will escort you to two of the region’s top wineries where you’ll enjoy some of California’s finest wines. Captain Jack's will then pour you back into Santa Barbara.",
   "priceLong": "**$215 per person**",
-  "timeLong": "**10:30am Start Time**",
+  "timeLong": "8:30am Start Time",
   "thumbnail": "https://ucarecdn.com/3572d8cf-0e45-4069-95c5-41f6a4f832a5/",
-  "timeShort": "10:30am Start Time",
+  "timeShort": "8:30am Start Time",
   "allowBooking": true,
   "gallery": [
     "/images/uploads/horseandwinewide.jpg",
@@ -28,11 +28,11 @@
     "includesPickup": true,
     "startTimes": [
       {
-        "time": "10:30am"
+        "time": "8:30am"
       }
     ],
     "email": {
-      "startTime": "10:00 - 10:30am (we will call you on your cell phone when we are almost there to pick you up).",
+      "startTime": "8:15am-8:30am (we will call you on your cell phone when we are almost there to pick you up).",
       "private": "(If you would like to make your tour private please call our office at (805) 564-1819. There is a one- time fee of $100 to buy out the vehicle.)",
       "description": "We offer door to door transportation from any location in the Santa Barbara area. The day begins between 10:00-10:30 with a scenic drive up the coast to a privately owned rustic ranch. It may look more like a movie set than a ranch but you can rest assured this ranch and the wranglers are the real deal. Your wrangler will guide you on this beautiful horseback ride that winds through the forest and up into the Santa Ynez Mountains where you’ll enjoy spectacular views of the Pacific Ocean and the Channel Islands. They’ll tell you stories, some of these stories may even be true! Next you will enjoy lunch at a popular local restaurant (lunch not included in price). Following lunch, we will head to the Santa Rita Hills Wine Trail. Here you will witness some of the most beautiful scenery in the Santa Ynez Valley. We will escort you to two of the region’s top wineries where you’ll enjoy some of California’s finest wines. Captain Jack's will then pour you back into Santa Barbara by 5:30.",
       "description2": "All wine tour guests must be over 21 years old and provide valid ID in order to go wine tasting.",
