@@ -56,6 +56,7 @@ collections:
               - {label: 'Price (in cents)', name: 'price', widget: 'number', required: false}
           - { label: 'Includes Pickup?', name: 'includesPickup', widget: 'boolean', default: false, required: false }
           - { label: 'Start Times', name: 'startTimes', widget: 'list', required: false, fields: [{label: 'time', name: 'time', widget: 'string'}]}
+          - { label: 'Minimum Guests', name: 'minGuests', widget: 'number', required: false }
           - label: 'Confirmation Email Options'
             name: 'email'
             widget: 'object'

@@ -27,7 +27,7 @@
                       <div class="ticket-stepper">
                         <div class="ticker-subtract"
                           @click="removeGuest(ticket)"
-                          :class="{ 'disabled': ticket.qty <= 0 || totalGuests === 1 }"
+                          :class="{ 'disabled': ticket.qty <= 0 || totalGuests === minGuests }"
                         >
                           &mdash;
                         </div>
@@ -38,7 +38,8 @@
                       </div>
                     </div>
                     <div class="dropdown-item">
-                      <p>Please call us for groups over 12 people.</p>
+                      <p class="min-guests">This tour has a {{ minGuests }} guest minimum. If you have less, please call us to join an existing tour.</p>
+                      <p>For groups over 12 people, please contact us for group rates and special accommodations.</p>
                     </div>
                   </div>
                 </div>
@@ -277,6 +278,9 @@ export default {
     },
     datePickClass() {
       return this.$v.$dirty && !this.$v.date.required ? 'input is-danger' : 'input';
+    },
+    minGuests() {
+      return this.tour.booking.minGuests || 2;
     }
   },
   created() {
@@ -288,7 +292,7 @@ export default {
         label: ticket.label,
         description: `$${(ticket.price / 100).toFixed(2)}` + (ticket.description ? ` - ${ticket.description}` : ``),
         price: ticket.price,
-        qty: idx === 0 ? 2 : 0
+        qty: idx === 0 ? this.minGuests : 0
       }));
       this.time = this.tour.booking.startTimes[0].time;
     }
@@ -341,7 +345,7 @@ export default {
       }
     },
     removeGuest(ticket) {
-      if (ticket.qty > 0 && this.totalGuests > 1) {
+      if (ticket.qty > 0 && this.totalGuests > this.minGuests) {
         ticket.qty--;
       }
     },
@@ -515,6 +519,9 @@ $vdpColor: $cjblue;
   .help.error
     color: #ff3860
     font-weight: bold
+
+.min-guests
+  margin-bottom: 8px
 
 .dropdown-menu
   width: 320px
