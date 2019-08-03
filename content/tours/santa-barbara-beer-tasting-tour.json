@@ -31,6 +31,7 @@
         "time": "11:30am"
       }
     ],
+    "minGuests": 4,
     "email": {
       "startTime": "11:30 - 12:00 (we will call you on your cell phone when we are almost there to pick you up).",
       "private": "(If you would like to make your tour private, there is a one- time fee of $100 to buy out the vehicle.)",
