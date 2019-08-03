@@ -24,9 +24,16 @@
         "label": "Non-Drinker",
         "price": 8500
       },
-      {},
-      {},
-      {}
+      {
+        "label": "Adult",
+        "description": "Ages 21+",
+        "price": 9910
+      },
+      {
+        "label": "Adult",
+        "description": "Ages 21+",
+        "price": 9900
+      }
     ],
     "includesPickup": true,
     "startTimes": [
