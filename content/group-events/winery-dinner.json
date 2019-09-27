@@ -1,12 +1,11 @@
 {
   "title": "Winery Dinner",
-  "groupSizes": "Groups of 15 - 200",
+  "groupSizes": "Groups of 30 - 200",
   "thumbnail": "/images/uploads/winetastinggroupthhumb.jpg",
   "gallery": [
     "/images/uploads/winetastinggroupwide.jpg",
     "/images/uploads/wineeventwide.jpg"
   ],
   "body": "One of our most popular events! Start with a late afternoon wine tasting at one or two wineries, followed by a fully catered dinner at one of the Santa Ynez Valley's premier wineries. Experience the beautiful views of the vineyards and the rolling hills while enjoying a delicious Chicken & Tri-Tip BBQ dinner. This event can be completely customized based on your groups budget and any time constraints. Some options we have done in the past include: large group tours of the wine making process, barrel room tastings, live bands with dinner & more. This event is great for groups with as few as 15 guests as well as groups of 100 or more!",
-  "sort": "10",
-  "allowBooking": true
+  "sort": "10"
 }
