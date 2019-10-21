@@ -85,7 +85,8 @@
         <p class="awards-text">
           <span class="emoji">🏅🎉</span> Voted <strong>"Best Wine Tour In Santa Barbara"</strong> 7&nbsp;years&nbsp;in&nbsp;a&nbsp;row! <span class="emoji2">🎈🏆</span>
         </p>
-        <img src="~/assets/images/readersawards.jpg" class="readers-choice-awards" alt="SB News Press Readers Choice Awards" />
+        <img src="~/assets/images/readerschoice-top.jpg" class="readers-choice-awards" alt="SB News Press Readers Choice Awards" />
+        <img src="~/assets/images/readerschoice-bottom.jpg" class="readers-choice-awards" alt="SB News Press Readers Choice Awards" />
         <p class="yelp-tripadvisor-text">Great reviews on Yelp and TripAdvisor!</p>
         <div class="columns is-mobile">
           <div class="column is-6-mobile is-3-tablet is-offset-3-tablet">
