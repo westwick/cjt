@@ -83,7 +83,7 @@
     <section class="home-awards">
       <div class="container">
         <p class="awards-text">
-          <span class="emoji">🏅🎉</span> Voted <strong>"Best Wine Tour In Santa Barbara"</strong> 5&nbsp;years&nbsp;in&nbsp;a&nbsp;row! <span class="emoji2">🎈🏆</span>
+          <span class="emoji">🏅🎉</span> Voted <strong>"Best Wine Tour In Santa Barbara"</strong> 7&nbsp;years&nbsp;in&nbsp;a&nbsp;row! <span class="emoji2">🎈🏆</span>
         </p>
         <img src="~/assets/images/readersawards.jpg" class="readers-choice-awards" alt="SB News Press Readers Choice Awards" />
         <p class="yelp-tripadvisor-text">Great reviews on Yelp and TripAdvisor!</p>
@@ -98,7 +98,7 @@
             <div class="review-container">
               <img src="~/assets/images/tripadvisor.jpg" alt="Trip Advisor Logo" />
               <p class="reviews-text">
-                Certificate of Excellence 2012&nbsp;-&nbsp;2018
+                Certificate of Excellence 2012&nbsp;-&nbsp;2019
               </p>
             </div>
           </div>
