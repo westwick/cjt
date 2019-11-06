@@ -1,6 +1,6 @@
 {
-  "body": "On the tour you'll enjoy 3 of the area's prime brewing locations. In Santa Barbara, The Brew House is a lively full service restaurant, and M. Special Brewery up North has bands and food trucks rotating on a regular basis and claims what we believe is the longest bar in SB County made from a single piece of a fallen tree. Carpinteria is home to Island Brewing Company and has been brewing award winning beers in this little slice of paradise since 2000, they have won international acclaim for their hand crafted ales. The Beer Tour includes all tasting fees and transportation. At one of these stops you'll be given time to enjoy lunch. (Lunch not included in the price.) Tours of the beer making process are based on the availability of the brewery staff and the discretion of the guide and may not be possible on busy days. This tour has a minimum of 4 people.",
-  "priceLong": "**$99 Per Person**",
+  "body": "On this tour you will enjoy three of the area's prime brewing locations. At the second you'll enjoy lunch which is included in the price along with tasting fees and transportation. Tours of the beer making process are based on the availability of the brewery staff and the discretion of the guide.",
+  "priceLong": "**$125 Per Person**",
   "timeLong": "11:30am - 12 Start Time",
   "thumbnail": "https://ucarecdn.com/8cbc3b95-1608-4751-bd59-a58a5193e866/",
   "timeShort": "11:30am Start Time",
@@ -10,7 +10,7 @@
     "/images/uploads/brewery.jpg",
     "/images/uploads/beers.jpg"
   ],
-  "priceShort": "$99 Per Person",
+  "priceShort": "$125 Per Person",
   "tourId": 1100,
   "title": "Santa Barbara Beer Tasting Tour",
   "booking": {
@@ -34,10 +34,10 @@
     "minGuests": 4,
     "email": {
       "startTime": "11:30 - 12:00 (we will call you on your cell phone when we are almost there to pick you up).",
-      "private": "(If you would like to make your tour private, there is a one- time fee of $100 to buy out the vehicle.)",
-      "description": "Santa Barbara County may be known for its wine, but that's not the only locally-produced beverage receiving raves. The region's micro-breweries give beer lovers a tasting trail of their own. We stop at three of the following breweries, one of which you’ll enjoy a lunch with your beer (not included in price). On the south side, Carpinteria is home to the Island Brewing Company production facility and tasting room. In Santa Barbara, The Brewhouse is a lively, full service restaurant pouring their own beers as well as international brews. Other breweries we visit include Island Brewing Company, M Special Brewery Company , and Figueroa Mountain Brewing Company.",
+      "private": "If you would like to make your tour private, there is a one- time fee of $150 to buy out the vehicle.",
+      "description": "On this tour you will enjoy three of the area's prime brewing locations. At the second you'll enjoy lunch which is included in the price along with tasting fees and transportation. Tours of the beer making process are based on the availability of the brewery staff and the discretion of the guide.",
       "description2": "All beer tour guests must be over 21 years old and provide valid ID in order to go beer tasting.",
-      "gratuity": "Your tour price includes a booking/handling fee. Our guides will do everything to make your tour special, please tip your guide. A standard tip is around 15%-18%."
+      "gratuity": "Our guides will do everything to make your tour special, so please tip your guide."
     }
   },
   "sort": "110"
