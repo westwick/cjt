@@ -1,10 +1,12 @@
 {
   "body": "This tour offers a “taste” of the Old West. Visit two Distilleries (one in Santa Barbara and one in Goleta). One has been family run since 1915 and the proprietor will share with you how their product has been made over the years. The other will give you a behind the scenes tour and allow you to discover their high-quality spirits which represent the agricultural roots of the area. We will then head up to Cold Spring Tavern, a Stagecoach stop from 1865 that now provides a bar and restaurant. Included in the tour price is a tri-tip sandwich (or a menu item of equal value), tasting fees, and transportation. Tour begins at 1 p.m. and departs the Tavern at 5:30 p.m.",
   "timeLong": "1:00 pm",
-  "thumbnail": "https://ucarecdn.com/67afb3ad-b279-4945-ac1d-a658d9c5e229/",
+  "thumbnail": "https://ucarecdn.com/d087776c-a877-4f0c-8315-e14fdc8eeb01/",
   "timeShort": "1:00 pm",
   "allowBooking": true,
-  "gallery": [],
+  "gallery": [
+    "https://ucarecdn.com/c64ba4f8-205c-473e-a955-aad0f7161904/"
+  ],
   "priceShort": "$125.00",
   "title": "Distilleries and the Old West",
   "booking": {
