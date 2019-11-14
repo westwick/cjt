@@ -1,0 +1,24 @@
+{
+  "body": "This tour offers a “taste” of the Old West. Visit two Distilleries (one in Santa Barbara and one in Goleta). One has been family run since 1915 and the proprietor will share with you how their product has been made over the years. The other will give you a behind the scenes tour and allow you to discover their high-quality spirits which represent the agricultural roots of the area. We will then head up to Cold Spring Tavern, a Stagecoach stop from 1865 that now provides a bar and restaurant. Included in the tour price is a tri-tip sandwich (or a menu item of equal value), tasting fees, and transportation. Tour begins at 1 p.m. and departs the Tavern at 5:30 p.m.",
+  "timeLong": "1:00 pm",
+  "thumbnail": "https://ucarecdn.com/67afb3ad-b279-4945-ac1d-a658d9c5e229/",
+  "timeShort": "1:00 pm",
+  "allowBooking": true,
+  "gallery": [],
+  "priceShort": "$125.00",
+  "title": "Distilleries and the Old West",
+  "booking": {
+    "includesPickup": true,
+    "minGuests": 2,
+    "email": {
+      "startTime": "1:00 pm",
+      "private": "This is a PUBLIC tour. (If you would like to make your tour private, there is a one time fee of $150 to buy out the vehicle.)",
+      "description": "This tour offers a “taste” of the Old West. Visit two Distilleries (one in Santa Barbara and one in Goleta). One has been family run since 1915 and the proprietor will share with you how their product has been made over the years. The other will give you a behind the scenes tour and allow you to discover their high-quality spirits which represent the agricultural roots of the area. We will then head up to Cold Spring Tavern, a Stagecoach stop from 1865 that now provides a bar and restaurant. Included in the tour price is a tri-tip sandwich (or a menu item of equal value), tasting fees, and transportation. Tour begins at 1 p.m. and departs the Tavern at 5:30 p.m.",
+      "description2": "All tour guests must be over 21 years old and provide valid ID. Captain Jack's Tours is not responsible for items lost or left behind. Please make sure you check your belongings carefully at the end of the tour.",
+      "gratuity": "Our guides will do everything to make your tour special. Gratuities are always appreciated.",
+      "boatlaunchDirections": false,
+      "stableDirections": false
+    }
+  },
+  "sort": 6
+}
