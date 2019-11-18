@@ -1,18 +1,25 @@
 {
-  "title": "Santa Barbara Site-Seeing Tour",
-  "timeLong": "",
-  "priceShort": "$300 for up to six people",
-  "thumbnail": "https://ucarecdn.com/fcbb114b-5283-4c0b-ab18-db23c295e45d/",
-  "gallery": [
-    "https://ucarecdn.com/e485d721-aebf-43a0-80de-98325f83729c/"
-  ],
   "body": "On this three-hour tour you will learn all about the history and architecture of Santa Barbara. You will visit the Old Mission, Stearns' Wharf, the Presidio and many other fabulous sites.  During the tour your guide will share information about these locations as well as stories about the city. We will also stop at the Santa Barbara Courthouse where you will be invited to climb the clock tower which offers one of Santa Barbara's most beautiful views. If you want to see all that Santa Barbara has to offer, this is the way to do it!",
-  "sort": 7,
+  "timeLong": "",
+  "thumbnail": "https://ucarecdn.com/fcbb114b-5283-4c0b-ab18-db23c295e45d/",
+  "timeShort": "9:00 am Start Time",
+  "allowBooking": true,
+  "gallery": [
+    "https://ucarecdn.com/19093752-8246-4c08-be3a-69fb8941e22e/"
+  ],
+  "priceShort": "$300 for up to six people",
+  "title": "Santa Barbara Site-Seeing Tour",
   "booking": {
-    "includesPickup": false,
+    "includesPickup": true,
+    "minGuests": 2,
     "email": {
+      "startTime": "9:00 am",
+      "private": "This is a PUBLIC tour. (If you would like to make your tour private, there is a one time fee of $150 to buy out the vehicle.)",
+      "description": "On this three-hour tour you will learn all about the history and architecture of Santa Barbara. You will visit the Old Mission, Stearns' Wharf, the Presidio and many other fabulous sites.  During the tour your guide will share information about these locations as well as stories about the city. This tour begins at 9:00 am and finishes at 12:00 pm. ",
+      "description2": "Our guides will do everything to make your tour special, please make sure to tip your guide.If you are driving in to Santa Barbara on the day of the tour, please arrive early and allow time for traffic. If you miss your scheduled pick up time, you are not subject to a refund. Captain Jack's Tours is not responsible for items lost or left behind.",
       "boatlaunchDirections": false,
       "stableDirections": false
     }
-  }
+  },
+  "sort": 7
 }
