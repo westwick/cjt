@@ -11,6 +11,11 @@
   "title": "Santa Barbara Site-Seeing Tour",
   "booking": {
     "includesPickup": true,
+    "startTimes": [
+      {
+        "time": "9:00 am"
+      }
+    ],
     "minGuests": 2,
     "email": {
       "startTime": "9:00 am",
