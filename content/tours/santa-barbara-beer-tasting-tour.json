@@ -1,16 +1,16 @@
 {
   "body": "On this tour you will enjoy three of the area's prime brewing locations. At the second you'll enjoy lunch which is included in the price along with tasting fees and transportation. Tours of the beer making process are based on the availability of the brewery staff and the discretion of the guide.",
-  "priceLong": "**$125 Per Person**",
-  "timeLong": "11:30am - 12 Start Time",
+  "priceLong": "**$125 per person**",
+  "timeLong": "11:30am - 12 start time",
   "thumbnail": "https://ucarecdn.com/8cbc3b95-1608-4751-bd59-a58a5193e866/",
-  "timeShort": "11:30am Start Time",
+  "timeShort": "11:30am start time",
   "allowBooking": true,
   "gallery": [
     "/images/uploads/beertastingwide.jpg",
     "/images/uploads/brewery.jpg",
     "/images/uploads/beers.jpg"
   ],
-  "priceShort": "$125 Per Person",
+  "priceShort": "$125 per person",
   "tourId": 1100,
   "title": "Santa Barbara Beer Tasting Tour",
   "booking": {
