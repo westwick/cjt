@@ -11,6 +11,12 @@
   "priceShort": "$125 per person",
   "title": "Distilleries and the Old West",
   "booking": {
+    "tickets": [
+      {
+        "label": "Adult",
+        "price": 125
+      }
+    ],
     "includesPickup": true,
     "minGuests": 2,
     "email": {
