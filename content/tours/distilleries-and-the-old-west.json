@@ -18,6 +18,11 @@
       }
     ],
     "includesPickup": true,
+    "startTimes": [
+      {
+        "time": "1:00 pm"
+      }
+    ],
     "minGuests": 2,
     "email": {
       "startTime": "1:00 pm",
