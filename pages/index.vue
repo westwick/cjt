@@ -44,13 +44,13 @@
             <div class="card">
               <img class="treasure" src="~/assets/images/treasure.jpg" alt="treasure chest" />
               <div class="treasure-featured">Featured</div>
-              <img class="img-main" src="~/assets/images/hotel.jpg" alt="Hotel and Wine Tour Special">
+              <img class="img-main" src="~/assets/images/tavern.jpg" alt="Distilleries and the Old West">
               <div class="card-content">
-                <h2>Hotel and Wine Tour Combo</h2>
-                <h3>Only $149 per night Oct 15th – March 14th</h3>
-                <h3>Only $169 per night March 15th – Oct 14th</h3>
-                <p>Book any tour through Captain Jack’s Tours and you will qualify for our hotel special. Hotel accommodations are at the newly remodeled La Quinta Inn & Suites. It includes an over-sized room, heated pool, beautiful garden grounds and is located in downtown Santa Barbara. Breakfast, WI-FI & free parking are 'included' in this package – this package is limited in availability. Book any tour with Captain Jack’s tours….and save with our special room rate. Ask for more details.</p>
-                <nuxt-link class="button btn-outline" to="/specials/">View All Specials</nuxt-link>
+                <h2>Distilleries and the Old West</h2>
+                <h3>$125 per person</h3>
+                <h3>1:00pm start time</h3>
+                <p>This tour offers a “taste” of the Old West. Visit two Distilleries (one in Santa Barbara and one in Goleta) along with Cold Spring Tavern, a Stagecoach stop from 1865. The first distillery has been family run since 1915 and the proprietor will share with you how their product has been made over the years. The second will give you a behind the scenes tour and allow you to discover their high-quality spirits which represent the agricultural roots of the area.</p>
+                <nuxt-link class="button btn-outline" to="/tours/distilleries-and-the-old-west/">About This Tour</nuxt-link>
               </div>
             </div>
           </div>
