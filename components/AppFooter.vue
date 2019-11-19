@@ -19,8 +19,8 @@
               </ul>
               <h5>Social Media</h5>
               <ul>
-                <li><a href="https://www.instagram.com/captainjackssantabarbaratours/">Instagram</a></li>
-                <li><a href="https://www.facebook.com/captainjackssantabarbaratours/">Facebook</a></li>
+                <li><a href="https://www.instagram.com/captainjackssantabarbaratours/" target="_blank" rel="noreferrer">Instagram</a></li>
+                <li><a href="https://www.facebook.com/captainjackssantabarbaratours/" target="_blank" rel="noreferrer">Facebook</a></li>
               </ul>
             </div>
             <div class="column is-5-widescreen footer-contact">
