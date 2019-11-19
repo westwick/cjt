@@ -17,6 +17,11 @@
                 <li><nuxt-link to="/blog">Blog</nuxt-link></li>
                 <li><nuxt-link to="/terms">Terms</nuxt-link></li>
               </ul>
+              <h5>Social Media</h5>
+              <ul>
+                <li><a href="https://www.instagram.com/captainjackssantabarbaratours/">Instagram</a></li>
+                <li><a href="https://www.facebook.com/captainjackssantabarbaratours/">Facebook</a></li>
+              </ul>
             </div>
             <div class="column is-5-widescreen footer-contact">
               <h5>Get in touch</h5>
