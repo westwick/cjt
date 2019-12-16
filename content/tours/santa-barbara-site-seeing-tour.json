@@ -10,6 +10,13 @@
   "priceShort": "$300 for up to six people",
   "title": "Santa Barbara Site-Seeing Tour",
   "booking": {
+    "tickets": [
+      {
+        "label": "Adult",
+        "description": "Up to 6 guests",
+        "price": 30000
+      }
+    ],
     "includesPickup": true,
     "startTimes": [
       {
