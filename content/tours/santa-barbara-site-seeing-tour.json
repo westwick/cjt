@@ -3,7 +3,7 @@
   "timeLong": "9:00am start time",
   "thumbnail": "https://ucarecdn.com/fcbb114b-5283-4c0b-ab18-db23c295e45d/",
   "timeShort": "9:00am start time",
-  "allowBooking": true,
+  "allowBooking": false,
   "gallery": [
     "https://ucarecdn.com/19093752-8246-4c08-be3a-69fb8941e22e/"
   ],
