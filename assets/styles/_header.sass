@@ -30,10 +30,16 @@ header.cjt
     .header-left
       height: 100%
       display: flex
+      width: auto
+      +tablet
+        width: 100%
     .header-right
       height: 100%
+      min-width: 0
       display: flex
       align-items: center
+      +desktop
+        min-width: 130px
       .mobile-menu
         display: flex
         align-items: center
@@ -72,7 +78,7 @@ header.cjt
     +desktop
       margin-left: 0
     +widescreen
-      margin-right: 32px
+      margin-right: 0
     a
       height: 100%
       display: flex
@@ -82,7 +88,9 @@ header.cjt
       height: 56px
       width: auto
       +widescreen
-        height: 80px
+        // height: 72px
+        height: auto
+        min-width: 270px
     .logo-small
       display: flex
       min-width: 100%
@@ -96,12 +104,18 @@ header.cjt
         display: flex
   nav 
     display: none
+    width: 100%
     +tablet
       display: flex
       align-items: center
+      justify-content: space-evenly
       padding-left: 16px
+    +desktop
+      padding-left: 0
+    +widescreen
+      padding: 0 16px
     a
-      padding: 0 24px
+      // padding: 0 18px
       color: #e3e3e3
       text-transform: uppercase
       font-weight: bold
@@ -112,7 +126,7 @@ header.cjt
       // border-bottom: 2px solid transparent
       // border-top: 2px solid transparent
       +widescreen
-        padding: 0 32px
+        padding: 0 24px
         font-size: 16px
       &:hover
         color: $cjredbold
@@ -132,7 +146,7 @@ header.cjt
   justify-content: center
   flex-direction: column
   z-index: 50
-  transform: translateY(-196px)
+  transform: translateY(-245px)
   transition: all .3s cubic-bezier(0.68, 0, 0.265, 1.0)
   +tablet
     transform: translateY(0)

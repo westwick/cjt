@@ -10,9 +10,10 @@
             </div>
             <nav>
               <nuxt-link to="/tours/">Tours</nuxt-link>
-              <nuxt-link to="/boat-charters/">Boat Charters</nuxt-link>
-              <nuxt-link to="/group-events/">Group Events</nuxt-link>
+              <nuxt-link to="/boat-charters/">Boat&nbsp;Charters</nuxt-link>
+              <nuxt-link to="/group-events/">Group&nbsp;Events</nuxt-link>
               <nuxt-link to="/specials/">Specials</nuxt-link>
+              <nuxt-link to="/guides/">Guides</nuxt-link>
             </nav>
           </div>
           <div class="header-logo-text">
@@ -39,6 +40,7 @@
         <nuxt-link to="/boat-charters/">Boat Charters</nuxt-link>
         <nuxt-link to="/group-events/">Group Events</nuxt-link>
         <nuxt-link to="/specials/">Specials</nuxt-link>
+        <nuxt-link to="/guides/">Guides</nuxt-link>
       </div>
       <p>Call us <a href="tel:1-805-564-1819"><span class="icon-phone"></span> (805) 564-1819</a></p>
     </div>
