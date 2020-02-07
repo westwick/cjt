@@ -36,7 +36,7 @@
               <div class="guide-details">
                 <h2>Ayla Armstrong</h2>
                 <p class="guide-title">Adventure Guide</p>
-                <p class="guide-about">Ayla love to give tours when she is not working as a teaching assistant at a local
+                <p class="guide-about">Ayla loves to give tours when she is not working as a teaching assistant at a local
   private school.</p>
               </div>
             </div>
