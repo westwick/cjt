@@ -4,7 +4,7 @@
   "timeLong": "11:30am - 12 start time",
   "thumbnail": "https://ucarecdn.com/8cbc3b95-1608-4751-bd59-a58a5193e866/",
   "timeShort": "11:30am start time",
-  "allowBooking": true,
+  "allowBooking": false,
   "gallery": [
     "/images/uploads/beertastingwide.jpg",
     "/images/uploads/brewery.jpg",
