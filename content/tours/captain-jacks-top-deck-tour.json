@@ -4,7 +4,7 @@
   "timeLong": "9:00 - 9:30am start time",
   "thumbnail": "https://ucarecdn.com/d9ac31ed-8606-4e97-811a-fe82560b67c5/",
   "timeShort": "9:00am start time",
-  "allowBooking": true,
+  "allowBooking": false,
   "gallery": [
     "/images/uploads/topdeckwide.jpg",
     "/images/uploads/tastingroomwide.jpg",
