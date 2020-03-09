@@ -4,7 +4,7 @@
   "timeLong": "9:00 - 9:30am start time",
   "thumbnail": "https://ucarecdn.com/dd035c49-71ea-4411-9982-745604795478/",
   "timeShort": "9:00am start time",
-  "allowBooking": false,
+  "allowBooking": true,
   "gallery": [
     "/images/uploads/valley.jpg",
     "/images/uploads/winebottleswide.jpg",
