@@ -4,7 +4,7 @@
   "timeLong": "8:30am start time",
   "thumbnail": "https://ucarecdn.com/3572d8cf-0e45-4069-95c5-41f6a4f832a5/",
   "timeShort": "8:30am start time",
-  "allowBooking": false,
+  "allowBooking": true,
   "gallery": [
     "/images/uploads/horseandwinewide.jpg",
     "/images/uploads/gaineywide.jpg",
