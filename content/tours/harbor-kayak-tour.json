@@ -4,7 +4,7 @@
   "timeLong": "**Daily at 10:30 or 1:30**",
   "thumbnail": "https://ucarecdn.com/25846176-4447-4279-ad57-19bae580b0fd/",
   "timeShort": "Daily at 10:30 or 1:30",
-  "allowBooking": false,
+  "allowBooking": true,
   "priceSpecial": "",
   "gallery": [
     "/images/uploads/groupkayakwide.jpg",
