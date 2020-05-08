@@ -107,6 +107,22 @@
         <a href="https://www.bbb.org/us/ca/santa-barbara/profile/tour-operators/captain-jack-s-tours-events-1236-92027231/#sealclick" target="_blank" rel="noreferrer"><img src="~/assets/images/bbb-seal.png" alt="Captain Jack's Tours BBB Business Review" /></a>
       </div>
     </section>
+    <section class="paradise-retreat">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-3">
+            <img src="~/assets/images/paradise_retreats.svg" />
+          </div>
+          <div class="column is-9">
+            <div class="t-wrap">
+            <p>
+              <a href="https://www.paradiseretreats.com/santa-barbara-activities/captain-jacks-tours/" target="_blank" rel="noreferrer">Click here</a>
+              &nbsp;to see the article about Captain Jack's featured on the Paradise Retreats website.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </section>
 </template>
 
@@ -298,5 +314,16 @@ export default {
         width: 1px
         height: 104px
         background: #eee
-
+  .paradise-retreat
+    padding: 2rem 0
+    background: #686874
+    color: #fff
+    a
+      color: #fff
+      text-decoration: underline
+    .t-wrap
+      display: flex
+      justify-content: center
+      align-items: center
+      height: 100%
 </style>
