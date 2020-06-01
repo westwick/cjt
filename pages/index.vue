@@ -6,7 +6,7 @@
       :full="require('~/assets/backgrounds/cjtbg.jpg')"
     >
       <div class="covid-banner">
-        COVID-19 Update: Only custom tours available during this time on a first come first served basis. Please call us for details.
+        COVID-19 Update: Only private tours available during this time on a first come first served basis. Please call us for details.
       </div>
       <div class="container">
         <div class="columns">
