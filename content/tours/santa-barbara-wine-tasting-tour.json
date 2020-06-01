@@ -4,7 +4,7 @@
   "timeLong": "11 - 11:30am start time",
   "thumbnail": "https://ucarecdn.com/7f9da3e7-1f22-4a1b-bac1-69308f6f70e0/",
   "timeShort": "11:00am start time",
-  "allowBooking": true,
+  "allowBooking": false,
   "gallery": [
     "/images/uploads/winewide.jpg",
     "/images/uploads/tastingroomwide.jpg"
