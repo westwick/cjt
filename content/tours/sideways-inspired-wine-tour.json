@@ -4,7 +4,7 @@
   "timeLong": "11:00 - 11:30am start time",
   "thumbnail": "https://ucarecdn.com/430bb631-7262-4e0c-988c-77f9a640401f/",
   "timeShort": "11:00 - 11:30am start time",
-  "allowBooking": true,
+  "allowBooking": false,
   "gallery": [
     "/images/uploads/grapeswide.jpg",
     "/images/uploads/vineyardladies.jpg"
