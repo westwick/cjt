@@ -5,9 +5,6 @@
       :preview="require('~/assets/backgrounds/cjtbg.svg')" 
       :full="require('~/assets/backgrounds/cjtbg.jpg')"
     >
-      <div class="covid-banner">
-        COVID-19 Update: Only custom tours available during this time on a first come first served basis. Please call us for details.
-      </div>
       <div class="container">
         <div class="columns">
           <div class="column is-7">
@@ -330,13 +327,4 @@ export default {
       justify-content: center
       align-items: center
       height: 100%
-  .covid-banner
-    background-color: rgba(0,0,0,0.5)
-    color: #fff
-    text-align: center
-    padding: 8px
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
 </style>

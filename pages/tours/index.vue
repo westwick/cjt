@@ -3,7 +3,7 @@
     <omg-cover class="listing-header tours-hero" :preview="require('~/assets/backgrounds/toursbg.svg')" :full="require('~/assets/backgrounds/toursbg.jpg')">
       <div class="container">
         <h1 class="page-title" @click.alt="handleSort">Captain Jack's Tours</h1>
-        <p>All tours are available 7 days a week unless otherwise stated. Too much fun stuff!</p>
+        <p>All tours are available 7 days a week unless otherwise stated. Too much fun!</p>
       </div>
     </omg-cover>
     <section class="container">

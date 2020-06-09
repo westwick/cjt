@@ -44,6 +44,9 @@
       </div>
       <p>Call us <a href="tel:1-805-564-1819"><span class="icon-phone"></span> (805) 564-1819</a></p>
     </div>
+    <div class="covid-banner">
+      COVID-19 Update: Only custom tours available during this time on a first come first served basis. Please call us for details.
+    </div>
   </section>
 </template>
 
