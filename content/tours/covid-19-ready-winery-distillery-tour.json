@@ -1,4 +1,13 @@
 {
+  "body": "We are happy to announce our COVID19 ready Winery/Distillery* Tour! We are following strict cleanliness guidelines and will arrive to pick up your party in a fully sanitized vehicle with extra wipes, hand sanitizer, and gloves for all.  \n\nThis tour will pick you up in Santa Barbara and take you to three unique venues in the Santa Ynez Valley as well as a working olive oil farm. Tastings are no longer available, so guests are required to purchase alcohol and food Guests are also required to bring along their own masks.\n\n\\*Choose either one distillery and two winery visits or three winery visits.",
+  "priceLong": "1-2 guests-$300\n\n3-4 guests-$400\n\n5-8 guests-$500\n\n9-12 guests-$800\n\nCall or email to book the tour or if you have any questions.",
+  "timeLong": "10:30 am start time\n\n4:00 pm end time",
+  "thumbnail": "https://ucarecdn.com/1939c487-396d-4c04-8b2d-d153fbfedd51/",
+  "timeShort": "10:30 am",
+  "gallery": [
+    "https://ucarecdn.com/3077a8f7-74c2-4778-b964-194cc36133a4/"
+  ],
+  "title": "COVID19 Ready -  Winery/Distillery* Tour",
   "booking": {
     "includesPickup": false,
     "email": {
@@ -6,11 +15,5 @@
       "stableDirections": false
     }
   },
-  "title": "COVID19 Ready -  Winery/Distillery* Tour",
-  "timeShort": "10:30 am",
-  "timeLong": "10:30 am start time\n\n4:00 pm end time",
-  "priceLong": "1-2 guests-$300\n\n3-4 guests-$400\n\n5-8 guests-$500\n\n9-12 guests-$800\n\nCall or email to book the tour or if you have any questions.",
-  "thumbnail": "https://ucarecdn.com/1939c487-396d-4c04-8b2d-d153fbfedd51/",
-  "body": "We are happy to announce our COVID19 ready Winery/Distillery* Tour! We are following strict cleanliness guidelines and will arrive to pick up your party in a fully sanitized vehicle with extra wipes, hand sanitizer, and gloves for all.  \n\nThis tour will pick you up in Santa Barbara and take you to three unique venues in the Santa Ynez Valley as well as a working olive oil farm. Tastings are no longer available, so guests are required to purchase alcohol and food Guests are also required to bring along their own masks.\n\n\\*Choose either one distillery and two winery visits or three winery visits.",
   "sort": 1
 }
