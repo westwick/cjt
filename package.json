@@ -21,7 +21,7 @@
     "bulma-tooltip": "^2.0.2",
     "cross-env": "^5.2.0",
     "dotenv": "^6.2.0",
-    "lodash": "^4.17.13",
+    "lodash": "^4.17.19",
     "moment-mini": "^2.22.1",
     "netlify-lambda": "^1.4.2",
     "nuxt": "^2.4.5",
