@@ -22,6 +22,10 @@
                 <li><a href="https://www.instagram.com/captainjackssantabarbaratours/" target="_blank" rel="noreferrer">Instagram</a></li>
                 <li><a href="https://www.facebook.com/captainjackssantabarbaratours/" target="_blank" rel="noreferrer">Facebook</a></li>
               </ul>
+              <h5>COVID Update</h5>
+              <ul>
+                <li><nuxt-link to="/covid">COVID Guidelines</nuxt-link></li>
+              </ul>
             </div>
             <div class="column is-5-widescreen footer-contact">
               <h5>Get in touch</h5>

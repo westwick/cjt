@@ -1,5 +1,5 @@
 <template>
-  <section class="">
+  <section class="wrappa">
     <div class="container">
       <div class="columns is-centered">
         <div class="column is-12-mobile is-8-desktop">
@@ -48,8 +48,10 @@ export default {
 </script>
 
 <style lang="sass">
+.wrappa
+  padding-top: 1px
 .blogs-container
-  padding: 0 0 80px
+  padding: 24px 0 80px
 .blog-post-link
   border-bottom: 1px solid #e8e8e8
   &:last-child
