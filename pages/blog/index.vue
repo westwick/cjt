@@ -51,7 +51,7 @@ export default {
 .wrappa
   padding-top: 1px
 .blogs-container
-  padding: 24px 0 80px
+  padding: 24px 16px 80px
 .blog-post-link
   border-bottom: 1px solid #e8e8e8
   &:last-child
