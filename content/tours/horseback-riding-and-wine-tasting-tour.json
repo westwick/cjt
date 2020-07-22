@@ -1,6 +1,6 @@
 {
-  "body": "We are happy to announce our COVID19 ready Horseback Riding and Wine Tasting* Tour! \n\nThis tour begins with a scenic drive up the coast to a privately owned rustic ranch. Your wrangler will guide you on a beautiful horseback ride that winds through the forest and up into the Santa Ynez Mountains where you will enjoy spectacular views of the Pacific Ocean and the Channel Islands. After enjoying a delicious boxed lunch you will then be escorted to two of the regions top wineries* where you will enjoy some of California’s finest wines (wines not included). Tour price includes door to door transportation from anywhere in Santa Barbara, a 90 minute horseback ride, and lunch. Tour returns to Santa Barbara at approximately 4:00 pm. Please call for details if you are interested in our 90 minute beach ride option.\n\n\\*Option for those staying in Santa Barbara to choose one distillery and one winery instead of two wineries.\n\nWe are following strict cleanliness guidelines and will arrive to pick up your party in a fully sanitized vehicle with extra wipes, hand sanitizer, and gloves for all. Guests must provide their own masks.",
-  "priceLong": "$230 per person. Please call or email to book or if you have any questions.",
+  "body": "We are happy to announce our COVID19 ready Horseback Riding and Wine Tasting Tour! \n\nThis tour begins with a scenic drive up the coast to a privately owned rustic ranch. Your wrangler will guide you on a beautiful horseback ride that winds through the forest and up into the Santa Ynez Mountains where you will enjoy spectacular views of the Pacific Ocean and the Channel Islands. After enjoying a delicious boxed lunch you will then be escorted to two of the regions top wineries where you will enjoy tasting some of California’s finest wines. Tour price includes door to door transportation from anywhere in Santa Barbara, a 90 minute horseback ride, lunch, and wine tastings. Tour returns to Santa Barbara at approximately 4:00 pm. Please call for details if you are interested in our 90 minute beach ride option.\n\nWe are following strict cleanliness guidelines and will arrive to pick up your party in a fully sanitized vehicle with extra wipes, hand sanitizer, and gloves for all. Guests must provide their own masks.",
+  "priceLong": "$275 per person. Please call or email to book or if you have any questions.",
   "timeLong": "8:30am start time",
   "thumbnail": "https://ucarecdn.com/3572d8cf-0e45-4069-95c5-41f6a4f832a5/",
   "timeShort": "8:30am start time",
@@ -10,7 +10,7 @@
     "/images/uploads/gaineywide.jpg",
     "/images/uploads/tastingroomwide.jpg"
   ],
-  "priceShort": "$230 per person",
+  "priceShort": "$275 per person",
   "tourId": 400,
   "title": "COVID19 Ready - Horseback Riding and Wine Tasting Tour",
   "booking": {
@@ -33,8 +33,8 @@
     ],
     "email": {
       "startTime": "8:15am-8:30am (we will call you on your cell phone when we are almost there to pick you up).",
-      "private": "(If you would like to make your tour private please call our office at (805) 564-1819. There is a one-time fee of $150 to buy out the vehicle.)",
-      "description": "This tour begins with a scenic drive up the coast to a privately owned rustic ranch. Your wrangler will guide you on a beautiful horseback ride that winds through the forest and up into the Santa Ynez Mountains where you will enjoy spectacular views of the Pacific Ocean and the Channel Islands. After the ride you will be driven to a popular local restaurant for lunch (lunch not included in price). We will then escort you to two of the regions top wineries where you will enjoy some of California’s finest wines. Tour price includes door to door transportation, 90 minute horseback ride, and tasting fees. Tour returns to Santa Barbara at approximately 4:00 pm.",
+      "private": "",
+      "description": "This tour begins with a scenic drive up the coast to a privately owned rustic ranch. Your wrangler will guide you on a beautiful horseback ride that winds through the forest and up into the Santa Ynez Mountains where you will enjoy spectacular views of the Pacific Ocean and the Channel Islands. After lunch you will be escorted to two of the regions top wineries where you will enjoy tasting some of California’s finest wines. Tour price includes door to door transportation, 90 minute horseback ride, lunch, and tasting fees. Tour returns to Santa Barbara at approximately 4:00 pm.",
       "description2": "All wine tour guests must be over 21 years old and provide valid ID in order to go wine tasting.",
       "gratuity": "Our guides will do everything to make your tour special, please make sure to tip your guides."
     }
