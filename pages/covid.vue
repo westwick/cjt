@@ -9,7 +9,7 @@
 
           <p>The health and safety of our guests and staff come first at Captain Jack’s Santa Barbara Tours.   We will be implementing procedures to help mitigate the spread of Covid-19.</p>
           <p>Our staff will answer all the health screening questions and have their temperature taken prior to starting any tours.</p>
-          <p>Guests will also be asked to complete the health screening prior to beginning or tour.  The health screening includes the following three questions and a temperature check:</p>
+          <p>Guests will also be asked to complete the health screening prior to beginning a tour.  The health screening includes the following three questions and a temperature check:</p>
           <ul>
             <li>Have you been in close contact with a confirmed case of COVID-19?</li>
             <li>Are you experiencing shortness of breath, a cough or a sore throat?</li>
