@@ -1,9 +1,9 @@
 {
-  "body": "Captain Jacks Santa Barbara Tours conducts guided 1.5 - 2 hour kayak tours of the Santa Barbara Harbor at 10:30 & 1:30 daily. Experience California's most beautiful harbor on this fun and easy tour. Our professionally guided tour includes a kayak lesson/briefing, all kayak gear and paddles. This tour is the perfect introduction to kayaking and is fun for the entire family. Your tour starts at the boat launch, winds through the harbor, under Stearns Wharf, and out to the one mile buoy. Chances are good the locals will show up to greet you.",
+  "body": "Captain Jacks Santa Barbara Tours conducts guided 1.5 hour kayak tours of the Santa Barbara Harbor daily upon request. Experience California's most beautiful harbor on this fun and easy tour. Our professionally guided tour includes a kayak lesson/briefing, all kayak gear and paddles. This tour is the perfect introduction to kayaking and is fun for the entire family. Your tour starts at the boat launch, winds through the harbor, under Stearns' Wharf, and out to the one mile buoy. Chances are good the locals (sea lions) will show up to greet you. It is suggested you begin by 9:30 a.m. before the wind comes up!",
   "priceLong": "**$55 per person**\n\nFor groups of 10 or more $30 per person",
-  "timeLong": "**Daily at 10:30 or 1:30**",
+  "timeLong": "**Daily**",
   "thumbnail": "https://ucarecdn.com/25846176-4447-4279-ad57-19bae580b0fd/",
-  "timeShort": "Daily at 10:30 or 1:30",
+  "timeShort": "Daily ",
   "allowBooking": true,
   "priceSpecial": "",
   "gallery": [
@@ -12,7 +12,7 @@
     "/images/uploads/sealbuoy.jpg"
   ],
   "priceShort": "$55 per person (group discounts available)",
-  "tourId": 1300,
+  "tourId": 930,
   "title": "Harbor Kayak Tour",
   "booking": {
     "tickets": [
@@ -28,16 +28,13 @@
     ],
     "startTimes": [
       {
-        "time": "10:30am"
-      },
-      {
-        "time": "1:30pm"
+        "time": "9:30am"
       }
     ],
     "email": {
-      "description": "You’ll experience California's most beautiful harbor on this fun and easy tour. Our professionally guided tour includes a kayak lesson/briefing, all kayak gear and paddles. This tour is the perfect introduction to kayaking and is fun for the entire family. Your tour starts at the boat launch, winds through the harbor, under Stearns Wharf, and out to the one mile buoy. Chances are good the locals will show up to greet you. Dolphin, California sea lions, and harbor seals may cruise by to say hello.",
+      "description": "You’ll experience California's most beautiful harbor on this fun and easy tour. Our professionally guided tour includes a kayak lesson/briefing, all kayak gear and paddles. This tour is the perfect introduction to kayaking and is fun for the entire family. Your tour starts at the boat launch, winds through the harbor, under Stearns' Wharf, and out to the one mile buoy. Chances are good the local sea lions will show up to greet you. You may also see dolphins!",
       "description2": "You will want to wear shorts or a swim suit and a light shirt. You may want to bring a sweat shirt, a waterproof jacket or a windbreaker (dress in layers) in case it is cool. You will warm up as you paddle. You might want to bring a change of clothes to change into after the tour. You'll get wet from the water dripping off the paddles. You’re welcome to bring a beverage to enjoy while paddling. We also recommend wearing sunscreen, sunglasses and a hat or visor.",
-      "gratuity": "Our guides will do everything to make your tour special, please make sure to tip your guide. A standard tip is around $20 per person.",
+      "gratuity": "Our guides will do everything to make your tour special, please make sure to tip your guide. A standard tip is around $10 per person.",
       "boatlaunchDirections": true
     }
   },
