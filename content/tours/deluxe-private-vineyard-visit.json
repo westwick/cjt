@@ -1,4 +1,13 @@
 {
+  "body": "Visit a sustainable farm and vineyard which includes an organic blueberry farm. Meet the proprietor and walk with her on some of her 100 acres of ocean view hills above Lompoc. After the tour enjoy sipping the award-winning french inspired wine she has grown on the property. Lunch included. This tour is $190 per person beginning at 10am and ending at 2pm.  If you choose to add a second private vineyard tour and tasting the cost is $250 per person and begins at 9am and ends at 4pm.\n\nPlease call to book this tour.",
+  "priceLong": "Starting at $190.00 per person.",
+  "timeLong": "10am-2pm\n\nor\n\n9am-4pm",
+  "thumbnail": "https://ucarecdn.com/72691b49-ea72-4498-8763-6c1928688509/",
+  "gallery": [
+    "https://ucarecdn.com/2ea945cf-064c-4a9f-b1ec-04eb5c1dc66e/"
+  ],
+  "priceShort": "$190.00",
+  "title": "Deluxe Private Vineyard Visit",
   "booking": {
     "includesPickup": false,
     "email": {
@@ -6,11 +15,5 @@
       "stableDirections": false
     }
   },
-  "title": "Deluxe Private Vineyard Visit",
-  "timeLong": "10am-2pm\n\nor\n\n9am-4pm",
-  "priceLong": "Starting at $190.00 per person.",
-  "priceShort": "$190.00",
-  "body": "Visit a sustainable farm and vineyard which includes an organic blueberry farm. Meet the proprietor and walk with her on some of her 100 acres of ocean view hills above Lompoc. After the tour enjoy sipping the award-winning french inspired wine she has grown on the property. Lunch included. This tour is $190 per person beginning at 10am and ending at 2pm.  If you choose to add a second private vineyard tour and tasting the cost is $250 per person and begins at 9am and ends at 4pm.\n\nPlease call to book this tour.",
-  "sort": 4,
-  "thumbnail": "https://ucarecdn.com/72691b49-ea72-4498-8763-6c1928688509/"
+  "sort": 4
 }
