@@ -1,5 +1,5 @@
 {
-  "body": "On this tour you will enjoy three of the area's prime brewing locations. At the second you'll enjoy lunch which is included in the price along with tasting fees and transportation from anywhere in Santa Barbara. Tours of the beer making process are based on the availability of the brewery staff and the discretion of the guide.",
+  "body": "On this tour you will enjoy three of the area's prime brewing locations or two breweries and one distillery. All tasting fees are included. You can choose to order lunch at the first tasting but it is not included in the price of the tour. Transportation is included from anywhere in Santa Barbara. Tours of the beer making process are based on the availability of the brewery staff and the discretion of the guide.",
   "priceLong": "$115.00",
   "timeLong": "11:30 am",
   "thumbnail": "https://ucarecdn.com/8cbc3b95-1608-4751-bd59-a58a5193e866/",
@@ -12,7 +12,7 @@
   ],
   "priceShort": "$115.00",
   "tourId": 1100,
-  "title": "Santa Barbara Beer Tasting Tour",
+  "title": "Santa Barbara Beer (or Beer/Distillery) Tasting Tour",
   "booking": {
     "tickets": [
       {
@@ -34,8 +34,8 @@
     "minGuests": 4,
     "email": {
       "startTime": "11:30 - 12:00 (we will call you on your cell phone when we are almost there to pick you up).",
-      "private": "If you would like to make your tour private, there is a one- time fee of $150 to buy out the vehicle.",
-      "description": "On this tour you will enjoy three of the area's prime brewing locations. At the second you'll enjoy lunch which is included in the price along with tasting fees and transportation. Tours of the beer making process are based on the availability of the brewery staff and the discretion of the guide.",
+      "private": "",
+      "description": "On this tour you will enjoy three of the area's prime brewing locations or two breweries and one distillery. All tasting fees are included. You can choose to order lunch at the first tasting but it is not included in the price of the tour. Transportation is included from anywhere in Santa Barbara. Tours of the beer making process are based on the availability of the brewery staff and the discretion of the guide.",
       "description2": "All beer tour guests must be over 21 years old and provide valid ID in order to go beer tasting.",
       "gratuity": "Our guides will do everything to make your tour special, so please tip your guide."
     }
