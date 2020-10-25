@@ -10,5 +10,10 @@
   ],
   "priceShort": "$180 per person",
   "title": "Beach Horseback Riding Tours",
+  "booking": {
+    "email": {
+      "gratuity": "Please bring cash to tip your guide."
+    }
+  },
   "sort": "125"
 }
