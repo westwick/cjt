@@ -1,14 +1,14 @@
 {
-  "body": "This tour offers a “taste” of the Old West. Visit two Distilleries (one in Santa Barbara and one in Goleta). One has been family run since 1915 and the proprietor will share with you how their product has been made over the years. The other will give you a behind the scenes tour and allow you to discover their high-quality spirits which represent the agricultural roots of the area. We will then head up to Cold Spring Tavern, a Stagecoach stop from 1865 that now provides a bar and restaurant where you can have lunch. Tastings and lunch not included. Tour begins at 1 p.m. and departs the Tavern at 5:30 p.m. Round trip transportation included.",
-  "priceLong": "**$125 per person**",
-  "timeLong": "1:00pm start time",
+  "body": "This tour offers a “taste” of the Old West. We will head up to Cold Spring Tavern, a stagecoach stop from 1865 that now provides a bar and restaurant where you can have lunch. Then we will visit two Distilleries (one Goleta and one in Buellton). One will offer either tastings of spirits or a cocktail made from one of the spirits. The other will give you a behind the scenes tour and allow you to discover their high-quality spirits which represent the agricultural roots of the area. We will then head up to Cold Spring Tavern, a Stagecoach stop from 1865 that now provides a bar and restaurant where you can have lunch. Lunch and tastings included. Tour begins at 11 p.m. and returns around 4:30 p.m.",
+  "priceLong": "**$160 per person plus 15% gratuity for the guide**",
+  "timeLong": "11:00 pm start time",
   "thumbnail": "https://ucarecdn.com/d087776c-a877-4f0c-8315-e14fdc8eeb01/",
-  "timeShort": "1:00pm start time",
+  "timeShort": "11:00pm start time",
   "allowBooking": false,
   "gallery": [
     "https://ucarecdn.com/c64ba4f8-205c-473e-a955-aad0f7161904/"
   ],
-  "priceShort": "$125 per person",
+  "priceShort": "$160 per person plus 15% gratuity for the guide",
   "title": "Distilleries and the Old West",
   "booking": {
     "tickets": [
@@ -27,9 +27,9 @@
     "email": {
       "startTime": "1:00 pm",
       "private": "This is a PUBLIC tour. (If you would like to make your tour private, there is a one time fee of $150 to buy out the vehicle.)",
-      "description": "This tour offers a “taste” of the Old West. Visit two Distilleries (one in Santa Barbara and one in Goleta). One has been family run since 1915 and the proprietor will share with you how their product has been made over the years. The other will give you a behind the scenes tour and allow you to discover their high-quality spirits which represent the agricultural roots of the area. We will then head up to Cold Spring Tavern, a Stagecoach stop from 1865 that now provides a bar and restaurant. Included in the tour price is a tri-tip sandwich (or a menu item of equal value), tasting fees, and transportation. Tour begins at 1 p.m. and departs the Tavern at 5:30 p.m.",
+      "description": "This tour offers a “taste” of the Old West. We will head up to Cold Spring Tavern, a stagecoach stop from 1865 that now provides a bar and restaurant where you can have lunch. Then we will visit two Distilleries (one Goleta and one in Buellton). One will offer either tastings of spirits or a cocktail made from one of the spirits. The other will give you a behind the scenes tour and allow you to discover their high-quality spirits which represent the agricultural roots of the area. We will then head up to Cold Spring Tavern, a Stagecoach stop from 1865 that now provides a bar and restaurant where you can have lunch. Lunch and tastings included. Tour begins at 11 p.m. and returns around 4:30 p.m.",
       "description2": "All tour guests must be over 21 years old and provide valid ID. Captain Jack's Tours is not responsible for items lost or left behind. Please make sure you check your belongings carefully at the end of the tour.",
-      "gratuity": "Our guides will do everything to make your tour special. Gratuities are always appreciated.",
+      "gratuity": "A 15% gratuity is charged in addition to the cost of the tour.",
       "boatlaunchDirections": false,
       "stableDirections": false
     }
