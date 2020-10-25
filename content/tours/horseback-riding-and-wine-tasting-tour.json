@@ -10,7 +10,7 @@
     "/images/uploads/gaineywide.jpg",
     "/images/uploads/tastingroomwide.jpg"
   ],
-  "priceShort": "$275 per person plus a 15% gratuity for your guide.",
+  "priceShort": "$275 per person ",
   "tourId": 400,
   "title": "Horseback Riding and Wine Tasting Tour",
   "booking": {
@@ -36,7 +36,7 @@
       "private": "$325 for a private tour.",
       "description": "This tour begins with a scenic drive up the coast to a privately owned rustic ranch. Your wrangler will guide you on a beautiful horseback ride that winds through the forest and up into the Santa Ynez Mountains where you will enjoy spectacular views of the Pacific Ocean and the Channel Islands. Depending on the day of the week you will enjoy lunch either creekside, in Solvang, or at the first of two winery visits. Tour price includes door to door transportation, 90 minute horseback ride, lunch, and tasting fees. Tour returns to Santa Barbara at approximately 4:00 pm.",
       "description2": "All wine tour guests must be over 21 years old and provide valid ID in order to go wine tasting.",
-      "gratuity": "A 15% gratuity will be included for your guides."
+      "gratuity": "Please bring cash to tip your guides."
     }
   },
   "sort": 2
