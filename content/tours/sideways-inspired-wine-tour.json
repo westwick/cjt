@@ -1,6 +1,6 @@
 {
   "body": "This tour will visit sites featured in the movie Sideways and is one of our premium wine tours. Your guide will provide you with a fun list of trivia as you follow the Sideways path through wine country. You will also have a chance to stop at the Ostrich Farm where Jack was chased. \n\n Dinner will be enjoyed at the Hitching Post, Miles' favorite restaurant and where his love interest begins. Tour ends at approximately 7:30pm.",
-  "priceLong": "$175.00 per person plus 15% tip for guide",
+  "priceLong": "$175.00 per person",
   "timeLong": "11:00 - 11:30am start time",
   "thumbnail": "https://ucarecdn.com/430bb631-7262-4e0c-988c-77f9a640401f/",
   "timeShort": "11:00 - 11:30am start time",
@@ -9,7 +9,7 @@
     "/images/uploads/grapeswide.jpg",
     "/images/uploads/vineyardladies.jpg"
   ],
-  "priceShort": "$175 per person plus 15% tip for guide",
+  "priceShort": "$175 per person ",
   "tourId": 800,
   "title": "\"Sideways Inspired\" Wine Tour",
   "booking": {
@@ -35,7 +35,7 @@
       "private": "",
       "description": "We will visit four of the region's top wineries for wine tasting. You will drive through a beautiful country side on your way to the Santa Ynez Valley where you will enjoy wine tasting at three of the region's top vineyards and a Santa Ynez Valley tasting room.  We will also stop at an Ostrich Farm where you will get a chance to feed the ostriches!  At the end of the day we will head to dinner at the Hitching Post, Miles' favorite restaurant and where his love interest begins. Here you can treat yourself to a delicious meal (not included in the price). The tour price includes all tasting fees as well as a visit to the ostrich farm and round trip transportation from anywhere in Santa Barbara or Santa Ynez. Tour ends approximately 7:00 p.m.",
       "description2": "All wine tour guests must be over 21 years old and provide valid ID in order to go wine tasting.",
-      "gratuity": "A 15% tip will be included in the cost of the tour. If you feel the guide deserves more, go for it!"
+      "gratuity": "Please bring cash to tip your guide!"
     }
   },
   "sort": 5
