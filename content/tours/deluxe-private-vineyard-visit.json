@@ -6,14 +6,14 @@
   "gallery": [
     "https://ucarecdn.com/2ea945cf-064c-4a9f-b1ec-04eb5c1dc66e/"
   ],
-  "priceShort": "$110.00/160.00 plus 15% gratuity for the guide.",
+  "priceShort": "$110.00/160.00 ",
   "title": "Deluxe Private Vineyard Visit",
   "booking": {
     "includesPickup": false,
     "email": {
       "boatlaunchDirections": false,
       "stableDirections": false,
-      "gratuity": "A 15% gratuity for the guide is added on to the price of the tour."
+      "gratuity": "Please bring cash to tip your guide."
     }
   },
   "sort": 4
