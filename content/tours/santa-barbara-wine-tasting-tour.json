@@ -1,7 +1,7 @@
 {
-  "body": "Want a great way to see Santa Barbara and taste wine at the same time? We will escort you to three wine tasting rooms (or one Distillery and two wine tasting rooms) in three different neighborhoods within the city. We provide door-to-door transportation from anywhere in Santa Barbara. While this tour does not visit the vineyards, it allows groups to visit local wine tasting rooms in the city of Santa Barbara. This tour starts at 12:00 p.m. and usually finishes around 4:00 p.m.",
-  "priceLong": "$115.00",
-  "timeLong": "12 p.m. start time",
+  "body": "Want a great way to see Santa Barbara and taste wine at the same time? We will escort you to three wine tasting rooms (or one Distillery and two wine tasting rooms) in three different neighborhoods within the city. We provide door-to-door transportation from anywhere in Santa Barbara. While this tour does not visit the vineyards, it allows groups to visit local wine tasting rooms in the city of Santa Barbara. This tour starts at 11:00 p.m. and usually finishes around 4:00 p.m. Lunch included.",
+  "priceLong": "$125.00",
+  "timeLong": "11 a.m. start time",
   "thumbnail": "https://ucarecdn.com/7f9da3e7-1f22-4a1b-bac1-69308f6f70e0/",
   "timeShort": "12 p.m. start time",
   "allowBooking": false,
@@ -9,7 +9,7 @@
     "/images/uploads/winewide.jpg",
     "/images/uploads/tastingroomwide.jpg"
   ],
-  "priceShort": "$115.00",
+  "priceShort": "$125.00",
   "tourId": 83,
   "title": "Santa Barbara Wine Tasting Tour",
   "booking": {
@@ -27,10 +27,10 @@
     "includesPickup": true,
     "startTimes": [],
     "email": {
-      "startTime": "12:00 p.m. (we will call you when we are on the way to pick you up)",
+      "startTime": "11:00 a.m. (we will call you when we are on the way to pick you up)",
       "private": "",
-      "description": "We will escort you to three wine tasting rooms here in the city. The tour price includes all tasting fees & door-to-door transportation from anywhere in Santa Barbara including hotels, rental houses and even the train station!! While this tour doesn't go into the vineyards, it is perfect for groups who are on a tight schedule or who want to be close to downtown to keep the fun going! This tour starts at noon and usually finishes around 4:00.",
-      "gratuity": "Our guides will do everything to make your tour special, please make sure to tip your guide. A standard tip is around 15%-18%"
+      "description": "We will escort you to three wine tasting rooms here in the city. The tour price includes all tasting fees, lunch, and door-to-door transportation from anywhere in Santa Barbara including hotels, rental houses and even the train station!! While this tour doesn't go into the vineyards, it is perfect for groups who are on a tight schedule or who want to be close to downtown to keep the fun going! This tour starts at noon and usually finishes around 4:00.",
+      "gratuity": "A 15% tip will be included in the cost of this tour."
     }
   },
   "sort": 3
