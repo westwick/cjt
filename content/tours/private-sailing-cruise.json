@@ -1,17 +1,17 @@
 {
   "body": "Captain Jack's favorite! Enjoy a beautiful sunset cruise on a private chartered yacht. Find out why Santa Barbara is known as the \"American Riviera\" as you enjoy the sunset and the sparkling lights of the city. The price includes two hours on a private yacht. Cruise duration can be extended and does not necessarily need to go out at sunset.\n\nWe also offer many other styles of boats and yachts, view our [private chartered boats](/boat-charters) for more information.",
-  "priceLong": "**$475 for 2 hour cruise plus 18% cash gratuity for your captain**\n\n6 passenger maximum",
+  "priceLong": "**$450 for 2 hour cruise plus 18% cash gratuity for your captain**\n\n6 passenger maximum",
   "timeLong": "7 days a week by appointment",
   "thumbnail": "https://ucarecdn.com/6db5ea55-cbfb-4d08-ad61-8adcdf0459e5/",
   "timeShort": "7 days a week by appointment",
   "gallery": [
     "/images/uploads/sailwide.jpg"
   ],
-  "priceShort": "$475, up to 6 passengers",
-  "title": "Private Sailing Cruise",
+  "priceShort": "$450, up to 6 passengers",
+  "title": "Private Yacht Charter with Captain",
   "booking": {
     "email": {
-      "gratuity": "Please make sure your captain is given an 18$ cash gratuity."
+      "gratuity": "Please make sure your captain is given an 18% cash gratuity."
     }
   },
   "sort": "200"
