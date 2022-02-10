@@ -48,7 +48,7 @@
     "eslint-plugin-prettier": "2.6.2",
     "prettier": "1.14.3",
     "glob": "^7.1.2",
-    "node-sass": "^4.9.0",
+    "node-sass": "^7.0.0",
     "require-context": "^1.1.0",
     "sass-loader": "^7.0.1"
   }
